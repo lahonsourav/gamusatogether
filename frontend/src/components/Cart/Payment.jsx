@@ -168,6 +168,8 @@ const Payment = () => {
           />
         </form>
 
+        <Typography>or</Typography>
+
         <div className="codButton">
           <button className="paymentFormBtn" onClick={(e) => clickHandler(e)}>
             Cash On Delivery

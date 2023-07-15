@@ -38,7 +38,8 @@ const Footer = () => {
           <Link>facebook</Link>
           <Link>mail to us</Link>
           <Link>collab with us</Link>
-          <Link>become a model</Link>
+          <Link>report a bug</Link>
+          <Link>help</Link>
         </div>
       </div>
       <div className="copyright"> &copy; gamusagogamukh 2023</div>

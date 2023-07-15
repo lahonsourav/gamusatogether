@@ -65,14 +65,23 @@ const ConfirmOrder = () => {
               {cartItems &&
                 cartItems.map((item) => (
                   <div key={item.product}>
-                    <img src={item.image} alt="Product" />
-                    <Link to={`/product/${item.product}`}>
-                      {item.name}
-                    </Link>{" "}
+                    <Link to={`/product/${item.product}`}>{item.name}</Link>{" "}
+                    {/* <img src={item.image} alt="Product" /> */}
                     <span>
                       {item.quantity} X ₹{item.price} ={" "}
                       <b>₹{item.price * item.quantity}</b>
                     </span>
+                  </div>
+                ))}
+            </div>
+
+            <div className="confirmCartItemsContainer">
+              {cartItems &&
+                cartItems.map((item) => (
+                  <div key={item.product}>
+                    <Link to={`/product/${item.product}`}>{item.name}</Link>{" "}
+                    <span>{item.quantity}</span>
+                    <img src={item.image} alt="Product" />
                   </div>
                 ))}
             </div>

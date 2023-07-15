@@ -32,7 +32,7 @@ const OrderDetails = () => {
           <div className="orderDetailsPage">
             <div className="orderDetailsContainer">
               {order && (
-                <Typography component="h1">Order #{order._id}</Typography>
+                <Typography component="h1">Order id : {order._id}</Typography>
               )}
 
               <Typography>Shipping Info</Typography>
@@ -73,7 +73,7 @@ const OrderDetails = () => {
                       {order.shippingInfo &&
                       order.paymentInfo.status === "succeeded"
                         ? "PAID"
-                        : "NOT PAID"}
+                        : "CASH ON DELIVERY"}
                     </p>
                   )}
                 </div>

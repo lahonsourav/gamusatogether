@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, updatePassword } from "../../actions/userAction";
 import { useAlert } from "react-alert";
 import { UPDATE_PASSWORD_RESET } from "../../constants/userConstants";
-import { VscAccount } from "react-icons/vsc";
+import { VscLock } from "react-icons/vsc";
 import { useNavigate } from "react-router-dom";
 
 const UpdatePassword = ({ history }) => {
@@ -65,7 +65,7 @@ const UpdatePassword = ({ history }) => {
                 onSubmit={updatePasswordSubmit}
               >
                 <div className="loginPassword">
-                  <VscAccount />
+                  <VscLock />
                   <input
                     type="password"
                     placeholder="Old Password"
@@ -76,7 +76,7 @@ const UpdatePassword = ({ history }) => {
                 </div>
 
                 <div className="loginPassword">
-                  <VscAccount />
+                  <VscLock />
                   <input
                     type="password"
                     placeholder="New Password"
@@ -86,7 +86,7 @@ const UpdatePassword = ({ history }) => {
                   />
                 </div>
                 <div className="loginPassword">
-                  <VscAccount />
+                  <VscLock />
                   <input
                     type="password"
                     placeholder="Confirm Password"

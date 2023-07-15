@@ -11,7 +11,7 @@
 }
 
 #productListHeading {
-  font: 400 2rem "Roboto";
+  font: 400 2rem ;
   padding: 0.5vmax;
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.637);
@@ -52,6 +52,6 @@
 
 @media screen and (max-width: 600px) {
   .productListTable div {
-    font: 300 4vw "Roboto";
+    font: 300 4vw ;
   }
 }

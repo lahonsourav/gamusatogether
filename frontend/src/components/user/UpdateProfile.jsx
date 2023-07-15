@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import "./UpdateProfile.css";
 import Loader from "../layout/loader/Loader";
-import { VscAccount } from "react-icons/vsc";
+import { VscMail, VscSmiley } from "react-icons/vsc";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, updateProfile, loadUser } from "../../actions/userAction";
 import { useAlert } from "react-alert";
@@ -19,6 +19,21 @@ const UpdateProfile = () => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [avatar, setAvatar] = useState();
+  const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
+
+  const updateProfileDataChange = (e) => {
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      if (reader.readyState === 2) {
+        setAvatarPreview(reader.result);
+        setAvatar(reader.result);
+      }
+    };
+
+    reader.readAsDataURL(e.target.files[0]);
+  };
 
   const updateProfileSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +42,8 @@ const UpdateProfile = () => {
 
     myForm.set("name", name);
     myForm.set("email", email);
+    myForm.set("avatar", avatar);
+
     dispatch(updateProfile(myForm));
   };
 
@@ -69,10 +86,10 @@ const UpdateProfile = () => {
                 onSubmit={updateProfileSubmit}
               >
                 <div className="updateProfileName">
-                  <VscAccount />
+                  <VscSmiley />
                   <input
                     type="text"
-                    placeholder="Name"
+                    placeholder="type new name"
                     required
                     name="name"
                     value={name}
@@ -80,14 +97,23 @@ const UpdateProfile = () => {
                   />
                 </div>
                 <div className="updateProfileEmail">
-                  <VscAccount />
+                  <VscMail />
                   <input
                     type="email"
-                    placeholder="Email"
+                    placeholder="type new email"
                     required
                     name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div id="updateProfileImage">
+                  <img src={avatarPreview} alt="Avatar Preview" />
+                  <input
+                    type="file"
+                    name="avatar"
+                    accept="image/*"
+                    onChange={updateProfileDataChange}
                   />
                 </div>
 

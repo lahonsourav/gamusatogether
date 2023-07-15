@@ -48,7 +48,7 @@ const MyOrders = () => {
     {
       field: "actions",
       flex: 0.3,
-      headerName: "Actions",
+      headerName: "Details",
       minWidth: 150,
       type: "number",
       sortable: false,
@@ -95,6 +95,7 @@ const MyOrders = () => {
             rows={rows}
             columns={columns}
             pageSize={10}
+            rowsPerPageOptions={[5, 10, 25, 50, 100]}
             disableSelectionOnClick
             className="myOrdersTable"
             autoHeight
