@@ -63,6 +63,14 @@ const ProductDetails = () => {
     }
   };
 
+  const wishlistHandler = () => {
+    if (!user) {
+      navigate("/login");
+    } else {
+      navigate("/cart");
+    }
+  };
+
   const options = {
     edit: false,
     color: "rgba(20,20,20,0.1)",
@@ -125,12 +133,10 @@ const ProductDetails = () => {
             <div className="detail-block">
               <h1>{product && product.name}</h1>
               <p>{product && product.description}</p>
-
               <div className="price-container">
-                <h1>{product && product.price}/-</h1>
+                <h2>{product && product.price}/-</h2>
                 <small>inclusive of all taxes</small>
               </div>
-
               <div className="detailsBlock3">
                 <div className="detailsBlock3-1">
                   <div className="detailsBlock3-1-1">
@@ -149,23 +155,73 @@ const ProductDetails = () => {
                   </p>
                 </div>
               </div>
+              <div className="product-buttons">
+                <button
+                  className="product-btn"
+                  disabled={product && product.Stock < 1 ? true : false}
+                  onClick={addToCartHandler}
+                >
+                  Add to wishlist
+                </button>
+
+                <button className="product-btn" onClick={wishlistHandler}>
+                  Go to wishlist
+                </button>
+
+                <button onClick={submitReviewToggle} className="product-btn">
+                  Submit Review
+                </button>
+              </div>
+
+              <Dialog
+                aria-labelledby="simple-dialog-title"
+                open={open}
+                onClose={submitReviewToggle}
+              >
+                <DialogTitle>Submit Review</DialogTitle>
+                <DialogContent className="submitDialog">
+                  <Rating
+                    onChange={(e) => setRating(e.target.value)}
+                    value={rating}
+                    size="large"
+                  />
+
+                  <textarea
+                    className="submitDialogTextArea"
+                    cols="30"
+                    rows="5"
+                    value={comment}
+                    onChange={(e) => setComment(e.target.value)}
+                  ></textarea>
+                </DialogContent>
+                <DialogActions>
+                  <Button onClick={submitReviewToggle} color="secondary">
+                    Cancel
+                  </Button>
+                  <Button onClick={reviewSubmitHandler} color="primary">
+                    Submit
+                  </Button>
+                </DialogActions>
+              </Dialog>
             </div>
           </div>
 
-          <h3>Reviews</h3>
-          <div className="detailsBlock2">
-            <ReactStars {...options} />
-            <span>({product && product.numOfReviews})</span>
-          </div>
-          {product && product.reviews && product.reviews.length > 0 ? (
-            <div className="reviews">
-              {product.reviews.map((review) => (
-                <ReviewCard key={review._id} review={review} />
-              ))}
+          <div className="review_container">
+            <h3>Reviews</h3>
+            <div className="detailsBlock-2">
+              <ReactStars {...options} />
+              <span>({product && product.numOfReviews})</span>
             </div>
-          ) : (
-            <p className="noReviews">No Reviews Yet</p>
-          )}
+            {product && product.reviews && product.reviews.length > 0 ? (
+              <div className="reviews">
+                {product.reviews.map((review) => (
+                  <ReviewCard key={review._id} review={review} />
+                ))}
+              </div>
+            ) : (
+              <p className="noReviews">No Reviews Yet</p>
+            )}
+          </div>
         </Fragment>
       )}
     </Fragment>
@@ -173,53 +229,3 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
-
-// <div className="product-buttons">
-//   <button
-//     className="product-btn"
-//     disabled={product && product.Stock < 1 ? true : false}
-//     onClick={addToCartHandler}
-//   >
-//     Add to wishlist
-//   </button>
-
-//   <Link className="product-btn" to="/cart">
-//     {" "}
-//     Go to wishlist
-//   </Link>
-
-//   <button onClick={submitReviewToggle} className="product-btn">
-//     Submit Review
-//   </button>
-// </div>;
-
-// <Dialog
-//   aria-labelledby="simple-dialog-title"
-//   open={open}
-//   onClose={submitReviewToggle}
-// >
-//   <DialogTitle>Submit Review</DialogTitle>
-//   <DialogContent className="submitDialog">
-//     <Rating
-//       onChange={(e) => setRating(e.target.value)}
-//       value={rating}
-//       size="large"
-//     />
-
-//     <textarea
-//       className="submitDialogTextArea"
-//       cols="30"
-//       rows="5"
-//       value={comment}
-//       onChange={(e) => setComment(e.target.value)}
-//     ></textarea>
-//   </DialogContent>
-//   <DialogActions>
-//     <Button onClick={submitReviewToggle} color="secondary">
-//       Cancel
-//     </Button>
-//     <Button onClick={reviewSubmitHandler} color="primary">
-//       Submit
-//     </Button>
-//   </DialogActions>
-// </Dialog>;

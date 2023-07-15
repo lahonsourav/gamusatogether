@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   align-items: center;
-  background-color: var(--color-light-one);
+  background-color: var(--color-dark-shade-one);
   z-index: 10;
   color: var(--color-dark);
   font-size: 20px;
@@ -89,7 +89,7 @@
   float: right;
   width: 35px;
   height: 35px;
-  background: var(--color-light-one);
+  background: var(--color-dark-shade-one);
   display: flex;
   align-items: center;
   justify-content: center;

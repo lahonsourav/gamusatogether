@@ -45,7 +45,7 @@
 
 .profile-actions > a {
   border: none;
-  background-color: var(--color-dark-shade-one);
+  background-color: var(--color-light);
   color: var(--color-dark);
   font: 300 1vmax;
   width: 100%;
@@ -58,7 +58,7 @@
 
 .profile-actions > p {
   border: none;
-  background-color: var(--color-dark-shade-one);
+  background-color: var(--color-light);
   color: var(--color-dark);
   font: 300 1vmax;
   width: 100%;

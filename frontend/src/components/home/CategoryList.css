@@ -17,8 +17,7 @@
 }
 
 .categoryList > a:hover {
-  color: var(--color-red);
-  background-color: var(--color-light);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 620px) {
