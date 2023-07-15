@@ -74,7 +74,7 @@
 .cartInput > input {
   border: none;
   padding: 0.5vmax;
-  width: 1vmax;
+  width: 2vmax;
   text-align: center;
   outline: none;
   font: 400 0.8vmax;
@@ -130,6 +130,7 @@
     padding: 0;
     min-height: 60vh;
     margin-top: 7rem;
+    margin-bottom: 3rem;
   }
 
   .cartHeader {
@@ -148,12 +149,12 @@
   }
 
   .cartInput > button {
-    padding: 1.5vmax;
+    padding: 1vmax;
   }
 
   .cartInput > input {
     width: 2vmax;
-    padding: 1.5vmax;
+    padding: 1vmax;
     font: 400 1.8vmax "Roboto";
   }
 

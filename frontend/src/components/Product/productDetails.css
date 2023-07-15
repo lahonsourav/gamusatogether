@@ -7,17 +7,15 @@
   padding: 6vmax;
   box-sizing: border-box;
   display: flex;
-  margin-top: 4rem;
+  margin-top: 6rem;
   gap: 2rem;
 }
 
 .carousal-container {
   display: flex;
   flex: 0.5;
-  width: 300px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousal {
@@ -39,17 +37,20 @@
 .detail-block {
   display: flex;
   flex: 0.5;
-  gap: 0.5rem;
+  gap: 1rem;
   flex-direction: column;
-}
-.detailsBlock-1 > h2 {
-  color: rgb(54, 54, 54);
-  font: 600 1.6vmax "Roboto";
 }
 
 .detailsBlock-1 > p {
-  color: rgba(54, 54, 54, 0.582);
-  font: 200 0.6vmax cursive;
+  color: var(--color-btn);
+  font: 200 0.6vmax;
+  text-align: justify;
+}
+
+.detailsBlock-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .review_container {
@@ -78,6 +79,11 @@
   color: rgba(0, 0, 0, 0.699);
 }
 
+.price-container > h2 {
+  margin-top: 1rem;
+  font-size: 2vmax;
+  font-weight: 600;
+}
 .detailsBlock3 {
   width: 70%;
   margin-top: 1rem;
@@ -102,7 +108,7 @@
 .detailsBlock3-1-1 > input {
   border: none;
   padding: 0.5vmax;
-  width: 2vmax;
+  width: 3vmax;
   text-align: center;
   outline: none;
   font: 400 0.8vmax;
@@ -115,7 +121,6 @@
   transition: all 0.5s;
   background-color: var(--color-btn);
   font: 500 0.7vmax;
-  padding: 0.5vmax 1vmax;
   outline: none;
 }
 
@@ -130,7 +135,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  width: 30%;
+  width: 50%;
   gap: 1rem;
 }
 
@@ -139,7 +144,6 @@
   background-color: var(--color-btn);
   color: var(--color-bg);
   font: 300 0.9vmax "Roboto";
-  width: 70%;
   padding: 1vmax;
   cursor: pointer;
   transition: all 0.5s;
@@ -171,7 +175,7 @@
 
 .reviewCard {
   flex: none;
-
+  background-color: var(--color-light);
   border: 1px solid rgba(56, 56, 56, 0.116);
   width: 30vmax;
   display: flex;
@@ -209,14 +213,29 @@
     align-items: center;
   }
 
-  .detailsBlock-1 > h2 {
-    font-size: 2.8vmax;
-    text-align: center;
+  .detail-block {
+    display: flex;
+    flex: 0.5;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .detailsBlock-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .detailsBlock-1 > p {
-    text-align: center;
-    font-size: 1vmax;
+    color: var(--color-btn);
+    font-size: 2vmax;
+    font-weight: 300;
+    text-align: justify;
+  }
+
+  .detailsBlock-1 > h1 {
+    font-size: 3vmax;
+    font-weight: 400;
   }
 
   .detailsBlock-2 {
@@ -224,42 +243,6 @@
   }
   .detailsBlock-2 > span {
     font-size: 1.5vmax;
-  }
-
-  .detailsBlock3 > h1 {
-    font: 700 3vmax "Franklin Gothic Medium";
-    text-align: center;
-  }
-
-  .detailsBlock3-1 {
-    flex-direction: column;
-  }
-
-  .detailsBlock3-1-1 {
-    padding: 2vmax 0;
-  }
-  .detailsBlock3-1-1 > button {
-    padding: 1.2vmax;
-    width: 4vmax;
-  }
-
-  .detailsBlock3-1-1 > input {
-    padding: 1.5vmax;
-    width: 3vmax;
-    font: 400 1.8vmax;
-  }
-
-  .detailsBlock3-1-1 > button {
-    font: 500 1.7vmax;
-    padding: 1.5vmax;
-    width: 20vmax;
-    margin: 3vmax 0;
-  }
-
-  .detailsBlock-3 > p {
-    padding: 2.5vmax 0;
-    text-align: center;
-    font: 400 2vmax;
   }
 
   .submitReview {
@@ -274,5 +257,29 @@
   }
   .reviewCardComment {
     font: 300 5vw cursive;
+  }
+
+  .product-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 50%;
+    gap: 1rem;
+  }
+
+  .product-btn {
+    border: none;
+    background-color: var(--color-btn);
+    color: var(--color-bg);
+    font: 300 0.9vmax "Roboto";
+    padding: 1vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    text-align: center;
+  }
+
+  .product-btn:hover {
+    cursor: pointer;
   }
 }

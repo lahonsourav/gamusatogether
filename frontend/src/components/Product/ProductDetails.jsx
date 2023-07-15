@@ -131,12 +131,15 @@ const ProductDetails = () => {
             </div>
 
             <div className="detail-block">
-              <h1>{product && product.name}</h1>
-              <p>{product && product.description}</p>
-              <div className="price-container">
-                <h2>{product && product.price}/-</h2>
-                <small>inclusive of all taxes</small>
+              <div className="detailsBlock-1">
+                <h1>{product && product.name}</h1>
+                <p>{product && product.description}</p>
+                <div className="price-container">
+                  <h2>{product && product.price}/-</h2>
+                  <small>inclusive of all taxes</small>
+                </div>
               </div>
+
               <div className="detailsBlock3">
                 <div className="detailsBlock3-1">
                   <div className="detailsBlock3-1-1">
