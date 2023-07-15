@@ -1,0 +1,33 @@
+.categoryList {
+  display: flex;
+  background-color: var(--color-light);
+  position: sticky;
+  top: 5rem;
+  height: 4rem;
+  justify-content: space-around;
+  padding: 0 10rem;
+  align-items: center;
+  z-index: 8;
+  color: var(--color-dark);
+}
+
+.categoryList > a > h4 {
+  /* font-size: 16px; */
+  font-weight: 400;
+}
+
+.categoryList > a:hover {
+  color: var(--color-red);
+  background-color: var(--color-light);
+}
+
+@media screen and (max-width: 620px) {
+  .categoryList {
+    padding: 0 2rem;
+  }
+
+  .categoryList > a > h4 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

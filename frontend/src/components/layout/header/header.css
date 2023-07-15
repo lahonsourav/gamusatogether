@@ -1,0 +1,148 @@
+.header-container {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 5rem;
+  top: 0;
+  left: 0;
+  align-items: center;
+  background-color: var(--color-bg);
+  z-index: 10;
+  color: var(--color-dark);
+  font-size: 20px;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.left-head {
+  display: flex;
+  flex: 5;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1vmax;
+}
+
+.left-head > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1vmax;
+}
+
+/* .mid-head {
+  display: flex;
+  flex: 3;
+  align-items: center;
+  justify-content: flex-start;
+} */
+
+.right-head {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1vmax;
+}
+
+.right-head h4 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+/* .speedDial {
+  background-color: var(--color-light);
+} */
+
+.speedDialIcon {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.rightmostHead {
+  width: 10%;
+}
+
+.searchBox {
+  display: flex;
+
+  background: var(--color-light);
+  height: 35px;
+  align-items: center;
+}
+
+.searchBox:hover > .searchInput {
+  display: flex;
+  width: 300px;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.searchBox:hover > .searchButton {
+  background: var(--color-dark-shade-one);
+  color: var(--color-dark);
+}
+
+.searchButton {
+  display: flex;
+  color: var(--color-dark);
+  float: right;
+  width: 35px;
+  height: 35px;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.4s;
+  font-size: 18px;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding-left: 0;
+  color: var(--color-dark);
+  font-size: 12px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+.userDetails {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 620px) {
+  .searchBox:hover > .searchInput {
+    width: 180px;
+    padding: 0 6px;
+  }
+
+  .header-container {
+    top: 0;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .searchBox {
+    height: 30px;
+  }
+
+  .searchButton {
+    width: 30px;
+    height: 30px;
+
+    font-size: 18px;
+  }
+
+  .searchInput {
+    float: left;
+    padding-left: 0;
+    line-height: 10px;
+    font-size: 12px;
+  }
+}

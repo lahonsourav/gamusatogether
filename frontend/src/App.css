@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style-type: none;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  font-family: "Roboto", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+input ::-webkit-inner-spin-button,
+input ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.greenColor {
+  color: green;
+}
+
+.ColorRed {
+  color: red;
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+  color: var(--color-white);
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --color-bg: #f9f9fb;
+  --color-light: #fffff5;
+  --color-mid: #fdf4e3;
+  --color-dark-shade-one: #b59f84;
+  --color-dark: black;
+
+  --color-red: #7d0c0c;
+  --transition: all 400ms ease;
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+}
