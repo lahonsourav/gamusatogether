@@ -1,40 +1,22 @@
 import React, { Fragment } from "react";
 import "./header.css";
 
-import {
-  BsCartCheck,
-  BsDoorClosed,
-  BsFillBagHeartFill,
-  BsFillPersonCheckFill,
-} from "react-icons/bs";
+import { VscAccount, VscVmOutline, VscHeart } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { useAlert } from "react-alert";
-import { logout } from "../../../actions/userAction";
-import { useDispatch } from "react-redux";
 
 const UserOptions = () => {
-  const alert = useAlert();
-  const dispatch = useDispatch();
-
-  function logoutUser() {
-    dispatch(logout());
-    alert.success("Logout Successfully");
-  }
-
   return (
     <Fragment>
       <div className="userDetails">
-        <BsDoorClosed onClick={logoutUser} />
-
         <Link to="/admin/dashboard">
-          <BsFillBagHeartFill />
+          <VscVmOutline />
         </Link>
 
         <Link to="/cart">
-          <BsCartCheck />
+          <VscHeart />
         </Link>
         <Link to="/account">
-          <BsFillPersonCheckFill />
+          <VscAccount />
         </Link>
       </div>
     </Fragment>

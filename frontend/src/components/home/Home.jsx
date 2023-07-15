@@ -40,12 +40,8 @@ const Home = () => {
 
           <div className="banner">
             <div className="banner-text">
-              <p>GAMUSA GOGAMUKH</p>
-              <h1>ALL THE ASSAMESE TRADITIONAL ATTIRES YOU NEED</h1>
-
-              <Link>
-                <CgMouse />
-              </Link>
+              <p>THE ASSAMESE TRADITIONAL STORE</p>
+              <h1>GAMUSA GOGAMUKH</h1>
             </div>
           </div>
           <CategoryList />

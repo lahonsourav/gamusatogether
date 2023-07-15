@@ -3,7 +3,15 @@ import "./Shipping.css";
 import { useSelector, useDispatch } from "react-redux";
 import { saveShippingInfo } from "../../actions/cartActions";
 import Metadata from "../layout/Metadata";
-import { VscAccount } from "react-icons/vsc";
+import { VscAccount, VscLocation } from "react-icons/vsc";
+import {
+  PiPhoneIncomingLight,
+  PiGlobeHemisphereWestThin,
+  PiMapPinLight,
+  PiMapPinLineLight,
+} from "react-icons/pi";
+
+import { CiHome, CiMapPin } from "react-icons/ci";
 import { Country, State } from "country-state-city";
 import { useAlert } from "react-alert";
 import CheckoutSteps from "./CheckoutSteps.jsx";
@@ -37,13 +45,13 @@ const Shipping = () => {
 
   return (
     <Fragment>
-      <Metadata title="Shipping Details" />
+      <Metadata title="Gamusa shipping address" />
 
       <CheckoutSteps activeStep={0} />
 
       <div className="shippingContainer">
         <div className="shippingBox">
-          <h2 className="shippingHeading">Shipping Details</h2>
+          <h2 className="shippingHeading">Address</h2>
 
           <form
             className="shippingForm"
@@ -51,52 +59,7 @@ const Shipping = () => {
             onSubmit={shippingSubmit}
           >
             <div>
-              <VscAccount />
-              <input
-                type="text"
-                placeholder="Address"
-                required
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
-              />
-            </div>
-
-            <div>
-              <VscAccount />
-              <input
-                type="text"
-                placeholder="City"
-                required
-                value={city}
-                onChange={(e) => setCity(e.target.value)}
-              />
-            </div>
-
-            <div>
-              <VscAccount />
-              <input
-                type="number"
-                placeholder="Pin Code"
-                required
-                value={pinCode}
-                onChange={(e) => setPinCode(e.target.value)}
-              />
-            </div>
-
-            <div>
-              <VscAccount />
-              <input
-                type="number"
-                placeholder="Phone Number"
-                required
-                value={phoneNo}
-                onChange={(e) => setPhoneNo(e.target.value)}
-                size="10"
-              />
-            </div>
-
-            <div>
-              <VscAccount />
+              <PiGlobeHemisphereWestThin />
 
               <select
                 required
@@ -115,7 +78,7 @@ const Shipping = () => {
 
             {country && (
               <div>
-                <VscAccount />
+                <PiMapPinLineLight />
 
                 <select
                   required
@@ -132,6 +95,50 @@ const Shipping = () => {
                 </select>
               </div>
             )}
+
+            <div>
+              <PiMapPinLight />
+              <input
+                type="text"
+                placeholder="City"
+                required
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
+              />
+            </div>
+            <div>
+              <CiHome />
+              <input
+                type="text"
+                placeholder="Address"
+                required
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+              />
+            </div>
+
+            <div>
+              <CiMapPin />
+              <input
+                type="number"
+                placeholder="Pin Code"
+                required
+                value={pinCode}
+                onChange={(e) => setPinCode(e.target.value)}
+              />
+            </div>
+
+            <div>
+              <PiPhoneIncomingLight />
+              <input
+                type="number"
+                placeholder="Phone Number"
+                required
+                value={phoneNo}
+                onChange={(e) => setPhoneNo(e.target.value)}
+                size="10"
+              />
+            </div>
 
             <input
               type="submit"

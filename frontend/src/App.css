@@ -43,7 +43,8 @@ body {
 }
 
 :root {
-  --color-bg: #f9f9fb;
+  --color-bg: white;
+  --color-light-one: #f9f9fb;
   --color-light: #fffff5;
   --color-mid: #fdf4e3;
   --color-dark-shade-one: #b59f84;

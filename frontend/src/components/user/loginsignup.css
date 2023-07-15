@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(231, 231, 231);
+  background-color: var(--color-bg);
   position: fixed;
   top: 10%;
   left: 0;
@@ -15,7 +15,7 @@
   cursor: pointer;
 }
 .LoginSignUpBox {
-  background-color: white;
+  background-color: var(--color-bg);
   width: 25vw;
   height: 70vh;
   box-sizing: border-box;
@@ -35,11 +35,11 @@
   width: 100%;
 }
 .login_signUp_toggle > p:hover {
-  color: tomato;
+  color: var(--color-dark-shade-one);
 }
 
 .LoginSignUpBox > div > button {
-  background-color: tomato;
+  background-color: var(--color-dark-shade-one);
   height: 3px;
   width: 50%;
   border: none;
@@ -103,6 +103,7 @@
 #registerImage > img {
   width: 3vmax;
   border-radius: 100%;
+  margin-right: 0.5rem;
 }
 #registerImage > input {
   display: flex;
@@ -113,7 +114,7 @@
   cursor: pointer;
   width: 100%;
   z-index: 2;
-  height: 5vh;
+  height: 4vh;
   border: none;
   margin: 0%;
   font: 400 0.8vmax;
@@ -130,8 +131,8 @@
 .loginBtn,
 .signUpBtn {
   border: none;
-  background-color: tomato;
-  color: white;
+  background-color: var(--color-dark-shade-one);
+  color: var(--color-dark);
   font: 300 0.9vmax;
   width: 100%;
   padding: 0.8vmax;
@@ -144,7 +145,7 @@
 
 .loginBtn:hover,
 .signUpBtn:hover {
-  background-color: rgb(179, 66, 46);
+  background-color: var(--color-mid);
 }
 
 .shiftToLeft {

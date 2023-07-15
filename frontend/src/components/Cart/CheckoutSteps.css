@@ -9,9 +9,10 @@
 
 .MuiStepConnector-active,
 .MuiStepConnector-completed {
-  background-color: tomato;
+  background-color: var(--color-red);
 }
 
 .step {
   margin-top: 6rem;
+  background-color: var(--color-bg);
 }

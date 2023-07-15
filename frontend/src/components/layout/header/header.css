@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   align-items: center;
-  background-color: var(--color-bg);
+  background-color: var(--color-light-one);
   z-index: 10;
   color: var(--color-dark);
   font-size: 20px;
@@ -66,7 +66,7 @@
 .searchBox {
   display: flex;
 
-  background: var(--color-light);
+  background: var(--color-bg);
   height: 35px;
   align-items: center;
 }
@@ -79,7 +79,7 @@
 }
 
 .searchBox:hover > .searchButton {
-  background: var(--color-dark-shade-one);
+  background: var(--color-bg);
   color: var(--color-dark);
 }
 
@@ -89,7 +89,7 @@
   float: right;
   width: 35px;
   height: 35px;
-  background: var(--color-bg);
+  background: var(--color-light-one);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,5 +144,10 @@
     padding-left: 0;
     line-height: 10px;
     font-size: 12px;
+  }
+
+  .right-head h4 {
+    font-size: 12px;
+    font-weight: 100;
   }
 }

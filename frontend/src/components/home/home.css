@@ -17,7 +17,7 @@
     var(--color-light)
   ); */
 
-  background-color: var(--color-mid);
+  background-color: var(--color-light);
 
   color: var(--color-dark);
   z-index: -99;
@@ -54,8 +54,9 @@
 .banner-text {
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .banner-text > a {
@@ -74,7 +75,6 @@
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 3vmax;
-  /* border: 1px solid var(--color-red); */
   padding: 1vmax;
   font-size: 14px;
 }
@@ -82,31 +82,6 @@
 .home-container > a:hover {
   color: var(--color-red);
 }
-/* .scroll-down {
-  display: flex;
-  margin-top: 10rem;
-  margin-right: auto;
-  margin-left: auto;
-  width: 1rem;
-  height: 1rem;
-  border: 1px solid var(--color-light);
-  border-radius: 1rem;
-} */
-
-/* .home-container::before {
-  content: "";
-  width: 100vw;
-  height: 69vmax;
-  position: absolute;
-  background-color: var(--color-red);
-
-  top: 54px;
-  left: 0;
-  clip-path: polygon(100% 74%, 0 90%, 100% 100%);
-  top: 158px;
-
-  max-width: 100%;
-} */
 
 .homeHeading {
   text-align: center;
@@ -217,11 +192,10 @@
 
 .productCard > div > span {
   margin: 1vmax;
-  font: 300 0.7vmax "Roboto";
+  font: 300 0.7vmax;
 }
 
 .productCard > p {
-  font-family: "Roboto";
   font-size: 1.2vmax;
   margin: 1vmax 1vmax;
   margin-bottom: 0;
@@ -229,7 +203,6 @@
 
 .productCard > span {
   margin: 0.5vmax 1vmax;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1vmax;
 }
 
@@ -262,11 +235,6 @@
 
   .banner {
     height: 50vh;
-  }
-
-  .banner-text {
-    margin-top: 9rem;
-    font-size: 10px;
   }
 
   .banner-text > h1 {

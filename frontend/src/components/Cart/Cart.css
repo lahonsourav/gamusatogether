@@ -10,7 +10,7 @@
 }
 .emptyCart > svg {
   font-size: 5vmax;
-  color: tomato;
+  color: var(--color-mid);
 }
 .emptyCart > p {
   font-size: 2vmax;
@@ -21,7 +21,7 @@
   border: none;
   padding: 1vmax 3vmax;
   cursor: pointer;
-  font: 400 1vmax "Roboto";
+  font: 400 1vmax;
   text-decoration: none;
 }
 
@@ -30,11 +30,11 @@
 }
 
 .cartHeader {
-  background-color: tomato;
+  background-color: var(--color-bg);
   width: 90%;
   box-sizing: border-box;
   margin: auto;
-  color: white;
+  color: var(--color-dark);
   display: grid;
   grid-template-columns: 4fr 1fr 1fr;
   font: 300 0.7vmax "Roboto";
@@ -61,10 +61,10 @@
 
 .cartInput > button {
   border: none;
-  background-color: rgba(0, 0, 0, 0.616);
+  background-color: var(--color-mid);
   padding: 0.5vmax;
   cursor: pointer;
-  color: white;
+  color: var(--color-dark);
   transition: all 0.5s;
 }
 .cartInput > button:hover {
@@ -77,8 +77,9 @@
   width: 1vmax;
   text-align: center;
   outline: none;
-  font: 400 0.8vmax "Roboto";
-  color: rgba(0, 0, 0, 0.74);
+  font: 400 0.8vmax;
+  color: var(--color-dark);
+  background-color: var(--color-mid);
 }
 
 .cartSubtotal {
@@ -87,7 +88,7 @@
   height: 8vmax;
   align-items: center;
   box-sizing: border-box;
-  font: 300 1vmax cursive;
+  font: 300 1vmax;
   justify-content: flex-end;
   color: rgba(0, 0, 0, 0.753);
 }
@@ -112,12 +113,12 @@
   justify-content: flex-end;
 }
 .checkOutBtn > button {
-  background-color: tomato;
-  color: white;
+  background-color: var(--color-dark-shade-one);
+  color: var(--color-dark);
   border: none;
   padding: 0.8vmax 4vmax;
   width: 50%;
-  font: 300 0.8vmax "Roboto";
+  font: 300 0.8vmax;
   margin: 1vmax 4vmax;
   cursor: pointer;
   border-radius: 30px;

@@ -6,7 +6,7 @@ import "./CheckoutSteps.css";
 const CheckoutSteps = ({ activeStep }) => {
   const steps = [
     {
-      label: <Typography>Shipping Details</Typography>,
+      label: <Typography>Add Address</Typography>,
       icon: <VscAccount />,
     },
     {
@@ -36,7 +36,7 @@ const CheckoutSteps = ({ activeStep }) => {
               <StepLabel
                 style={{
                   color:
-                    activeStep >= index ? "tomato" : "rgba(0, 0, 0, 0.649)",
+                    activeStep >= index ? "#7d0c0c" : "rgba(0, 0, 0, 0.649)",
                 }}
                 icon={item.icon}
               >

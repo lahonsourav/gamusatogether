@@ -23,8 +23,8 @@ const LoginSignUp = () => {
   const registerTab = useRef(null);
   const switcherTab = useRef(null);
 
-  const [loginEmail, setLoginEmail] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
+  const [loginEmail, setLoginEmail] = useState("admin@gamusa.com");
+  const [loginPassword, setLoginPassword] = useState("7896961433");
   const [user, setUser] = useState({
     name: "lahon",
     email: "image@gmail.com",
@@ -33,8 +33,8 @@ const LoginSignUp = () => {
 
   const { name, email, password } = user;
 
-  const [avatar, setAvatar] = useState("/logo512.png");
-  const [avatarPreview, setAvatarPreview] = useState("/logo512.png");
+  const [avatar, setAvatar] = useState("/user.png");
+  const [avatarPreview, setAvatarPreview] = useState("/user.png");
 
   const loginSubmit = (e) => {
     console.log("login");

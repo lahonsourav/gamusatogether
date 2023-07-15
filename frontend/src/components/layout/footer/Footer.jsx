@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       <div className="footer-container">
         <div className="leftFooter">
-          <h4>MOKSHA</h4>
+          <h4>GAMUSA</h4>
           <Link>men</Link>
           <Link>women</Link>
           <Link>kids</Link>
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         <div className="midFooter">
-          <h4>MOKSHA STUFF</h4>
+          <h4>GAMUSA STUFF</h4>
           <Link>orders</Link>
           <Link>wishlist</Link>
           <Link>track Order</Link>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         <div className="rightFooter">
-          <h4>MOKSHA SOCIAL</h4>
+          <h4>GAMUSA SOCIAL</h4>
           <Link>instagram</Link>
           <Link>facebook</Link>
           <Link>mail to us</Link>
@@ -41,7 +41,7 @@ const Footer = () => {
           <Link>become a model</Link>
         </div>
       </div>
-      <div className="copyright"> &copy; Moksha 2023, all rights reserved</div>
+      <div className="copyright"> &copy; GAMUSA 2023, all rights reserved</div>
     </footer>
   );
 };
