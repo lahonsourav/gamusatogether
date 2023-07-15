@@ -13,22 +13,22 @@
   display: flex;
   margin: 0.3vmax 1vmax;
   flex-direction: column;
+  gap: 0.2rem;
 }
 
 .CartItemCard > div > a {
-  font: 300 0.9vmax cursive;
-  color: rgba(24, 24, 24, 0.815);
+  font: 300 1vmax;
   text-decoration: none;
 }
 
 .CartItemCard > div > span {
-  font: 300 0.9vmax "Roboto";
+  font: 300 0.5vmax;
   color: rgba(24, 24, 24, 0.815);
 }
 
 .CartItemCard > div > p {
-  color: tomato;
-  font: 100 0.8vmax "Roboto";
+  color: var(--color-red);
+  font: 100 0.8vmax;
   cursor: pointer;
 }
 
@@ -46,14 +46,14 @@
   }
 
   .CartItemCard > div > a {
-    font: 300 2vmax cursive;
+    font: 300 2vmax;
   }
 
   .CartItemCard > div > span {
-    font: 300 1.9vmax "Roboto";
+    font: 300 1.9vmax;
   }
 
   .CartItemCard > div > p {
-    font: 100 1.8vmax "Roboto";
+    font: 100 0.5vmax;
   }
 }

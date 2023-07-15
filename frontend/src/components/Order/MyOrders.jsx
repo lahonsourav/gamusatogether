@@ -105,8 +105,6 @@ const MyOrders = () => {
           </Typography>
         </div>
       )}
-
-      <div className="myOrdersPage">ok</div>
     </Fragment>
   );
 };

@@ -4,7 +4,7 @@ import CartItemCard from "./CartItemCard";
 import { useSelector, useDispatch } from "react-redux";
 import { addItemsToCart, removeItemsFromCart } from "../../actions/cartActions";
 import { Typography } from "@material-ui/core";
-import { VscAccount } from "react-icons/vsc";
+import { PiSmileySadThin } from "react-icons/pi";
 import { Link, useNavigate } from "react-router-dom";
 
 const Cart = () => {
@@ -43,16 +43,16 @@ const Cart = () => {
     <Fragment>
       {cartItems.length === 0 ? (
         <div className="emptyCart">
-          <VscAccount />
+          <PiSmileySadThin />
 
-          <Typography>No Product in Your Cart</Typography>
+          <Typography>No Product in Your Wishlist</Typography>
           <Link to="/products">View Products</Link>
         </div>
       ) : (
         <Fragment>
           <div className="cartPage">
             <div className="cartHeader">
-              <p>Product</p>
+              <p>Products</p>
               <p>Quantity</p>
               <p>Subtotal</p>
             </div>
@@ -91,7 +91,7 @@ const Cart = () => {
             <div className="cartGrossProfit">
               <div></div>
               <div className="cartGrossProfitBox">
-                <p>Gross Total</p>
+                <p>Total</p>
                 <p>{`₹${cartItems.reduce(
                   (acc, item) => acc + item.quantity * item.price,
                   0
@@ -99,7 +99,7 @@ const Cart = () => {
               </div>
               <div></div>
               <div className="checkOutBtn">
-                <button onClick={checkoutHandler}>Check Out</button>
+                <button onClick={checkoutHandler}>Buy</button>
               </div>
             </div>
           </div>

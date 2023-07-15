@@ -110,9 +110,6 @@
 
   .products {
     margin-top: 6rem;
-  }
-
-  .products {
-    gap: 4vmax;
+    gap: 5.4vmax;
   }
 }

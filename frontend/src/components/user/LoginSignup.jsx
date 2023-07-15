@@ -147,7 +147,7 @@ const LoginSignUp = () => {
                   />
                 </div>
 
-                <Link to="/password/forgot">Forget Password ?</Link>
+                <Link to="/password/forgot">forgot password ?</Link>
 
                 <input type="submit" value="Login" className="loginBtn" />
                 <small onClick={(e) => switchTabs(e, "register")}>

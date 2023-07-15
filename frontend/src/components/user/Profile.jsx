@@ -41,25 +41,25 @@ const Profile = () => {
             ) : (
               "please log in"
             )}
+          </div>
 
-            <div className="profile-details">
-              
-                <div>
-                  <h4>Name</h4>
-                  <p>{user && user.name}</p>
-                </div>
-
-                <div>
-                  <h4>email</h4>
-                  <p>{user && user.email}</p>
-                </div>
-
-                <Link to="/orders">My Orders</Link>
-                <Link to="/password/change">Change Password</Link>
-                <VscRedo onClick={logoutUser} />
-            
+          <div className="profile-details">
+            <div>
+              <p>{user && user.name}</p>
             </div>
-            <Link to="/me/update">Edit Profile</Link>
+
+            <div>
+              <p>{user && user.email}</p>
+            </div>
+          </div>
+
+          <div className="profile-actions">
+            <Link to="/cart">my wishlist</Link>
+            <Link to="/orders">my orders</Link>
+
+            <Link to="/me/update">edit profile</Link>
+            <Link to="/password/change">change password</Link>
+            <p onClick={logoutUser}>logout</p>
           </div>
         </Fragment>
       )}

@@ -6,7 +6,7 @@ import {
   newReview,
   getProductDetails,
 } from "../../actions/productActions";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import ReviewCard from "./ReviewCard";
 import Loader from "../layout/loader/Loader";
@@ -123,10 +123,11 @@ const ProductDetails = () => {
             </div>
 
             <div className="detail-block">
-              <h2>{product && product.name}</h2>
+              <h1>{product && product.name}</h1>
               <p>{product && product.description}</p>
+
               <div className="price-container">
-                <h1>{product && product.price}</h1>
+                <h1>{product && product.price}/-</h1>
                 <small>inclusive of all taxes</small>
               </div>
 
@@ -146,48 +147,7 @@ const ProductDetails = () => {
                       {product && product.Stock < 1 ? "OutOfStock" : "InStock"}
                     </b>
                   </p>
-                  <button
-                    disabled={product && product.Stock < 1 ? true : false}
-                    onClick={addToCartHandler}
-                  >
-                    Add to Cart
-                  </button>
-
-                  <button onClick={submitReviewToggle} className="submitReview">
-                    Submit Review
-                  </button>
                 </div>
-
-                <Dialog
-                  aria-labelledby="simple-dialog-title"
-                  open={open}
-                  onClose={submitReviewToggle}
-                >
-                  <DialogTitle>Submit Review</DialogTitle>
-                  <DialogContent className="submitDialog">
-                    <Rating
-                      onChange={(e) => setRating(e.target.value)}
-                      value={rating}
-                      size="large"
-                    />
-
-                    <textarea
-                      className="submitDialogTextArea"
-                      cols="30"
-                      rows="5"
-                      value={comment}
-                      onChange={(e) => setComment(e.target.value)}
-                    ></textarea>
-                  </DialogContent>
-                  <DialogActions>
-                    <Button onClick={submitReviewToggle} color="secondary">
-                      Cancel
-                    </Button>
-                    <Button onClick={reviewSubmitHandler} color="primary">
-                      Submit
-                    </Button>
-                  </DialogActions>
-                </Dialog>
               </div>
             </div>
           </div>
@@ -213,3 +173,53 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
+
+// <div className="product-buttons">
+//   <button
+//     className="product-btn"
+//     disabled={product && product.Stock < 1 ? true : false}
+//     onClick={addToCartHandler}
+//   >
+//     Add to wishlist
+//   </button>
+
+//   <Link className="product-btn" to="/cart">
+//     {" "}
+//     Go to wishlist
+//   </Link>
+
+//   <button onClick={submitReviewToggle} className="product-btn">
+//     Submit Review
+//   </button>
+// </div>;
+
+// <Dialog
+//   aria-labelledby="simple-dialog-title"
+//   open={open}
+//   onClose={submitReviewToggle}
+// >
+//   <DialogTitle>Submit Review</DialogTitle>
+//   <DialogContent className="submitDialog">
+//     <Rating
+//       onChange={(e) => setRating(e.target.value)}
+//       value={rating}
+//       size="large"
+//     />
+
+//     <textarea
+//       className="submitDialogTextArea"
+//       cols="30"
+//       rows="5"
+//       value={comment}
+//       onChange={(e) => setComment(e.target.value)}
+//     ></textarea>
+//   </DialogContent>
+//   <DialogActions>
+//     <Button onClick={submitReviewToggle} color="secondary">
+//       Cancel
+//     </Button>
+//     <Button onClick={reviewSubmitHandler} color="primary">
+//       Submit
+//     </Button>
+//   </DialogActions>
+// </Dialog>;

@@ -1,7 +1,7 @@
 .paymentContainer {
   display: grid;
   place-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-bg);
   height: 65vh;
   margin: 2vmax;
 }
@@ -12,8 +12,7 @@
 }
 
 .paymentForm > p {
-  font: 400 2vmax "Roboto";
-  color: rgba(0, 0, 0, 0.753);
+  font: 400 2vmax;
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
   padding: 1vmax 0;
   text-align: center;
@@ -46,8 +45,8 @@
 
 .paymentFormBtn {
   border: none;
-  background-color: tomato;
-  color: white;
+  background-color: var(--color-btn);
+  color: var(--color-bg);
   font: 300 0.9vmax "Roboto";
   width: 100%;
   padding: 0.8vmax;
@@ -57,7 +56,8 @@
 }
 
 .paymentFormBtn:hover {
-  background-color: rgb(179, 66, 46);
+  background-color: var(--color-mid);
+  color: var(--color-dark);
 }
 
 @media screen and (max-width: 600px) {

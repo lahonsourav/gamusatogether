@@ -41,7 +41,7 @@ const Footer = () => {
           <Link>become a model</Link>
         </div>
       </div>
-      <div className="copyright"> &copy; GAMUSA 2023, all rights reserved</div>
+      <div className="copyright"> &copy; gamusagogamukh 2023</div>
     </footer>
   );
 };

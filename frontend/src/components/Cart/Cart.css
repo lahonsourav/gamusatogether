@@ -7,17 +7,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .emptyCart > svg {
   font-size: 5vmax;
-  color: var(--color-mid);
+  color: var(--color-dark);
 }
 .emptyCart > p {
   font-size: 2vmax;
 }
 .emptyCart > a {
-  background-color: rgb(51, 51, 51);
-  color: white;
+  background-color: var(--color-mid);
+  color: var(--color-dark);
   border: none;
   padding: 1vmax 3vmax;
   cursor: pointer;
@@ -27,6 +28,7 @@
 
 .cartPage {
   padding: 5vmax;
+  margin-top: 5rem;
 }
 
 .cartHeader {
@@ -37,7 +39,7 @@
   color: var(--color-dark);
   display: grid;
   grid-template-columns: 4fr 1fr 1fr;
-  font: 300 0.7vmax "Roboto";
+  font: 300 0.7vmax;
 }
 .cartHeader > p {
   margin: 10px;
@@ -61,14 +63,12 @@
 
 .cartInput > button {
   border: none;
-  background-color: var(--color-mid);
   padding: 0.5vmax;
   cursor: pointer;
-  color: var(--color-dark);
   transition: all 0.5s;
 }
 .cartInput > button:hover {
-  background-color: rgba(0, 0, 0, 0.767);
+  background-color: var(--color-dark-shade-one);
 }
 
 .cartInput > input {
@@ -78,8 +78,6 @@
   text-align: center;
   outline: none;
   font: 400 0.8vmax;
-  color: var(--color-dark);
-  background-color: var(--color-mid);
 }
 
 .cartSubtotal {
@@ -90,7 +88,6 @@
   box-sizing: border-box;
   font: 300 1vmax;
   justify-content: flex-end;
-  color: rgba(0, 0, 0, 0.753);
 }
 
 .cartGrossProfit {
@@ -99,11 +96,11 @@
 }
 
 .cartGrossProfitBox {
-  border-top: 3px solid tomato;
+  border-top: 3px solid var(--color-btn);
   margin: 1vmax 4vmax;
   box-sizing: border-box;
   padding: 2vmax 0;
-  font: 300 1vmax "Roboto";
+  font: 300 1vmax;
   display: flex;
   justify-content: space-between;
 }
@@ -113,21 +110,26 @@
   justify-content: flex-end;
 }
 .checkOutBtn > button {
-  background-color: var(--color-dark-shade-one);
-  color: var(--color-dark);
+  background-color: var(--color-btn);
+  color: var(--color-bg);
   border: none;
   padding: 0.8vmax 4vmax;
   width: 50%;
   font: 300 0.8vmax;
   margin: 1vmax 4vmax;
   cursor: pointer;
-  border-radius: 30px;
+}
+
+.checkOutBtn > button:hover {
+  background-color: var(--color-mid);
+  color: var(--color-dark);
 }
 
 @media screen and (max-width: 600px) {
   .cartPage {
     padding: 0;
     min-height: 60vh;
+    margin-top: 7rem;
   }
 
   .cartHeader {

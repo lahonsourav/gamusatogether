@@ -131,8 +131,8 @@
 .loginBtn,
 .signUpBtn {
   border: none;
-  background-color: var(--color-dark-shade-one);
-  color: var(--color-dark);
+  background-color: var(--color-btn);
+  color: var(--color-bg);
   font: 300 0.9vmax;
   width: 100%;
   padding: 0.8vmax;
@@ -146,6 +146,7 @@
 .loginBtn:hover,
 .signUpBtn:hover {
   background-color: var(--color-mid);
+  color: var(--color-dark);
 }
 
 .shiftToLeft {

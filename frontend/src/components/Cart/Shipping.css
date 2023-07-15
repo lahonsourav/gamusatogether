@@ -63,8 +63,8 @@
 
 .shippingBtn {
   border: none;
-  background-color: var(--color-dark-shade-one);
-  color: var(--color-dark);
+  background-color: var(--color-btn);
+  color: var(--color-light);
   font: 300 1vmax;
   width: 100%;
   padding: 1vmax;
@@ -76,6 +76,7 @@
 
 .shippingBtn:hover {
   background-color: var(--color-mid);
+  color: var(--color-dark);
 }
 
 @media screen and (max-width: 600px) {

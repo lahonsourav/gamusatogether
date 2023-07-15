@@ -96,14 +96,6 @@
   align-items: center;
 }
 
-.detailsBlock-3-1-1 > button {
-  border: none;
-  background-color: rgba(0, 0, 0, 0.616);
-  padding: 0.5vmax;
-  cursor: pointer;
-  color: white;
-  transition: all 0.5s;
-}
 .detailsBlock-3-1-1 > button:hover {
   background-color: rgba(0, 0, 0, 0.767);
 }
@@ -135,15 +127,6 @@
   background-color: rgb(214, 84, 61);
 }
 
-.detailsBlock-3 > p {
-  border-top: 1px solid rgba(0, 0, 0, 0.205);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
-  padding: 1vmax 0;
-  color: rgba(0, 0, 0, 0.651);
-  font: 400 1vmax "Roboto";
-  margin: 1vmax 0;
-}
-
 .detailsBlock-4 {
   color: rgba(0, 0, 0, 0.897);
   font: 500 1.2vmax sans-serif;
@@ -154,21 +137,22 @@
   font: 300 0.8vmax sans-serif;
 }
 
-.submitReview {
+.product-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-button {
   border: none;
-  background-color: tomato;
-  font: 500 0.7vmax "Roboto";
-  border-radius: 20px;
-  padding: 0.6vmax 2vmax;
-  margin: 1vmax 0;
-  color: white;
+  background-color: var(--color-btn);
+  color: var(--color-bg);
+  font: 300 0.9vmax "Roboto";
+  width: 30%;
+  padding: 1vmax;
   cursor: pointer;
   transition: all 0.5s;
   outline: none;
-}
-.submitReview:hover {
-  background-color: rgb(197, 68, 45);
-  transform: scale(1.1);
+  text-align: center;
 }
 
 .submitDialog {

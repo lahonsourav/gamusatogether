@@ -40,8 +40,8 @@ const Home = () => {
 
           <div className="banner">
             <div className="banner-text">
-              <p>THE ASSAMESE TRADITIONAL STORE</p>
-              <h1>GAMUSA GOGAMUKH</h1>
+              <p>THE TRADITION</p>
+              <h1>GAMUSA</h1>
             </div>
           </div>
           <CategoryList />
@@ -114,7 +114,9 @@ const Home = () => {
               {products &&
                 products.map((products) => <ProductCard product={products} />)}
             </div>
-            <Link to="/products">SHOW ALL</Link>
+            <Link className="show-all" to="/products">
+              SHOW ALL
+            </Link>
           </div>
         </Fragment>
       )}

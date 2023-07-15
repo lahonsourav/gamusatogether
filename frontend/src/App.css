@@ -49,8 +49,8 @@ body {
   --color-mid: #fdf4e3;
   --color-dark-shade-one: #b59f84;
   --color-dark: black;
-
-  --color-red: #7d0c0c;
+  --color-btn: rgb(51, 51, 51);
+  --color-red: #f36d6d;
   --transition: all 400ms ease;
 }
 
