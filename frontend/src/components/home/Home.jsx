@@ -84,7 +84,7 @@ const Home = () => {
                 </div>
               </Link>
 
-              <Link to="/sale">
+              <Link to="/products/sale">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
@@ -124,7 +124,7 @@ const Home = () => {
             <Link className="show-all" to="/products">
               SHOW ALL
             </Link>
-            <div className="looking-for-2">
+            <div className="looking-for">
               <Link to="/products/mis">
                 <div className="looking-for-item-2">
                   <div className="looking-for-item-image">

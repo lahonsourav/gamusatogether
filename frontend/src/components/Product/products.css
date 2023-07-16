@@ -1,7 +1,7 @@
 .product-page-container {
   display: flex;
   flex-direction: column;
-  margin-top: 5vmax;
+  margin-top: 6vmax;
   max-width: 100%;
 }
 
@@ -94,7 +94,7 @@
   transition: all 0.5s;
 }
 .category-link-product:hover {
-  color: var(--color-red);
+  color: var(--color-mid);
 }
 
 .price-slider {
@@ -108,7 +108,32 @@
   }
 
   .products {
-    margin-top: 6rem;
+    margin-top: 8rem;
     gap: 5.4vmax;
   }
+
+  .filterBoxProduct {
+    display: flex;
+    position: fixed;
+    background-color: var(--color-light);
+    height: 5vmax;
+    color: var(--color-dark);
+    z-index: 8;
+  }
+
+  .categoryBoxProduct {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vmax;
+  }
+
+  /* .price-slider {
+    padding: 0 2vmax;
+    width: 20vmax;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+  } */
 }

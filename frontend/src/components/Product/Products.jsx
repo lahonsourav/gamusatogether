@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 import Pagination from "react-js-pagination";
 import { useAlert } from "react-alert";
 
-import { Slider } from "@material-ui/core";
+// import { Slider } from "@material-ui/core";
 import Metadata from "../layout/Metadata";
 
 const categories = [
@@ -48,9 +48,9 @@ const Products = () => {
     // e.preventDefault();
   };
 
-  const priceHandler = (event, newPrice) => {
-    setPrice(newPrice);
-  };
+  // const priceHandler = (event, newPrice) => {
+  //   setPrice(newPrice);
+  // };
   let count = productsCount;
 
   useEffect(() => {
@@ -87,16 +87,17 @@ const Products = () => {
                 ))}
               </ul>
             </div>
-            <div className="price-slider">
+
+            {/* <div className="price-slider">
               <Slider
                 value={price}
                 onChange={priceHandler}
-                valueLabelDisplay="on"
+                valueLabelDisplay="only"
                 aria-labelledby="range-slider"
                 min={0}
                 max={10000}
               />
-            </div>
+            </div> */}
 
             <div className="products">
               {products &&

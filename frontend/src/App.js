@@ -244,23 +244,104 @@ function App() {
             }
           />
 
-          <Route path="/admin/dashboard" element={<Dashboard />} />
+          <Route
+            path="/admin/dashboard"
+            element={
+              <>
+                <Header />
+                <Dashboard />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/admin/products" element={<ProductList />} />
+          <Route
+            path="/admin/products"
+            element={
+              <>
+                <Header />
+                <ProductList />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/admin/product" element={<NewProduct />} />
+          <Route
+            path="/admin/product"
+            element={
+              <>
+                <Header />
+                <NewProduct />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/admin/product/:id" element={<UpdateProduct />} />
+          <Route
+            path="/admin/product/:id"
+            element={
+              <>
+                <Header />
+                <UpdateProduct />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/admin/orders" element={<OrderList />} />
+          <Route
+            path="/admin/orders"
+            element={
+              <>
+                <Header />
+                <OrderList />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/admin/order/:id" element={<ProcessOrder />} />
+          <Route
+            path="/admin/order/:id"
+            element={
+              <>
+                <Header />
+                <ProcessOrder />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/admin/users" element={<UsersList />} />
+          <Route
+            path="/admin/users"
+            element={
+              <>
+                <Header />
+                <UsersList />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/admin/user/:id" element={<UpdateUser />} />
+          <Route
+            path="/admin/user/:id"
+            element={
+              <>
+                <Header />
+                <UpdateUser />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/admin/reviews" element={<ProductReviews />} />
+          <Route
+            path="/admin/reviews"
+            element={
+              <>
+                <Header />
+                <ProductReviews />
+                <Footer />
+              </>
+            }
+          />
         </Routes>
       </div>
     </Router>
