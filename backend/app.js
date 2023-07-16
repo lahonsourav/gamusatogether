@@ -12,10 +12,14 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(express.json({ limit: "100mb" }));
-// app.use(bodyParser.urlencoded({ limit: "100mb", extended: true }));
-app.use(fileUpload());
+app.use(express.json({ limit: "10mb" }));
+app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
+app.use(
+  fileUpload({
+    limits: { fileSize: 10 * 1024 * 1024 }, // 10MB
+  })
+);
 //route imports
 const product = require("./routes/productRoute.js");
 const user = require("./routes/userRoute.js");
