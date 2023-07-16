@@ -79,11 +79,10 @@
 
 .categoryBoxProduct {
   display: flex;
-  padding-inline-start: 0;
   overflow-x: auto;
   align-items: center;
   justify-content: center;
-  gap: 3vmax;
+  gap: 2vmax;
   margin: 0 auto;
 }
 

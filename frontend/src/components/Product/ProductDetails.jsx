@@ -6,7 +6,7 @@ import {
   newReview,
   getProductDetails,
 } from "../../actions/productActions";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import ReviewCard from "./ReviewCard";
 import Loader from "../layout/loader/Loader";
@@ -141,22 +141,21 @@ const ProductDetails = () => {
               </div>
 
               <div className="detailsBlock3">
-                <div className="detailsBlock3-1">
-                  <div className="detailsBlock3-1-1">
-                    <button onClick={decreaseQuantity}>-</button>
-                    <input readOnly type="number" value={quantity} />
-                    <button onClick={increaseQuantity}>+</button>
-                  </div>
-                  <p>
-                    <b
-                      className={
-                        product && product.Stock < 1 ? "redColor" : "greenColor"
-                      }
-                    >
-                      {product && product.Stock < 1 ? "OutOfStock" : "InStock"}
-                    </b>
-                  </p>
+                <div className="detailsBlock3-1-1">
+                  <button onClick={decreaseQuantity}>-</button>
+                  <input readOnly type="number" value={quantity} />
+                  <button onClick={increaseQuantity}>+</button>
                 </div>
+
+                <p>
+                  <b
+                    className={
+                      product && product.Stock < 1 ? "redColor" : "greenColor"
+                    }
+                  >
+                    {product && product.Stock < 1 ? "OutOfStock" : "a few left"}
+                  </b>
+                </p>
               </div>
               <div className="product-buttons">
                 <button

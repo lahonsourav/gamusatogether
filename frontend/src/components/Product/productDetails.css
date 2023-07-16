@@ -84,15 +84,15 @@
   font-size: 2vmax;
   font-weight: 600;
 }
+
+.price-container > small {
+  margin-top: 1rem;
+  font-size: 12px;
+  font-weight: 100;
+}
 .detailsBlock3 {
   width: 70%;
   margin-top: 1rem;
-}
-
-.detailsBlock3-1 {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 .detailsBlock3-1-1 {
@@ -224,6 +224,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    text-align: start;
   }
 
   .detailsBlock-1 > p {
@@ -246,24 +247,28 @@
   }
 
   .submitReview {
-    font: 500 1.7vmax "Roboto";
+    font: 500 1.7vmax;
     padding: 1.5vmax;
     width: 20vmax;
     margin: 3vmax 0;
   }
 
   .reviewCard > p {
-    font: 600 3vw "Roboto";
+    font-weight: 300;
+  }
+
+  .reviewCard > span {
+    font-weight: 200;
   }
   .reviewCardComment {
-    font: 300 5vw cursive;
+    font: 300 5vw;
   }
 
   .product-buttons {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    width: 50%;
+    width: 45%;
     gap: 1rem;
   }
 
@@ -271,15 +276,39 @@
     border: none;
     background-color: var(--color-btn);
     color: var(--color-bg);
-    font: 300 0.9vmax "Roboto";
     padding: 1vmax;
     cursor: pointer;
     transition: all 0.5s;
     outline: none;
     text-align: center;
+    font-size: 15px;
   }
 
   .product-btn:hover {
     cursor: pointer;
+  }
+
+  .detailsBlock3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 5px;
+  }
+
+  .detailsBlock3 > p {
+    display: flex;
+    align-items: center;
+  }
+
+  .detailsBlock3 > p > b {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .review_container > h3 {
+    font-weight: 300;
   }
 }

@@ -11,7 +11,6 @@ import Profile from "./components/user/Profile";
 import Loader from "./components/layout/loader/Loader";
 import store from "./store";
 import { loadUser } from "./actions/userAction";
-// import ProtectedRoute from "./components/Route/ProtectedRoute";
 import UpdateProfile from "./components/user/UpdateProfile";
 import UpdatePassword from "./components/user/UpdatePassword";
 import ResetPassword from "./components/user/ResetPassword";
@@ -32,53 +31,218 @@ import ProcessOrder from "./components/admin/ProcessOrder";
 import UsersList from "./components/admin/UsersList";
 import UpdateUser from "./components/admin/UpdateUser";
 import ProductReviews from "./components/admin/ProductReviews";
+import WebFont from "webfontloader";
 
 function App() {
   React.useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ["Roboto", "Droid Sans", "Chilanka"],
+      },
+    });
+
+    document.body.style.fontFamily = "'Roboto', sans-serif";
+
     store.dispatch(loadUser());
   });
   return (
     <Router>
       <div className="App">
-        <Header />
-
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <Home />
+                <Footer />
+              </>
+            }
+          />
 
           <Route path="loader" element={<Loader />} />
 
-          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route
+            path="/product/:id"
+            element={
+              <>
+                <Header />
+                <ProductDetails />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/products" element={<Products />} />
+          <Route
+            path="/products"
+            element={
+              <>
+                <Header />
+                <Products />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/products/:keyword" element={<Products />} />
+          <Route
+            path="/products/:keyword"
+            element={
+              <>
+                <Header />
+                <Products />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/login" element={<LoginSignup />} />
+          <Route
+            path="/login"
+            element={
+              <>
+                <LoginSignup />
+              </>
+            }
+          />
 
-          <Route path="/category" element={<Products />} />
+          <Route
+            path="/category"
+            element={
+              <>
+                <Header />
+                <Products />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/account" element={<Profile />} />
+          <Route
+            path="/account"
+            element={
+              <>
+                <Header />
+                <Profile />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/me/update" element={<UpdateProfile />} />
+          <Route
+            path="/me/update"
+            element={
+              <>
+                <Header />
+                <UpdateProfile />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/password/change" element={<UpdatePassword />} />
+          <Route
+            path="/password/change"
+            element={
+              <>
+                <Header />
+                <UpdatePassword />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/password/forgot" element={<ForgotPassword />} />
+          <Route
+            path="/password/forgot"
+            element={
+              <>
+                <Header />
+                <ForgotPassword />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="password/reset/:token" element={<ResetPassword />} />
+          <Route
+            path="password/reset/:token"
+            element={
+              <>
+                <Header />
+                <ResetPassword />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/cart" element={<Cart />} />
+          <Route
+            path="/cart"
+            element={
+              <>
+                <Header />
+                <Cart />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/shipping" element={<Shipping />} />
+          <Route
+            path="/shipping"
+            element={
+              <>
+                <Header />
+                <Shipping />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/order/confirm" element={<ConfirmOrder />} />
+          <Route
+            path="/order/confirm"
+            element={
+              <>
+                <Header />
+                <ConfirmOrder />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/process/payment" element={<PaymentOut />} />
+          <Route
+            path="/process/payment"
+            element={
+              <>
+                <PaymentOut />
+              </>
+            }
+          />
 
-          <Route path="/success" element={<OrderSuccess />} />
+          <Route
+            path="/success"
+            element={
+              <>
+                <Header />
+                <OrderSuccess />
+                <Footer />
+              </>
+            }
+          />
 
-          <Route path="/orders" element={<MyOrders />} />
-          <Route path="/order/:id" element={<OrderDetails />} />
+          <Route
+            path="/orders"
+            element={
+              <>
+                <Header />
+                <MyOrders />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/order/:id"
+            element={
+              <>
+                <Header />
+                <OrderDetails />
+                <Footer />
+              </>
+            }
+          />
 
           <Route path="/admin/dashboard" element={<Dashboard />} />
 
@@ -98,8 +262,6 @@ function App() {
 
           <Route path="/admin/reviews" element={<ProductReviews />} />
         </Routes>
-
-        <Footer />
       </div>
     </Router>
   );

@@ -10,7 +10,7 @@ import UserOptions from "./UserOptions";
 const Header = () => {
   const [keyword, setKeyword] = useState("");
   const navigate = useNavigate();
-  const { isAuthenticated, user } = useSelector((state) => state.user);
+  const { user } = useSelector((state) => state.user);
 
   const searchSubmitHandler = (e) => {
     e.preventDefault();
@@ -44,11 +44,10 @@ const Header = () => {
 
         {/* <div className="mid-head"></div> */}
 
-       
         <div className="right-head">
           {!user ? (
             <Link to="/login">
-              <h4>Login / Sign up</h4>
+              <h4>Login</h4>
             </Link>
           ) : (
             <UserOptions />

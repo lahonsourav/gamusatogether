@@ -21,25 +21,25 @@ const NewProduct = () => {
 
   const { loading, error, success } = useSelector((state) => state.newProduct);
 
-  const [name, setName] = useState("test");
+  const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
-  const [description, setDescription] = useState("testing");
-  const [tag, setTag] = useState("test testing item check");
+  const [description, setDescription] = useState("");
+  const [tag, setTag] = useState("");
 
-  const [category, setCategory] = useState("Laptop");
+  const [category, setCategory] = useState("");
   const [Stock, setStock] = useState(0);
 
   const [images, setImages] = useState([]);
   const [imagesPreview, setImagesPreview] = useState([]);
 
   const categories = [
-    "Laptop",
-    "Footwear",
-    "Bottom",
-    "Tops",
-    "Attire",
-    "Camera",
-    "SmartPhones",
+    "gamusa",
+    "jura",
+    "pat",
+    "muga",
+    "riha",
+    "ahom",
+    "mising",
   ];
 
   useEffect(() => {

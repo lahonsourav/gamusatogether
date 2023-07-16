@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect } from "react";
-import { CgMouse } from "react-icons/cg";
 import "./home.css";
 import ProductCard from "./ProductCard";
 import Metadata from "../layout/Metadata";
@@ -9,13 +8,21 @@ import Loader from "../layout/loader/Loader";
 import { useAlert } from "react-alert";
 import { Link } from "react-router-dom";
 import CategoryList from "./CategoryList";
+import black from "../../images/black.jpg";
+import gamusa from "../../images/gamusa.jpg";
+import sale from "../../images/sale.jpg";
+import white from "../../images/white.jpg";
+import mising from "../../images/mising.jpg";
+import ahom from "../../images/ahom.jpg";
+import men from "../../images/men.jpg";
+import her from "../../images/gift.jpg";
 
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Pagination, Autoplay } from "swiper/modules";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/autoplay";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/autoplay";
 
 const Home = () => {
   const alert = useAlert();
@@ -47,63 +54,63 @@ const Home = () => {
           <CategoryList />
           <div className="home-container">
             <div className="looking-for">
-              <Link to="/products/man">
+              <Link to="/products/gam">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src="https://images.bewakoof.com/t1080/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228989-1.jpg?tr=q-100"
+                      src={gamusa}
                       alt="looking-for"
                     />
                   </div>
                 </div>
                 <div className="looking-for-title">
-                  <h4>HIM</h4>
+                  <h4>GAMUSA</h4>
                 </div>
               </Link>
 
-              <Link to="/products/women">
+              <Link to="/products/trend">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src="https://images.bewakoof.com/t1080/women-s-purple-time-to-get-shit-done-graphic-printed-boyfriend-t-shirt-599539-1687764989-1.jpg"
+                      src={black}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>TRENDING</h4>
+                </div>
+              </Link>
+
+              <Link to="/sale">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={sale}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>ON SALE</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/new">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={white}
                       alt="looking-for"
                     />{" "}
                   </div>
                 </div>
                 <div className="looking-for-title">
-                  <h4>HER</h4>
-                </div>
-              </Link>
-
-              <Link to="/products">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1687842433_3385347.jpg?format=webp&w=480&dpr=1.3"
-                      alt="looking-for"
-                    />{" "}
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>UNISEX</h4>
-                </div>
-              </Link>
-
-              <Link to="/products/kids">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1679980950_2608416.jpg?format=webp&w=480&dpr=1.3"
-                      alt="looking-for"
-                    />{" "}
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>KIDS</h4>
+                  <h4>JUST ARRIVED</h4>
                 </div>
               </Link>
             </div>
@@ -117,6 +124,67 @@ const Home = () => {
             <Link className="show-all" to="/products">
               SHOW ALL
             </Link>
+            <div className="looking-for-2">
+              <Link to="/products/mis">
+                <div className="looking-for-item-2">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={mising}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>MISING</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/ahom">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={ahom}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>AHOM</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/man">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={men}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>FOR HIM</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/woman">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={her}
+                      alt="looking-for"
+                    />{" "}
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>FOR HER</h4>
+                </div>
+              </Link>
+            </div>
           </div>
         </Fragment>
       )}

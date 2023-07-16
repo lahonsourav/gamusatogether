@@ -201,6 +201,7 @@
 
   #registerImage > img {
     width: 8vmax;
+    height: 7.3vmax;
     border-radius: 100%;
   }
 

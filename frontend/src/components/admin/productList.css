@@ -2,16 +2,15 @@
   width: 100%;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
-  border-left: 1px solid rgba(0, 0, 0, 0.158);
   display: flex;
   flex-direction: column;
   height: 100vh;
   margin: 0 10rem;
-  
+  overflow-x: scroll;
 }
 
 #productListHeading {
-  font: 400 2rem ;
+  font: 400 2rem;
   padding: 0.5vmax;
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.637);
@@ -52,6 +51,6 @@
 
 @media screen and (max-width: 600px) {
   .productListTable div {
-    font: 300 4vw ;
+    font: 300 4vw;
   }
 }

@@ -12,13 +12,14 @@ import { Slider } from "@material-ui/core";
 import Metadata from "../layout/Metadata";
 
 const categories = [
-  "Track",
-  "Shirt",
-  "TShirt",
-  "Jeans",
-  "Shoes",
-  "Others",
-  "All",
+  "gamusa",
+  "jura",
+  "pat",
+  "muga",
+  "riha",
+  "ahom",
+  "mising",
+  "all",
 ];
 
 const Products = () => {
