@@ -14,7 +14,7 @@ import Metadata from "../layout/Metadata";
 const categories = [
   "gamusa",
   "jura",
-  "pat",
+  "paat",
   "muga",
   "riha",
   "ahom",

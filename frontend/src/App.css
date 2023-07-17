@@ -48,6 +48,8 @@ body {
   --color-dark-shade-one: #b59f84;
   --color-dark: black;
   --color-btn: rgb(51, 51, 51);
+  --color-bor: rgb(151, 151, 151);
+
   --color-red: #f36d6d;
   --transition: all 400ms ease;
 }

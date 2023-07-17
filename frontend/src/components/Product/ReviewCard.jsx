@@ -1,6 +1,5 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
-import profilePng from "../../assets/logo.jpg";
 
 const ReviewCard = ({ review }) => {
   const options = {
@@ -14,7 +13,6 @@ const ReviewCard = ({ review }) => {
 
   return (
     <div className="reviewCard">
-      <img src={profilePng} alt="User" />
       <p>{review.name}</p>
       <ReactStars {...options} />
       <span>{review.comment}</span>

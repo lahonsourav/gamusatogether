@@ -23,12 +23,12 @@ const LoginSignUp = () => {
   const registerTab = useRef(null);
   const switcherTab = useRef(null);
 
-  const [loginEmail, setLoginEmail] = useState("admin@gamusa.com");
-  const [loginPassword, setLoginPassword] = useState("7896961433");
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPassword, setLoginPassword] = useState("");
   const [user, setUser] = useState({
-    name: "lahon",
-    email: "image@gmail.com",
-    password: "7896961433",
+    name: "",
+    email: "",
+    password: "",
   });
 
   const { name, email, password } = user;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CategoryList.css";
 import { Link } from "react-router-dom";
 
-const category = ["gamusa", "jura", "pat", "muga", "riha", "ahom"];
+const category = ["GAMUSA", "JURA", "PAAT", "MUGA", "RIHA", "AHOM"];
 
 const CategoryList = () => {
   const [cate, setCate] = useState("");

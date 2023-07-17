@@ -18,23 +18,26 @@
   display: flex;
   flex: 5;
   display: flex;
+  align-items: center;
   justify-content: flex-start;
   margin-left: 1vmax;
 }
 
-.left-head > a {
+.logo-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 1vmax;
-}
-
-/* .mid-head {
-  display: flex;
-  flex: 3;
   align-items: center;
   justify-content: flex-start;
-} */
+  max-height: 4.5rem;
+  object-fit: contain;
+}
+
+.logo-container > img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: 4.5rem;
+  object-fit: contain;
+}
 
 .right-head {
   display: flex;
@@ -117,6 +120,21 @@
 }
 
 @media screen and (max-width: 620px) {
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 4.5rem;
+    object-fit: contain;
+  }
+
+  .logo-container > img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 4.5rem;
+    object-fit: contain;
+  }
   .searchBox:hover > .searchInput {
     width: 120px;
     padding: 0 6px;

@@ -3,7 +3,6 @@ footer {
 
   padding-top: 2rem;
   z-index: 10;
-
   font-size: 14px;
 }
 
@@ -23,7 +22,7 @@ footer {
 }
 
 .footer-container > div > a:hover {
-  color: var(--color-bg);
+  color: var(--color-red);
 }
 .leftFooter {
   display: flex;

@@ -8,16 +8,18 @@ const Footer = () => {
       <div className="footer-container">
         <div className="leftFooter">
           <h4>GAMUSA</h4>
+          <Link>gamusa</Link>
+          <Link>jura</Link>
+          <Link>pat</Link>
+          <Link>muga</Link>
+          <Link>riha</Link>
+          <Link>ahom</Link>
+          <Link>mising</Link>
+          <Link>trending</Link>
+          <Link>on sale</Link>
           <Link>men</Link>
           <Link>women</Link>
-          <Link>kids</Link>
-          <Link>shirts</Link>
-          <Link>tshirts</Link>
-          <Link>printed</Link>
-          <Link>tracks</Link>
-          <Link>shoes</Link>
-          <Link>drippy</Link>
-          <Link>formal</Link>
+          <Link>all</Link>
         </div>
 
         <div className="midFooter">

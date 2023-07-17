@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/layout/header/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Footer from "./components/layout/footer/Footer";
 import Home from "./components/home/Home.jsx";
 import React from "react";
@@ -32,6 +33,7 @@ import UsersList from "./components/admin/UsersList";
 import UpdateUser from "./components/admin/UpdateUser";
 import ProductReviews from "./components/admin/ProductReviews";
 import WebFont from "webfontloader";
+import NotFound from "./components/layout/notFound/NotFound";
 
 function App() {
   React.useEffect(() => {
@@ -45,8 +47,13 @@ function App() {
 
     store.dispatch(loadUser());
   });
+
+  //to prevent from inspect
+  // window.addEventListener("contextmenu", (e) => e.preventDefault());
+
   return (
     <Router>
+      {" "}
       <div className="App">
         <Routes>
           <Route
@@ -99,6 +106,7 @@ function App() {
             path="/login"
             element={
               <>
+                <Header />
                 <LoginSignup />
               </>
             }
@@ -340,6 +348,12 @@ function App() {
                 <ProductReviews />
                 <Footer />
               </>
+            }
+          />
+
+          <Route
+            element={
+              window.location.pathname === "/process/payment" ? null : NotFound
             }
           />
         </Routes>

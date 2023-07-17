@@ -16,6 +16,7 @@ import mising from "../../images/mising.jpg";
 import ahom from "../../images/ahom.jpg";
 import men from "../../images/men.jpg";
 import her from "../../images/gift.jpg";
+import bannerlogo from "../../assets/gamusa.png";
 
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Pagination, Autoplay } from "swiper/modules";
@@ -47,8 +48,7 @@ const Home = () => {
 
           <div className="banner">
             <div className="banner-text">
-              <p>THE TRADITION</p>
-              <h1>GAMUSA</h1>
+              <img src={bannerlogo} alt="Gamusa" />
             </div>
           </div>
           <CategoryList />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import "./header.css";
+import logo from "../../../assets/logo.png";
 
 import { BsSearch } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
@@ -23,7 +24,12 @@ const Header = () => {
     <header>
       <div className="header-container">
         <div className="left-head">
-          <Link to="/">Gamusa</Link>
+          <Link to="/">
+            <div className="logo-container">
+              <img src={logo} alt="Gamusa" />
+            </div>
+          </Link>
+
           <form className="searchBox" onSubmit={searchSubmitHandler}>
             <input
               className="searchInput"

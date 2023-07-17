@@ -94,7 +94,7 @@
   transition: all 0.5s;
 }
 .category-link-product:hover {
-  color: var(--color-mid);
+  color: var(--color-red);
 }
 
 .price-slider {
