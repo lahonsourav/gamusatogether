@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, login, register } from "../../actions/userAction";
 import Loader from "../layout/loader/Loader";
 import { useNavigate } from "react-router-dom";
-
+import logo from "../../assets/temp.png";
 import { useAlert } from "react-alert";
 
 const LoginSignUp = () => {
@@ -112,6 +112,11 @@ const LoginSignUp = () => {
       ) : (
         <Fragment>
           <div className="LoginSignUpContainer">
+            <Link>
+              <div className="logo-container-login">
+                <img src={logo} alt="gamusa" />
+              </div>
+            </Link>
             <div className="LoginSignUpBox">
               <div>
                 <div className="login_signUp_toggle">

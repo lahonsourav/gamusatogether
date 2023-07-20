@@ -4,7 +4,7 @@
   top: 4rem;
 
   width: 100vw;
-  height: 70vh;
+  height: 90vh;
 
   text-align: center;
 
@@ -174,7 +174,7 @@
 .container {
   display: grid;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 4vmax 2vmax;
   max-width: 100%;
   gap: 5vmax;

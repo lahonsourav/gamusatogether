@@ -1,4 +1,6 @@
 .LoginSignUpContainer {
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   max-width: 100%;
@@ -8,7 +10,19 @@
   background-color: var(--color-bg);
   position: fixed;
   top: 10%;
-  left: 0;
+}
+
+.logo-container-login {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-container-login > img {
+  width: 50%;
 }
 
 .LoginSignUpContainer small:hover {
@@ -16,6 +30,7 @@
 }
 .LoginSignUpBox {
   background-color: var(--color-bg);
+
   width: 25vw;
   height: 70vh;
   box-sizing: border-box;

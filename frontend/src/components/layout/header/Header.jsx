@@ -15,6 +15,8 @@ const Header = () => {
 
   const searchSubmitHandler = (e) => {
     e.preventDefault();
+
+    console.log("ok");
     if (keyword.trim()) {
       navigate(`/products/${keyword}`, { replace: true });
     }

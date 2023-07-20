@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../../../assets/gamusa.png";
 import "./footer.css";
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -43,6 +43,9 @@ const Footer = () => {
           <Link>report a bug</Link>
           <Link>help</Link>
         </div>
+      </div>
+      <div className="logo-container-footer">
+        <img src={logo} alt="gamusa" />
       </div>
       <div className="copyright"> &copy; gamusagogamukh 2023</div>
     </footer>
