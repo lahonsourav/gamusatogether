@@ -8,40 +8,39 @@ const Footer = () => {
       <div className="footer-container">
         <div className="leftFooter">
           <h4>GAMUSA</h4>
-          <Link>gamusa</Link>
-          <Link>jura</Link>
-          <Link>pat</Link>
-          <Link>muga</Link>
-          <Link>riha</Link>
-          <Link>ahom</Link>
-          <Link>mising</Link>
-          <Link>trending</Link>
-          <Link>on sale</Link>
-          <Link>men</Link>
-          <Link>women</Link>
-          <Link>all</Link>
+          <Link to="/products/gam">gamusa</Link>
+          <Link to="/products/ju">jura</Link>
+          <Link to="/products/pa">pat</Link>
+          <Link to="/products/muga">muga</Link>
+          <Link to="/products/riha"> riha</Link>
+          <Link to="/products/ahom">ahom</Link>
+          <Link to="/products/mis">mising</Link>
+          <Link to="/products/tr">trending</Link>
+          <Link to="/products/sale">on sale</Link>
+          <Link to="/products/men">men</Link>
+          <Link to="/products/wom">women</Link>
+          <Link to="/products">all</Link>
         </div>
 
         <div className="midFooter">
           <h4>GAMUSA STUFF</h4>
-          <Link>orders</Link>
-          <Link>wishlist</Link>
-          <Link>track Order</Link>
-          <Link>returns</Link>
-          <Link>support</Link>
-          <Link>contact us</Link>
-          <Link>privacy policy</Link>
-          <Link>terms & conditions</Link>
+          <Link to="/orders">orders</Link>
+          <Link to="/cart">my cart</Link>
+          <Link to="/orders">support</Link>
+          <Link to="/about">contact us</Link>
+          <Link to="/about">privacy policy</Link>
+          <Link to="/about">terms & conditions</Link>
+          <Link to="/about">report</Link>
+          <Link to="/about">help</Link>
         </div>
 
         <div className="rightFooter">
           <h4>GAMUSA SOCIAL</h4>
-          <Link>instagram</Link>
-          <Link>facebook</Link>
-          <Link>mail to us</Link>
-          <Link>collab with us</Link>
-          <Link>report a bug</Link>
-          <Link>help</Link>
+          <a href="#">instagram</a>
+          <a href="#">facebook</a>
+
+          <a href="#">youtube</a>
+          <a href="#">report</a>
         </div>
       </div>
       <div className="logo-container-footer">

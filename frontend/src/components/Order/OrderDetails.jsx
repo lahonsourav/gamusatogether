@@ -119,6 +119,18 @@ const OrderDetails = () => {
                   ))}
               </div>
             </div>
+
+            <div className="orderDetailsContainerBox">
+              <div>
+                {order && order.orderStatus === "Delivered" ? (
+                  <Link to="/return">Request Return</Link>
+                ) : (
+                  <p>
+                    <Link to="/return">Request Cancel</Link>
+                  </p>
+                )}
+              </div>
+            </div>
           </div>
         </Fragment>
       )}

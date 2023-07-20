@@ -12,14 +12,14 @@ import { useAlert } from "react-alert";
 import Metadata from "../layout/Metadata";
 
 const categories = [
-  "gamusa",
-  "jura",
-  "paat",
-  "muga",
-  "riha",
-  "ahom",
-  "mising",
-  "all",
+  "1000/-",
+  "2000/-",
+  "4000/-",
+  "6000/-",
+  "8000/-",
+  "10000/-",
+  "15000/-",
+  "20000/-",
 ];
 
 const Products = () => {
@@ -77,7 +77,7 @@ const Products = () => {
                     className="category-link-product"
                     key={category}
                     onClick={() => {
-                      category === "All"
+                      category === "20000/-"
                         ? setCategory("")
                         : setCategory(category);
                     }}

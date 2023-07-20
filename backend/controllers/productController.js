@@ -43,7 +43,10 @@ exports.getAllProducts = catchAsyncErrors(async (req, res) => {
   const resultPerPage = 100;
   const productsCount = await Product.countDocuments();
 
-  const apiFeature = new ApiFeatures(Product.find(), req.query)
+  const apiFeature = new ApiFeatures(
+    Product.find().sort({ createdAt: -1 }),
+    req.query
+  )
     .search()
 
     .filter()

@@ -63,13 +63,23 @@ const ProductDetails = () => {
     }
   };
 
-  const wishlistHandler = () => {
+  const buyHandler = () => {
     if (!user) {
       navigate("/login");
     } else {
+      dispatch(addItemsToCart(params.id, quantity));
+      alert.success("Item Added To Cart");
       navigate("/cart");
     }
   };
+
+  // const wishlistHandler = () => {
+  //   if (!user) {
+  //     navigate("/login");
+  //   } else {
+  //     navigate("/cart");
+  //   }
+  // };
 
   const options = {
     edit: false,
@@ -163,15 +173,11 @@ const ProductDetails = () => {
                   disabled={product && product.Stock < 1 ? true : false}
                   onClick={addToCartHandler}
                 >
-                  Add to wishlist
+                  add to cart
                 </button>
 
-                <button className="product-btn" onClick={wishlistHandler}>
-                  Go to wishlist
-                </button>
-
-                <button onClick={submitReviewToggle} className="product-btn">
-                  Submit Review
+                <button className="product-btn" onClick={buyHandler}>
+                  buy
                 </button>
               </div>
 
@@ -208,7 +214,24 @@ const ProductDetails = () => {
             </div>
           </div>
 
+          <div className="imageContainer">
+            <div className="productImages">
+              {product.images &&
+                product.images.map((item, i) => (
+                  <img
+                    className="CarouselImage"
+                    key={i}
+                    src={item.url}
+                    alt={`${i} Slide`}
+                  />
+                ))}
+            </div>
+          </div>
+
           <div className="review_container">
+            <button onClick={submitReviewToggle} className="product-btn">
+              Submit Review
+            </button>
             <h3>Reviews</h3>
             <div className="detailsBlock-2">
               <ReactStars {...options} />

@@ -22,6 +22,8 @@ import ConfirmOrder from "./components/Cart/ConfirmOrder";
 import PaymentOut from "./components/Cart/PaymentOut";
 import OrderSuccess from "./components/Cart/OrderSucess";
 import MyOrders from "./components/Order/MyOrders";
+import Request from "./components/Order/Request";
+
 import Dashboard from "./components/admin/Dashboard";
 import ProductList from "./components/admin/ProductList";
 import NewProduct from "./components/admin/newproduct";
@@ -48,7 +50,6 @@ function App() {
     store.dispatch(loadUser());
   });
 
-  //to prevent from inspect
   // window.addEventListener("contextmenu", (e) => e.preventDefault());
 
   return (
@@ -346,6 +347,17 @@ function App() {
               <>
                 <Header />
                 <ProductReviews />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/return"
+            element={
+              <>
+                <Header />
+                <Request />
                 <Footer />
               </>
             }

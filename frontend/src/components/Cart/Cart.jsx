@@ -45,7 +45,7 @@ const Cart = () => {
         <div className="emptyCart">
           <PiSmileySadThin />
 
-          <Typography>No Product in Your Wishlist</Typography>
+          <Typography>No Product in Your Csrt</Typography>
           <Link to="/products">View Products</Link>
         </div>
       ) : (

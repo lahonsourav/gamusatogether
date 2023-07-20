@@ -1,0 +1,51 @@
+.sell__container {
+  display: flex;
+  margin-top: 6rem;
+  margin-bottom: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.about__line {
+  display: flex;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  color: var(--color-btn);
+  font-weight: 300;
+}
+
+.btn-primary {
+  border: none;
+  background-color: var(--color-light);
+  padding: 1vmax;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+}
+
+.sell__container > form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.sell__container > form > input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-mid);
+  resize: none;
+  color: var(--color-dark);
+}

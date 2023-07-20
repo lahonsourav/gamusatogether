@@ -13,20 +13,30 @@
 
 .carousal-container {
   display: flex;
+  flex-direction: column;
   flex: 0.5;
   align-items: center;
   justify-content: center;
+  object-fit: cover;
+}
+
+.imageContainer {
+  display: flex;
+  height: 25vmax;
+  padding: 0 2vmax;
+  object-fit: contain;
+}
+
+.productImages {
+  display: flex;
+  gap: 5vmax;
+  overflow-x: scroll;
+  border: 1px solid var(--color-btn);
 }
 
 .carousal {
   width: 300px;
   height: 400px;
-}
-
-.CarouselImage {
-  width: 300px;
-  height: 400px;
-  object-fit: contain;
 }
 
 .CarouselImage {
@@ -56,7 +66,7 @@
 .review_container {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 5rem;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -133,7 +143,6 @@
 
 .product-buttons {
   display: flex;
-  flex-direction: column;
   margin-top: 2rem;
   width: 50%;
   gap: 1rem;
@@ -169,8 +178,7 @@
 
 .reviews {
   display: flex;
-  flex-direction: column;
-  overflow: auto;
+  overflow: scroll;
   margin-bottom: 4rem;
 }
 
@@ -267,13 +275,16 @@
 
   .product-buttons {
     display: flex;
-    flex-direction: column;
     margin-top: 2rem;
-    width: 45%;
+    width: 90%;
     gap: 1rem;
   }
 
   .product-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vmax;
     border: none;
     background-color: var(--color-btn);
     color: var(--color-bg);

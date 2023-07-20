@@ -33,13 +33,14 @@ const NewProduct = () => {
   const [imagesPreview, setImagesPreview] = useState([]);
 
   const categories = [
-    "gamusa",
-    "jura",
-    "pat",
-    "muga",
-    "riha",
-    "ahom",
-    "mising",
+    "1000/-",
+    "2000/-",
+    "4000/-",
+    "6000/-",
+    "8000/-",
+    "10000/-",
+    "15000/-",
+    "20000/-",
   ];
 
   useEffect(() => {

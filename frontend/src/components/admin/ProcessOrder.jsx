@@ -64,7 +64,7 @@ const ProcessOrder = () => {
             <div
               className="confirmOrderPage"
               style={{
-                display: order.orderStatus === "Delivered" ? "block" : "grid",
+                display: order.orderStatus === "Returned" ? "block" : "grid",
               }}
             >
               <div>
@@ -119,7 +119,7 @@ const ProcessOrder = () => {
                     <div>
                       <p
                         className={
-                          order.orderStatus && order.orderStatus === "Delivered"
+                          order.orderStatus && order.orderStatus === "Returned"
                             ? "greenColor"
                             : "redColor"
                         }
@@ -151,7 +151,7 @@ const ProcessOrder = () => {
               {/*  */}
               <div
                 style={{
-                  display: order.orderStatus === "Delivered" ? "none" : "block",
+                  display: order.orderStatus === "Returned" ? "none" : "block",
                 }}
               >
                 <form
@@ -170,6 +170,10 @@ const ProcessOrder = () => {
 
                       {order.orderStatus === "Shipped" && (
                         <option value="Delivered">Delivered</option>
+                      )}
+
+                      {order.orderStatus === "Delivered" && (
+                        <option value="Returned">Returned</option>
                       )}
                     </select>
                   </div>
