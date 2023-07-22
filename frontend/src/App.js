@@ -45,7 +45,7 @@ function App() {
       },
     });
 
-    document.body.style.fontFamily = "'Roboto', sans-serif";
+    // document.body.style.fontFamily = "'Roboto', sans-serif";
 
     store.dispatch(loadUser());
   });

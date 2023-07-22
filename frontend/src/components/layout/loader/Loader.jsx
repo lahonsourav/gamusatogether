@@ -1,5 +1,6 @@
 import React from "react";
 import "./loader.css";
+import logo from "../../../assets/gamusawhite.png";
 
 const Loader = () => {
   return (
@@ -13,6 +14,9 @@ const Loader = () => {
             <div></div>
           </div>
         </div>
+      </div>
+      <div className="logoimage">
+        <p>loading...</p>
       </div>
     </div>
   );

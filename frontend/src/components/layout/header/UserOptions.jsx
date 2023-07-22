@@ -1,7 +1,9 @@
 import React, { Fragment } from "react";
 import "./header.css";
 
-import { VscAccount, VscVmOutline, VscHeart } from "react-icons/vsc";
+import { BsBag } from "react-icons/bs";
+
+import { VscAccount, VscVmOutline } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux/es/hooks/useSelector";
 const UserOptions = () => {
@@ -16,7 +18,7 @@ const UserOptions = () => {
               <VscVmOutline />
             </Link>
             <Link to="/cart">
-              <VscHeart />
+              <BsBag />
             </Link>
             <Link to="/account">
               <VscAccount />
@@ -25,7 +27,7 @@ const UserOptions = () => {
         ) : (
           <div className="userDetails">
             <Link to="/cart">
-              <VscHeart />
+              <BsBag />
             </Link>
             <Link to="/account">
               <VscAccount />

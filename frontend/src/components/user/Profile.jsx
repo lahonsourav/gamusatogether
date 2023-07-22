@@ -6,8 +6,8 @@ import Loader from "../layout/loader/Loader";
 import "./profile.css";
 import { logout } from "../../actions/userAction";
 import { useDispatch } from "react-redux";
-import { VscRedo } from "react-icons/vsc";
 import { useAlert } from "react-alert";
+import logo from "../../assets/gamusawhite.png";
 
 const Profile = () => {
   const { user, loading, isAuthenticated } = useSelector((state) => state.user);
@@ -36,7 +36,7 @@ const Profile = () => {
           <div className="profileContainer">
             {user && isAuthenticated ? (
               <div>
-                <img src={user && user.avatar.url} alt={user.name} />
+                <img src={logo} alt={user.name} />
               </div>
             ) : (
               "please log in"

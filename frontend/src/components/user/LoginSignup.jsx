@@ -33,9 +33,6 @@ const LoginSignUp = () => {
 
   const { name, email, password } = user;
 
-  const [avatar, setAvatar] = useState("/user.jpg");
-  const [avatarPreview, setAvatarPreview] = useState("/user.jpg");
-
   const loginSubmit = (e) => {
     console.log("login");
 
@@ -51,26 +48,11 @@ const LoginSignUp = () => {
     myForm.set("name", name);
     myForm.set("email", email);
     myForm.set("password", password);
-    myForm.set("avatar", avatar);
-    console.log(`this is ${avatar}`);
     dispatch(register(myForm));
   };
 
   const registerDataChange = (e) => {
-    if (e.target.name === "avatar") {
-      const reader = new FileReader();
-
-      reader.onload = () => {
-        if (reader.readyState === 2) {
-          setAvatarPreview(reader.result);
-          setAvatar(reader.result);
-        }
-      };
-
-      reader.readAsDataURL(e.target.files[0]);
-    } else {
-      setUser({ ...user, [e.target.name]: e.target.value });
-    }
+    setUser({ ...user, [e.target.name]: e.target.value });
   };
 
   const redirect = window.location.search
@@ -199,15 +181,6 @@ const LoginSignUp = () => {
                   />
                 </div>
 
-                <div id="registerImage">
-                  <img src={avatarPreview} alt="Avatar Preview" />
-                  <input
-                    type="file"
-                    name="avatar"
-                    accept="image/*"
-                    onChange={registerDataChange}
-                  />
-                </div>
                 <input type="submit" value="Register" className="signUpBtn" />
               </form>
             </div>

@@ -7,6 +7,12 @@
   justify-content: center;
 }
 
+.logoimage {
+  display: flex;
+  width: 20vmax;
+  justify-content: center;
+}
+
 @keyframes loadingRotate {
   to {
     transform: rotateZ(-360deg);
