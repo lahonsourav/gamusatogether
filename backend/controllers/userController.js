@@ -90,7 +90,7 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
   try {
     await sendEmail({
       email: user.email,
-      subject: `Moksha Password Recovery`,
+      subject: `Gamusa Password Recovery`,
       message,
     });
 
