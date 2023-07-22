@@ -1,4 +1,3 @@
-
 const sendToken = (user, statusCode, res) => {
   const token = user.getJWTToken();
 
@@ -9,7 +8,9 @@ const sendToken = (user, statusCode, res) => {
     httpOnly: true,
   };
 
-  res.status(statusCode).cookie("token", token, options).json({
+  const expiresIn = process.env.COOKIE_EXPIRE * 24 * 60 * 60 * 1000;
+
+  res.status(statusCode).cookie("token", token, expiresIn).json({
     success: true,
     user,
     token,
