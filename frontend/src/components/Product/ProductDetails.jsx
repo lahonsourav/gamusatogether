@@ -72,7 +72,6 @@ const ProductDetails = () => {
     }
   };
 
-  
   const options = {
     edit: false,
     color: "rgba(20,20,20,0.1)",
@@ -96,6 +95,16 @@ const ProductDetails = () => {
     dispatch(newReview(myForm));
 
     setOpen(false);
+  };
+
+  const [enlargedImage, setEnlargedImage] = useState(null);
+
+  const handleImageClick = (url) => {
+    setEnlargedImage(url);
+  };
+
+  const handleCloseModal = () => {
+    setEnlargedImage(null);
   };
 
   useEffect(() => {
@@ -206,7 +215,7 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          <div className="imageContainer">
+          {/* <div className="imageContainer">
             <div className="productImages">
               {product.images &&
                 product.images.map((item, i) => (
@@ -218,6 +227,30 @@ const ProductDetails = () => {
                   />
                 ))}
             </div>
+          </div> */}
+
+          <div className="imageContainer">
+            <div className="productImages">
+              {product.images &&
+                product.images.map((item, i) => (
+                  <img
+                    className="CarouselImage"
+                    key={i}
+                    src={item.url}
+                    alt={`${i} Slide`}
+                    onClick={() => handleImageClick(item.url)}
+                  />
+                ))}
+            </div>
+            {enlargedImage && (
+              <div className="imageModal" onClick={handleCloseModal}>
+                <img
+                  className="enlargedImg"
+                  src={enlargedImage}
+                  alt="Enlarged Slide"
+                />
+              </div>
+            )}
           </div>
 
           <div className="review_container">
