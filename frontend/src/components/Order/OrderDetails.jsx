@@ -123,10 +123,10 @@ const OrderDetails = () => {
             <div className="orderDetailsContainerBox">
               <div>
                 {order && order.orderStatus === "Delivered" ? (
-                  <Link to="/return">Request Return</Link>
+                  <Link to="/return">Request order return</Link>
                 ) : (
                   <p>
-                    <Link to="/return">Request Cancel</Link>
+                    <Link to="/return">Request order cancel</Link>
                   </p>
                 )}
               </div>

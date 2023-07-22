@@ -1,0 +1,9 @@
+.terms_container {
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  padding: 4vmax;
+  padding-top: 13vmax;
+  align-items: center;
+  text-align: justify;
+}

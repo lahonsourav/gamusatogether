@@ -28,8 +28,8 @@ const Footer = () => {
           <Link to="/cart">my cart</Link>
           <Link to="/orders">support</Link>
           <Link to="/about">contact us</Link>
-          <Link to="/about">privacy policy</Link>
-          <Link to="/about">terms & conditions</Link>
+          <Link to="/privacy">privacy policy</Link>
+          <Link to="/terms">terms & conditions</Link>
           <Link to="/about">report</Link>
           <Link to="/about">help</Link>
         </div>

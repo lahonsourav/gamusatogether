@@ -1,6 +1,5 @@
 import React from "react";
 import "./loader.css";
-import logo from "../../../assets/gamusawhite.png";
 
 const Loader = () => {
   return (

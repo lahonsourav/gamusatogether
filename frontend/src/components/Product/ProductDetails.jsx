@@ -72,14 +72,7 @@ const ProductDetails = () => {
     }
   };
 
-  // const wishlistHandler = () => {
-  //   if (!user) {
-  //     navigate("/login");
-  //   } else {
-  //     navigate("/cart");
-  //   }
-  // };
-
+  
   const options = {
     edit: false,
     color: "rgba(20,20,20,0.1)",

@@ -1,13 +1,16 @@
 import React from "react";
 import "./request.css";
+import { useAlert } from "react-alert";
 
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Request = () => {
   const { order } = useSelector((state) => state.orderDetails);
-
+  const alert = useAlert();
+  const navigate = useNavigate();
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -15,26 +18,27 @@ const Request = () => {
 
     emailjs
       .sendForm(
-        "service_pb9vrqw",
-        "template_71kwt7v",
+        "service_qtzcc3k",
+        "template_2mit4i9",
         form.current,
-        "0RwgMGfnVh-mwKq1J"
+        "kAGHUYRfuz5_dnP20"
       )
       .then(
         (result) => {
-          console.log(result.text);
+          alert.success("Request sent, we'll contact you soon");
         },
         (error) => {
-          console.log(error.text);
+          alert.error("something went wrong, try again");
         }
       );
 
     e.target.reset();
+    navigate(-1);
   };
   return (
     <div className="sell">
       <div className="sell__container">
-        <h3 className="about__line"> Cancel Order</h3>
+        <h3 className="about__line"> Request form</h3>
         <form ref={form} onSubmit={sendEmail}>
           <textarea
             name="orderId"
@@ -52,7 +56,7 @@ const Request = () => {
           ></textarea>
 
           <button type="submit" className="btn-primary">
-            Request Cancel
+            Send a request
           </button>
         </form>
       </div>

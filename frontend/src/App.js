@@ -36,6 +36,8 @@ import UpdateUser from "./components/admin/UpdateUser";
 import ProductReviews from "./components/admin/ProductReviews";
 import WebFont from "webfontloader";
 import NotFound from "./components/layout/notFound/NotFound";
+import Terms from "./components/extra/terms";
+import Privacy from "./components/extra/Privacy";
 
 function App() {
   React.useEffect(() => {
@@ -358,6 +360,28 @@ function App() {
               <>
                 <Header />
                 <Request />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/terms"
+            element={
+              <>
+                <Header />
+                <Terms />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/privacy"
+            element={
+              <>
+                <Header />
+                <Privacy />
                 <Footer />
               </>
             }
