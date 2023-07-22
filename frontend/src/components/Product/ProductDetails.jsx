@@ -215,19 +215,7 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          {/* <div className="imageContainer">
-            <div className="productImages">
-              {product.images &&
-                product.images.map((item, i) => (
-                  <img
-                    className="CarouselImage"
-                    key={i}
-                    src={item.url}
-                    alt={`${i} Slide`}
-                  />
-                ))}
-            </div>
-          </div> */}
+        
 
           <div className="imageContainer">
             <div className="productImages">
