@@ -44,13 +44,11 @@ const Header = () => {
               placeholder="search..."
             />
 
-            <Link to="#" className="searchButton" type="submit">
+            <button className="searchButton" type="submit">
               <BsSearch />
-            </Link>
+            </button>
           </form>
         </div>
-
-        {/* <div className="mid-head"></div> */}
 
         <div className="right-head">
           {!user ? (

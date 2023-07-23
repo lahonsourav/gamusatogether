@@ -1,10 +1,15 @@
 import "./App.css";
 import Header from "./components/layout/header/Header";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 
 import Footer from "./components/layout/footer/Footer";
 import Home from "./components/home/Home.jsx";
-import React from "react";
+import React, { useEffect } from "react";
 import ProductDetails from "./components/Product/ProductDetails";
 import Products from "./components/Product/Products";
 import LoginSignup from "./components/user/LoginSignup";
@@ -34,21 +39,22 @@ import ProcessOrder from "./components/admin/ProcessOrder";
 import UsersList from "./components/admin/UsersList";
 import UpdateUser from "./components/admin/UpdateUser";
 import ProductReviews from "./components/admin/ProductReviews";
-import WebFont from "webfontloader";
 import NotFound from "./components/layout/notFound/NotFound";
 import Terms from "./components/extra/terms";
 import Privacy from "./components/extra/Privacy";
 
+const ScrollToTop = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+};
+
 function App() {
   React.useEffect(() => {
-    WebFont.load({
-      google: {
-        families: ["Roboto", "Droid Sans", "Chilanka"],
-      },
-    });
-
-    // document.body.style.fontFamily = "'Roboto', sans-serif";
-
     store.dispatch(loadUser());
   });
 
@@ -56,13 +62,13 @@ function App() {
 
   return (
     <Router>
-      {" "}
       <div className="App">
         <Routes>
           <Route
             path="/"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <Home />
                 <Footer />
@@ -76,6 +82,8 @@ function App() {
             path="/product/:id"
             element={
               <>
+                <ScrollToTop />
+                <ScrollToTop />
                 <Header />
                 <ProductDetails />
                 <Footer />
@@ -87,6 +95,8 @@ function App() {
             path="/products"
             element={
               <>
+                <ScrollToTop />
+                <ScrollToTop />
                 <Header />
                 <Products />
                 <Footer />
@@ -98,6 +108,7 @@ function App() {
             path="/products/:keyword"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <Products />
                 <Footer />
@@ -109,6 +120,7 @@ function App() {
             path="/login"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <LoginSignup />
               </>
@@ -119,6 +131,7 @@ function App() {
             path="/category"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <Products />
                 <Footer />
@@ -130,6 +143,7 @@ function App() {
             path="/account"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <Profile />
                 <Footer />
@@ -141,6 +155,7 @@ function App() {
             path="/me/update"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <UpdateProfile />
                 <Footer />
@@ -152,6 +167,7 @@ function App() {
             path="/password/change"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <UpdatePassword />
                 <Footer />
@@ -163,6 +179,7 @@ function App() {
             path="/password/forgot"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <ForgotPassword />
                 <Footer />
@@ -174,6 +191,7 @@ function App() {
             path="password/reset/:token"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <ResetPassword />
                 <Footer />
@@ -185,6 +203,7 @@ function App() {
             path="/cart"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <Cart />
                 <Footer />
@@ -196,6 +215,7 @@ function App() {
             path="/shipping"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <Shipping />
                 <Footer />
@@ -207,6 +227,7 @@ function App() {
             path="/order/confirm"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <ConfirmOrder />
                 <Footer />
@@ -218,6 +239,7 @@ function App() {
             path="/process/payment"
             element={
               <>
+                <ScrollToTop />
                 <PaymentOut />
               </>
             }
@@ -227,6 +249,7 @@ function App() {
             path="/success"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <OrderSuccess />
                 <Footer />
@@ -238,6 +261,7 @@ function App() {
             path="/orders"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <MyOrders />
                 <Footer />
@@ -248,6 +272,7 @@ function App() {
             path="/order/:id"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <OrderDetails />
                 <Footer />
@@ -259,6 +284,7 @@ function App() {
             path="/admin/dashboard"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <Dashboard />
                 <Footer />
@@ -270,6 +296,7 @@ function App() {
             path="/admin/products"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <ProductList />
                 <Footer />
@@ -281,6 +308,7 @@ function App() {
             path="/admin/product"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <NewProduct />
                 <Footer />
@@ -292,6 +320,7 @@ function App() {
             path="/admin/product/:id"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <UpdateProduct />
                 <Footer />
@@ -303,6 +332,7 @@ function App() {
             path="/admin/orders"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <OrderList />
                 <Footer />
@@ -314,6 +344,7 @@ function App() {
             path="/admin/order/:id"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <ProcessOrder />
                 <Footer />
@@ -325,6 +356,7 @@ function App() {
             path="/admin/users"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <UsersList />
                 <Footer />
@@ -336,6 +368,7 @@ function App() {
             path="/admin/user/:id"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <UpdateUser />
                 <Footer />
@@ -347,6 +380,7 @@ function App() {
             path="/admin/reviews"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <ProductReviews />
                 <Footer />
@@ -358,6 +392,7 @@ function App() {
             path="/return"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <Request />
                 <Footer />
@@ -369,6 +404,7 @@ function App() {
             path="/terms"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <Terms />
                 <Footer />
@@ -380,6 +416,7 @@ function App() {
             path="/privacy"
             element={
               <>
+                <ScrollToTop />
                 <Header />
                 <Privacy />
                 <Footer />
