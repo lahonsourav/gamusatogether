@@ -24,7 +24,7 @@ const LoginSignUp = () => {
   const registerTab = useRef(null);
   const switcherTab = useRef(null);
 
-  const [loginEmail, setLoginEmail] = useState("");
+  const [loginPhone, setLoginPhone] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [user, setUser] = useState({
     name: "",
@@ -36,10 +36,8 @@ const LoginSignUp = () => {
   const { name, phone, email, password } = user;
 
   const loginSubmit = (e) => {
-    console.log("login");
-
     e.preventDefault();
-    dispatch(login(loginEmail, loginPassword));
+    dispatch(login(loginPhone, loginPassword));
   };
 
   const registerSubmit = (e) => {
@@ -116,14 +114,14 @@ const LoginSignUp = () => {
                 encType="multipart/form-data"
                 onSubmit={loginSubmit}
               >
-                <div className="loginEmail">
-                  <VscMail />
+                <div className="loginPhone">
+                  <PiPhoneIncomingLight />
                   <input
-                    type="email"
-                    placeholder="Email"
+                    type="number"
+                    placeholder="Phone"
                     required
-                    value={loginEmail}
-                    onChange={(e) => setLoginEmail(e.target.value)}
+                    value={loginPhone}
+                    onChange={(e) => setLoginPhone(e.target.value)}
                   />
                 </div>
                 <div className="loginPassword">

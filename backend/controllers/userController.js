@@ -23,23 +23,24 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
 
 //user login
 exports.loginUser = catchAsyncErrors(async (req, res, next) => {
-  const { email, password } = req.body;
+  const { phone, password } = req.body;
 
-  //check if user provided email and password both
-
-  if (!email || !password) {
-    return next(new ErrorHandler("Please Enter valid email and password", 400));
+  // Check if the user provided phone and password both
+  if (!phone || !password) {
+    return next(
+      new ErrorHandler("Please enter a valid phone number and password", 400)
+    );
   }
 
-  const user = await User.findOne({ email }).select("+password");
+  const user = await User.findOne({ phone }).select("+password");
 
   if (!user) {
-    return next(new ErrorHandler("Invalid email or password", 401));
+    return next(new ErrorHandler("Invalid phone number", 401));
   }
 
   const isPasswordMatched = await user.comparePassword(password);
   if (!isPasswordMatched) {
-    return next(new ErrorHandler("Invalid email or password", 401));
+    return next(new ErrorHandler("Invalid password", 401));
   }
 
   sendToken(user, 200, res);

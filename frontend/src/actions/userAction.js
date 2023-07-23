@@ -39,7 +39,7 @@ import {
 import axios from "axios";
 
 // Login
-export const login = (email, password) => async (dispatch) => {
+export const login = (phone, password) => async (dispatch) => {
   try {
     dispatch({ type: LOGIN_REQUEST });
 
@@ -47,7 +47,7 @@ export const login = (email, password) => async (dispatch) => {
 
     const { data } = await axios.post(
       `/api/v1/login`,
-      { email, password },
+      { phone, password },
       config
     );
 
