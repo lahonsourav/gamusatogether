@@ -215,8 +215,6 @@ const ProductDetails = () => {
             </div>
           </div>
 
-        
-
           <div className="imageContainer">
             <div className="productImages">
               {product.images &&
@@ -239,6 +237,10 @@ const ProductDetails = () => {
                 />
               </div>
             )}
+          </div>
+
+          <div className="swipe_more">
+            <small>swipe for more images</small>
           </div>
 
           <div className="review_container">

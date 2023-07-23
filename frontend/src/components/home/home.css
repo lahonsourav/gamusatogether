@@ -230,10 +230,9 @@
 
 .show-all {
   border: none;
-  background-color: var(--color-btn);
-  color: var(--color-bg);
-  font: 300 0.9vmax "Roboto";
-  width: 30%;
+  background-color: var(--color-bor);
+  color: var(--color-dark);
+  width: 10%;
   padding: 1vmax;
   cursor: pointer;
   transition: all 0.5s;
@@ -285,5 +284,9 @@
     gap: 2rem;
     transition: var(--transition);
     overflow-x: scroll;
+  }
+
+  .show-all {
+    width: 20%;
   }
 }

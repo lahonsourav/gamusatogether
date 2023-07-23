@@ -49,9 +49,9 @@ body {
   --color-dark-shade-one: #b59f84;
   --color-dark: black;
   --color-btn: rgb(51, 51, 51);
-  --color-bor: rgb(151, 151, 151);
+  --color-bor: rgb(201, 201, 201);
 
-  --color-red: #f36d6d;
+  --color-red: #a01212;
   --transition: all 400ms ease;
 }
 
@@ -63,4 +63,3 @@ a {
 a:hover {
   color: var(--color-white);
 }
-

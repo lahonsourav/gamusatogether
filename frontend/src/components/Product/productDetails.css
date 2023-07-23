@@ -126,9 +126,9 @@
 
 .detailsBlock3-1-1 > button {
   border: none;
-  color: var(--color-bg);
+  color: var(--color-dark);
   transition: all 0.5s;
-  background-color: var(--color-btn);
+  background-color: var(--color-bor);
   font: 500 0.7vmax;
   outline: none;
 }
@@ -149,9 +149,9 @@
 
 .product-btn {
   border: none;
-  background-color: var(--color-btn);
-  color: var(--color-bg);
-  font: 300 0.9vmax "Roboto";
+  background-color: var(--color-bor);
+  color: var(--color-dark);
+  font: 300 0.9vmax;
   padding: 1vmax;
   cursor: pointer;
   transition: all 0.5s;
@@ -177,7 +177,7 @@
 
 .reviews {
   display: flex;
-  overflow: scroll;
+  flex-direction: column;
   margin-bottom: 4rem;
 }
 
@@ -209,6 +209,18 @@
   font: 400 1.3vmax;
   text-align: center;
   color: rgba(0, 0, 0, 0.548);
+}
+
+.swipe_more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vmax;
+}
+
+.swipe_more > small {
+  font-size: 10px;
+  font-weight: 100;
 }
 
 /* Styling for the modal popup when an image is enlarged */
@@ -312,8 +324,6 @@
     justify-content: center;
     width: 15vmax;
     border: none;
-    background-color: var(--color-btn);
-    color: var(--color-bg);
     padding: 1vmax;
     cursor: pointer;
     transition: all 0.5s;
@@ -348,5 +358,11 @@
 
   .review_container > h3 {
     font-weight: 300;
+  }
+
+  .reviews {
+    display: flex;
+    overflow: scroll;
+    margin-bottom: 4rem;
   }
 }

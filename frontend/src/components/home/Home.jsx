@@ -99,7 +99,7 @@ const Home = () => {
                 </div>
               </Link>
 
-              <Link to="/products/new">
+              <Link to="/products/op">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
@@ -110,20 +110,11 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="looking-for-title">
-                  <h4>JUST ARRIVED</h4>
+                  <h4>OPENING OFFER</h4>
                 </div>
               </Link>
             </div>
 
-            <h2 className="homeHeading">FEATURED</h2>
-
-            <div className="container" id="container">
-              {products &&
-                products.map((products) => <ProductCard product={products} />)}
-            </div>
-            <Link className="show-all" to="/products">
-              SHOW ALL
-            </Link>
             <div className="looking-for">
               <Link to="/products/mis">
                 <div className="looking-for-item-2">
@@ -185,6 +176,16 @@ const Home = () => {
                 </div>
               </Link>
             </div>
+
+            <h2 className="homeHeading">FEATURED</h2>
+
+            <div className="container" id="container">
+              {products &&
+                products.map((products) => <ProductCard product={products} />)}
+            </div>
+            <Link className="show-all" to="/products">
+              SHOW ALL
+            </Link>
           </div>
         </Fragment>
       )}

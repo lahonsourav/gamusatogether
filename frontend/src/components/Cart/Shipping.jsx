@@ -3,7 +3,6 @@ import "./Shipping.css";
 import { useSelector, useDispatch } from "react-redux";
 import { saveShippingInfo } from "../../actions/cartActions";
 import Metadata from "../layout/Metadata";
-import { VscAccount, VscLocation } from "react-icons/vsc";
 import {
   PiPhoneIncomingLight,
   PiGlobeHemisphereWestThin,
