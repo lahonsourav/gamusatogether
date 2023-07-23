@@ -51,7 +51,11 @@ const Profile = () => {
               <p>{user && user.phone}</p>
             </div>
             <div>
-              <p>{user && user.email}</p>
+              {!user.email ? (
+                "please add email address for password recovery"
+              ) : (
+                <p>{user && user.email}</p>
+              )}
             </div>
           </div>
 
@@ -59,7 +63,7 @@ const Profile = () => {
             <Link to="/cart">my wishlist</Link>
             <Link to="/orders">my orders</Link>
 
-            <Link to="/me/update">addm email and edit profile</Link>
+            <Link to="/me/update">add email and edit profile</Link>
             <Link to="/password/change">change password</Link>
             <p onClick={logoutUser}>logout</p>
           </div>

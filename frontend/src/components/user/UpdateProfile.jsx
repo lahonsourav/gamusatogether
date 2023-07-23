@@ -8,6 +8,7 @@ import { useAlert } from "react-alert";
 import { UPDATE_PROFILE_RESET } from "../../constants/userConstants";
 import Metadata from "../layout/Metadata";
 import { useNavigate } from "react-router-dom";
+import { PiPhoneIncomingLight } from "react-icons/pi";
 
 const UpdateProfile = () => {
   const dispatch = useDispatch();
@@ -18,22 +19,25 @@ const UpdateProfile = () => {
   const { error, isUpdated, loading } = useSelector((state) => state.profile);
 
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+
   const [email, setEmail] = useState("");
-  const [avatar, setAvatar] = useState();
-  const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
 
-  const updateProfileDataChange = (e) => {
-    const reader = new FileReader();
+  // const [avatar, setAvatar] = useState();
+  // const [avatarPreview, setAvatarPreview] = useState("/Profile.png");
 
-    reader.onload = () => {
-      if (reader.readyState === 2) {
-        setAvatarPreview(reader.result);
-        setAvatar(reader.result);
-      }
-    };
+  // const updateProfileDataChange = (e) => {
+  //   const reader = new FileReader();
 
-    reader.readAsDataURL(e.target.files[0]);
-  };
+  //   reader.onload = () => {
+  //     if (reader.readyState === 2) {
+  //       setAvatarPreview(reader.result);
+  //       setAvatar(reader.result);
+  //     }
+  //   };
+
+  //   reader.readAsDataURL(e.target.files[0]);
+  // };
 
   const updateProfileSubmit = (e) => {
     e.preventDefault();
@@ -42,7 +46,7 @@ const UpdateProfile = () => {
 
     myForm.set("name", name);
     myForm.set("email", email);
-    myForm.set("avatar", avatar);
+    myForm.set("phone", phone);
 
     dispatch(updateProfile(myForm));
   };
@@ -50,6 +54,8 @@ const UpdateProfile = () => {
   useEffect(() => {
     if (user) {
       setName(user.name);
+      setPhone(user.phone);
+
       setEmail(user.email);
     }
 
@@ -85,6 +91,17 @@ const UpdateProfile = () => {
                 encType="application/json"
                 onSubmit={updateProfileSubmit}
               >
+                <div className="updateProfileEmail">
+                  <VscMail />
+                  <input
+                    type="email"
+                    placeholder="add new email"
+                    required
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
                 <div className="updateProfileName">
                   <VscSmiley />
                   <input
@@ -96,17 +113,18 @@ const UpdateProfile = () => {
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
-                <div className="updateProfileEmail">
-                  <VscMail />
+
+                <div className="loginPhone">
+                  <PiPhoneIncomingLight />
                   <input
-                    type="email"
-                    placeholder="type new email"
+                    type="number"
+                    placeholder="Phone"
                     required
-                    name="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                   />
                 </div>
+
                 {/* <div id="updateProfileImage">
                   <img src={avatarPreview} alt="Avatar Preview" />
                   <input
