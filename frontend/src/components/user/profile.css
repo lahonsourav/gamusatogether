@@ -16,7 +16,8 @@
 .profileContainer > div > img {
   width: 10vmax;
   height: 10vmax;
-  border-radius: 100%;
+  border-radius: 50%;
+  border: 1px solid var(--color-bor);
 }
 
 .profile-details {
@@ -47,7 +48,7 @@
 
 .profile-actions > a {
   border: none;
-  background-color: var(--color-light);
+  background-color: var(--color-light-one);
   color: var(--color-dark);
   font: 300 1vmax;
   width: 100%;
@@ -60,8 +61,8 @@
 
 .profile-actions > p {
   border: none;
-  background-color: var(--color-light);
-  color: var(--color-dark);
+  background-color: var(--color-light-one);
+  color: var(--color-red);
   font: 300 1vmax;
   width: 100%;
   padding: 3vmax;

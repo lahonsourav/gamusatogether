@@ -42,6 +42,8 @@ import ProductReviews from "./components/admin/ProductReviews";
 import NotFound from "./components/layout/notFound/NotFound";
 import Terms from "./components/extra/terms";
 import Privacy from "./components/extra/Privacy";
+import Contacct from "./components/extra/Contacct";
+import About from "./components/extra/About";
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -58,7 +60,7 @@ function App() {
     store.dispatch(loadUser());
   });
 
-  window.addEventListener("contextmenu", (e) => e.preventDefault());
+  // window.addEventListener("contextmenu", (e) => e.preventDefault());
 
   return (
     <Router>
@@ -419,6 +421,30 @@ function App() {
                 <ScrollToTop />
                 <Header />
                 <Privacy />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/contact"
+            element={
+              <>
+                <ScrollToTop />
+                <Header />
+                <Contacct />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/about"
+            element={
+              <>
+                <ScrollToTop />
+                <Header />
+                <About />
                 <Footer />
               </>
             }

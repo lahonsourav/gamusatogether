@@ -26,12 +26,11 @@ const Footer = () => {
           <h4>GAMUSA STUFF</h4>
           <Link to="/orders">orders</Link>
           <Link to="/cart">my cart</Link>
-          <Link to="/orders">support</Link>
-          <Link to="/about">contact us</Link>
+          <Link to="/contact">help and support</Link>
+          <Link to="/contact">contact us</Link>
           <Link to="/privacy">privacy policy</Link>
           <Link to="/terms">terms & conditions</Link>
-          <Link to="/about">report</Link>
-          <Link to="/about">help</Link>
+          <Link to="/contact">report</Link>
         </div>
 
         <div className="rightFooter">
@@ -40,7 +39,7 @@ const Footer = () => {
           <a href="#">facebook</a>
 
           <a href="#">youtube</a>
-          <a href="#">report</a>
+          <Link to="/about">about us</Link>
         </div>
       </div>
       <div className="logo-container-footer">

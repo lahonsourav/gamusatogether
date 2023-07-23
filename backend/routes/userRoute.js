@@ -16,7 +16,6 @@ const {
 
 const {
   isAuthenticatedUser,
-  autorizeRoles,
   authorizeRoles,
 } = require("../middleware/auth");
 const {

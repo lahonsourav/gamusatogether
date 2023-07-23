@@ -5,8 +5,6 @@ const Privacy = () => {
   return (
     <div className="terms_container">
       <p>
-        <br />
-        <br />
         Privacy Policy for Gamusagogamukh.in <br />
         <br /> Effective Date: 2 August 2023 <br />
         <br /> At Gamusagogamukh.in ("we," "our," or "us"), we are committed to
@@ -24,7 +22,10 @@ const Privacy = () => {
         information, including credit card details, is collected and processed
         securely through third-party payment processors. - We may collect
         information you voluntarily provide to us through surveys, feedback, or
-        customer support inquiries. <br />
+        customer support inquiries. <br /> <br />
+        [imp] We do not collect and save your passwords, passwords are
+        encrypted, no third party/us can access to your account and passwords.{" "}
+        <br />
         <br />
         1.2. Usage Data: - We don't collect information like your IP address,
         browser type, device information, and browsing behavior. <br />
