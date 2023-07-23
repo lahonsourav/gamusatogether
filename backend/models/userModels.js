@@ -20,10 +20,7 @@ const userSchema = new mongoose.Schema({
 
   email: {
     type: String,
-    validate: [validator.isMobilePhone, "Please enter a valid phone number"],
-    unique: true,
-
-    unique: false,
+    default: "",
   },
   password: {
     type: String,

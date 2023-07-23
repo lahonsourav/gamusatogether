@@ -107,7 +107,7 @@ const UpdateProfile = () => {
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
-                <div id="updateProfileImage">
+                {/* <div id="updateProfileImage">
                   <img src={avatarPreview} alt="Avatar Preview" />
                   <input
                     type="file"
@@ -115,7 +115,7 @@ const UpdateProfile = () => {
                     accept="image/*"
                     onChange={updateProfileDataChange}
                   />
-                </div>
+                </div> */}
 
                 <input
                   type="submit"

@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
 import "./loginsignup.css";
 import { Link } from "react-router-dom";
-import { VscMail, VscLock, VscSmiley } from "react-icons/vsc";
+import { VscLock, VscSmiley } from "react-icons/vsc";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, login, register } from "../../actions/userAction";
 import Loader from "../layout/loader/Loader";
@@ -28,12 +28,11 @@ const LoginSignUp = () => {
   const [loginPassword, setLoginPassword] = useState("");
   const [user, setUser] = useState({
     name: "",
-    email: "",
     phone: "",
     password: "",
   });
 
-  const { name, phone, email, password } = user;
+  const { name, phone, password } = user;
 
   const loginSubmit = (e) => {
     e.preventDefault();
@@ -47,7 +46,6 @@ const LoginSignUp = () => {
 
     myForm.set("name", name);
     myForm.set("phone", phone);
-    myForm.set("email", email);
     myForm.set("password", password);
     dispatch(register(myForm));
   };
@@ -55,21 +53,6 @@ const LoginSignUp = () => {
   const registerDataChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
-
-  const redirect = window.location.search
-    ? window.location.search.split("=")[1]
-    : "/";
-
-  useEffect(() => {
-    if (error) {
-      alert.error(error);
-      dispatch(clearErrors());
-    }
-
-    if (isAuthenticated) {
-      navigate(redirect);
-    }
-  }, [dispatch, error, alert, navigate, isAuthenticated, redirect]);
 
   const switchTabs = (e, tab) => {
     if (tab === "login") {
@@ -87,6 +70,20 @@ const LoginSignUp = () => {
       loginTab.current.classList.add("shiftToLeft");
     }
   };
+
+  const redirect = window.location.search
+    ? window.location.search.split("=")[1]
+    : "/";
+  useEffect(() => {
+    if (error) {
+      alert.error(error);
+      dispatch(clearErrors());
+    }
+
+    if (isAuthenticated) {
+      navigate(redirect);
+    }
+  }, [dispatch, error, alert, navigate, isAuthenticated, redirect]);
 
   return (
     <Fragment>
@@ -170,16 +167,7 @@ const LoginSignUp = () => {
                     onChange={registerDataChange}
                   />
                 </div>
-                <div className="signUpEmail">
-                  <VscMail />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                    value={email}
-                    onChange={registerDataChange}
-                  />
-                </div>
+
                 <div className="signUpPassword">
                   <VscLock />
                   <input

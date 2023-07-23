@@ -59,7 +59,7 @@ const Profile = () => {
             <Link to="/cart">my wishlist</Link>
             <Link to="/orders">my orders</Link>
 
-            <Link to="/me/update">edit profile</Link>
+            <Link to="/me/update">addm email and edit profile</Link>
             <Link to="/password/change">change password</Link>
             <p onClick={logoutUser}>logout</p>
           </div>

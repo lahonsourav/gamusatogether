@@ -8,10 +8,16 @@ const crypto = require("crypto");
 //register user
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
   try {
-    const { name, email, phone, password } = req.body;
+    const { name, phone, password } = req.body;
+
+    const existingUser = await User.findOne({ phone });
+
+    if (existingUser) {
+      return next(new ErrorHandler("account exists, please login", 400));
+    }
+
     const user = await User.create({
       name,
-      email,
       phone,
       password,
     });
