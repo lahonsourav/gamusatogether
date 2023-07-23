@@ -28,10 +28,11 @@ const LoginSignUp = () => {
   const [user, setUser] = useState({
     name: "",
     email: "",
+    phone: "",
     password: "",
   });
 
-  const { name, email, password } = user;
+  const { name, phone, email, password } = user;
 
   const loginSubmit = (e) => {
     console.log("login");
@@ -46,6 +47,7 @@ const LoginSignUp = () => {
     const myForm = new FormData();
 
     myForm.set("name", name);
+    myForm.set("phone", phone);
     myForm.set("email", email);
     myForm.set("password", password);
     dispatch(register(myForm));
@@ -155,6 +157,17 @@ const LoginSignUp = () => {
                     required
                     name="name"
                     value={name}
+                    onChange={registerDataChange}
+                  />
+                </div>
+                <div className="signUpPhone">
+                  <VscSmiley />
+                  <input
+                    type="number"
+                    placeholder="Phone Number"
+                    required
+                    name="phone"
+                    value={phone}
                     onChange={registerDataChange}
                   />
                 </div>

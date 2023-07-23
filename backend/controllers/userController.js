@@ -8,13 +8,12 @@ const crypto = require("crypto");
 //register user
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
   try {
-   
-    const { name, email, password } = req.body;
+    const { name, email, phone, password } = req.body;
     const user = await User.create({
       name,
       email,
+      phone,
       password,
-   
     });
     sendToken(user, 201, res);
   } catch (error) {
@@ -174,7 +173,6 @@ exports.updateProfile = catchAsyncErrors(async (req, res, next) => {
     name: req.body.name,
     email: req.body.email,
   };
-
 
   const user = await User.findByIdAndUpdate(req.user.id, newUserData, {
     new: true,
