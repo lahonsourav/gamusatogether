@@ -8,6 +8,7 @@ import Loader from "../layout/loader/Loader";
 import { useNavigate } from "react-router-dom";
 import logo from "../../assets/temp.png";
 import { useAlert } from "react-alert";
+import { PiPhoneIncomingLight } from "react-icons/pi";
 
 const LoginSignUp = () => {
   const dispatch = useDispatch();
@@ -161,7 +162,7 @@ const LoginSignUp = () => {
                   />
                 </div>
                 <div className="signUpPhone">
-                  <VscSmiley />
+                  <PiPhoneIncomingLight />
                   <input
                     type="number"
                     placeholder="Phone Number"
@@ -176,7 +177,6 @@ const LoginSignUp = () => {
                   <input
                     type="email"
                     placeholder="Email"
-                    required
                     name="email"
                     value={email}
                     onChange={registerDataChange}

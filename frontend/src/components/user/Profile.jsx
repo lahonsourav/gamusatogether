@@ -47,7 +47,9 @@ const Profile = () => {
             <div>
               <p>{user && user.name}</p>
             </div>
-
+            <div>
+              <p>{user && user.phone}</p>
+            </div>
             <div>
               <p>{user && user.email}</p>
             </div>
@@ -61,6 +63,8 @@ const Profile = () => {
             <Link to="/password/change">change password</Link>
             <p onClick={logoutUser}>logout</p>
           </div>
+
+          <small>user since {user && user.createdAt}</small>
         </Fragment>
       )}
     </Fragment>
