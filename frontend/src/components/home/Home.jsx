@@ -8,14 +8,14 @@ import Loader from "../layout/loader/Loader";
 import { useAlert } from "react-alert";
 import { Link } from "react-router-dom";
 import CategoryList from "./CategoryList";
-import black from "../../images/black.jpg";
-import gamusa from "../../images/gamusa.jpg";
-import sale from "../../images/sale.jpg";
-import white from "../../images/white.jpg";
-import mising from "../../images/mising.jpg";
-import ahom from "../../images/ahom.jpg";
-import him from "../../images/men.jpg";
-import her from "../../images/gift.jpg";
+// import black from "../../images/black.jpg";
+// import gamusa from "../../images/gamusa.jpg";
+// import sale from "../../images/sale.jpg";
+// import white from "../../images/white.jpg";
+// import mising from "../../images/mising.jpg";
+// import ahom from "../../images/ahom.jpg";
+// import him from "../../images/men.jpg";
+// import her from "../../images/gift.jpg";
 import bannerlogo from "../../assets/gamusa.png";
 
 const Home = () => {
@@ -74,6 +74,34 @@ const Home = () => {
                 </div>
                 <div className="looking-for-title">
                   <h4>OPENING OFFER</h4>
+                </div>
+              </Link>
+              <Link to="/products/op">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />{" "}
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>SUMMER DEALS</h4>
+                </div>
+              </Link>
+              <Link to="/products/op">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />{" "}
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>TRENDING</h4>
                 </div>
               </Link>
             </div>
@@ -176,6 +204,36 @@ const Home = () => {
                 </div>
                 <div className="looking-for-title">
                   <h4>FOR HER</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/man">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>BABY HE</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/woman">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>BABY SHE</h4>
                 </div>
               </Link>
             </div>
@@ -336,6 +394,36 @@ const Home = () => {
                 </div>
                 <div className="looking-for-title">
                   <h4>TOSS</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/deo">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>DHUTI</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/deo">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>EXPLORE</h4>
                 </div>
               </Link>
             </div>

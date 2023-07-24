@@ -34,7 +34,9 @@ const Footer = () => {
 
         <div className="rightFooter">
           <h4>GAMUSA SOCIAL</h4>
-          <a href="#">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=100066812676876">
+            Instagram
+          </a>
           <a href="https://www.facebook.com/profile.php?id=100066812676876">
             Facebook
           </a>
