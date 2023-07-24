@@ -187,7 +187,6 @@
 .reviews {
   display: flex;
   flex-direction: column;
-  margin-bottom: 4rem;
 }
 
 .reviewCard {
@@ -384,11 +383,5 @@
 
   .review_container > h3 {
     font-weight: 300;
-  }
-
-  .reviews {
-    display: flex;
-    overflow: scroll;
-    margin-bottom: 4rem;
   }
 }
