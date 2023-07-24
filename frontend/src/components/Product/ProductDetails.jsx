@@ -140,6 +140,9 @@ const ProductDetails = () => {
                   ))}
               </Carousel>
             </div>
+            <div className="swipe_more_one">
+              <small>swipe for more images</small>
+            </div>
 
             <div className="detail-block">
               <div className="detailsBlock-1">
@@ -240,7 +243,7 @@ const ProductDetails = () => {
           </div>
 
           <div className="swipe_more">
-            <small>swipe for more images</small>
+            <small>swipe and click to view</small>
           </div>
 
           <div className="review_container">

@@ -47,6 +47,20 @@ const Home = () => {
           <CategoryList />
           <div className="home-container">
             <div className="looking-for">
+              <Link to="/products/op">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />{" "}
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>OPENING OFFER</h4>
+                </div>
+              </Link>
               <Link to="/products/sale">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
@@ -62,20 +76,6 @@ const Home = () => {
                 </div>
               </Link>
 
-              <Link to="/products/op">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={bannerlogo}
-                      alt="looking-for"
-                    />{" "}
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>OPENING OFFER</h4>
-                </div>
-              </Link>
               <Link to="/products/op">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">

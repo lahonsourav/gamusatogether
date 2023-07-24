@@ -1,6 +1,5 @@
 .myOrdersPage {
-  width: 60vw;
-  padding: 0 7vmax;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,9 +39,6 @@
 @media screen and (max-width: 600px) {
   .myOrdersPage {
     width: 100vw;
-    padding: 0;
-    height: 93vh;
-    padding-left: -100px;
   }
 
   .myOrdersTable div {
