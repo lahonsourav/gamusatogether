@@ -35,16 +35,20 @@ const Footer = () => {
         <div className="rightFooter">
           <h4>GAMUSA SOCIAL</h4>
           <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
+          <a href="https://www.facebook.com/profile.php?id=100066812676876">
+            Facebook
+          </a>
 
-          <a href="#">Youtube</a>
+          <a href="https://www.youtube.com/@gamusagugamukh2751">Youtube</a>
           <Link to="/about">About us</Link>
         </div>
       </div>
       <div className="logo-container-footer">
         <img src={logo} alt="gamusa" />
       </div>
-      <div className="copyright"> &copy; gamusagogamukh 2023</div>
+      <div className="copyright">
+        <small>&copy; gamusagogamukh 2023</small>
+      </div>
     </footer>
   );
 };

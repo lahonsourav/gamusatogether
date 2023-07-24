@@ -91,6 +91,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 100vw;
   align-items: center;
+  justify-content: center;
+
   margin-top: 4vmax;
   margin-left: 4rem;
   margin-right: 4rem;
@@ -114,8 +116,6 @@
   height: 20vmax;
   padding-top: 1rem;
 }
-
-
 
 .looking-for-title {
   display: flex;
@@ -265,12 +265,23 @@
     grid-template-columns: 1fr 1fr;
     max-width: 100vw;
     align-items: center;
-    margin-top: 4vmax;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    gap: 2rem;
-    transition: var(--transition);
-    overflow-x: scroll;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 0;
+  }
+
+  .looking-for-item {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vmax;
+    height: 25vmax;
+    padding-top: 1vmax;
+  }
+
+  .looking-for-title {
+    padding: 3vmax;
   }
 
   .show-all {
