@@ -24,7 +24,6 @@ const Footer = () => {
 
         <div className="midFooter">
           <h4>GAMUSA STUFF</h4>
-          <Link to="/orders">Orders</Link>
           <Link to="/cart">My Cart</Link>
           <Link to="/contact">Help and Support</Link>
           <Link to="/contact">Contact Us</Link>
