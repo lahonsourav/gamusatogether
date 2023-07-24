@@ -51,8 +51,10 @@ const Profile = () => {
               <p>{user && user.phone}</p>
             </div>
             <div>
-              {!user.email ? (
-                "please add email address for password recovery"
+              {user && !user.email ? (
+                <Link className="addmail" to="/me/update">
+                  <p>Add email for Password Recovery</p>
+                </Link>
               ) : (
                 <p>{user && user.email}</p>
               )}
@@ -60,12 +62,12 @@ const Profile = () => {
           </div>
 
           <div className="profile-actions">
-            <Link to="/cart">my wishlist</Link>
-            <Link to="/orders">my orders</Link>
+            <Link to="/cart">WISHLIST</Link>
+            <Link to="/orders">ORDERS</Link>
 
-            <Link to="/me/update">add email and edit profile</Link>
-            <Link to="/password/change">change password</Link>
-            <p onClick={logoutUser}>logout</p>
+            <Link to="/me/update">EDIT PROFILE</Link>
+            <Link to="/password/change">CHANGE PASSWORD</Link>
+            <p onClick={logoutUser}>LOGOUT</p>
           </div>
 
           <small>user since {user && user.createdAt}</small>
