@@ -43,8 +43,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: contain;
-  background-image: url(../../assets/bannerbg.png);
 }
 
 .banner-text > img {
@@ -53,14 +51,14 @@
   margin-top: -5vmax;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid var(--color-bor);
-  background-color: var(--color-light-one);
+  background-color: var(--color-light);
 }
 .home-container {
   display: flex;
   flex-direction: column;
   width: 100vw;
   background: var(--color-bg);
+  padding-top: 3vmax;
 }
 
 .home-container > a {
@@ -76,29 +74,20 @@
   cursor: pointer;
 }
 
-.homeHeading {
-  text-align: center;
-  font-size: 1.4vmax;
-  border-bottom: 1px solid var(--color-dark-shade-one);
-
-  padding: 2px;
-  margin: 0 auto;
-  margin-top: 5vmax;
-}
-
 .looking-for {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 100vw;
   align-items: center;
   justify-content: center;
-
-  margin-top: 4vmax;
+  margin-bottom: 5vmax;
   margin-left: 4rem;
   margin-right: 4rem;
   gap: 4rem;
   transition: var(--transition);
   overflow-x: scroll;
+  border-bottom: 1px solid var(--color-dark-shade-one);
+  padding-bottom: 1vmax;
 }
 
 .looking-for > a {
@@ -143,6 +132,7 @@
   width: 100%;
   object-fit: contain;
   border: 1px solid var(--color-bor);
+  background-color: var(--color-light-one);
 }
 
 .looking-for-image {
@@ -217,6 +207,89 @@
   transition: all 0.5s;
   outline: none;
   text-align: center;
+}
+
+.marryContainer {
+  display: flex;
+  width: 88%;
+  aspect-ratio: 2 / 1;
+  border: 1px solid var(--color-bor);
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-image: url(../../assets/marry.png);
+}
+
+.openContainer {
+  display: flex;
+  width: 88%;
+  aspect-ratio: 2 / 1;
+  border: 1px solid var(--color-bor);
+  margin: 0 auto;
+  align-items: center;
+  background-size: contain;
+  background-image: url(../../assets/offer.png);
+}
+
+.giftContainer {
+  display: flex;
+  width: 92%;
+  aspect-ratio: 2 / 1;
+  border: 1px solid var(--color-bor);
+  margin: 0 auto;
+  margin-bottom: 2vmax;
+  align-items: center;
+  background-size: contain;
+  background-image: url(../../assets/gift.png);
+}
+
+.ethContainer {
+  display: flex;
+  width: 92%;
+  aspect-ratio: 2 / 1;
+  border: 1px solid var(--color-bor);
+  margin: 0 auto;
+  margin-bottom: 2vmax;
+  align-items: center;
+  background-size: contain;
+  background-image: url(../../assets/ethnic.png);
+}
+
+.axomContainer {
+  display: flex;
+  width: 92%;
+  aspect-ratio: 2 / 1;
+  border: 1px solid var(--color-bor);
+  margin: 0 auto;
+  margin-bottom: 2vmax;
+  align-items: center;
+  background-size: contain;
+  background-image: url(../../assets/axom.png);
+}
+
+.justContainer {
+  display: flex;
+  width: 88%;
+  aspect-ratio: 2 / 1;
+  border: 1px solid var(--color-bor);
+  margin: 0 auto;
+  margin-bottom: 2vmax;
+  align-items: center;
+  background-size: contain;
+  background-image: url(../../assets/just.png);
+}
+
+.youContainer {
+  display: flex;
+  width: 88%;
+  aspect-ratio: 2 / 1;
+  border: 1px solid var(--color-bor);
+  margin: 0 auto;
+  margin-bottom: 2vmax;
+  align-items: center;
+  background-size: contain;
+  background-image: url(../../assets/you.png);
 }
 
 @media screen and (max-width: 600px) {

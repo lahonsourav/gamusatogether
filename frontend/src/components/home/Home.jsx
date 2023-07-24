@@ -14,16 +14,9 @@ import sale from "../../images/sale.jpg";
 import white from "../../images/white.jpg";
 import mising from "../../images/mising.jpg";
 import ahom from "../../images/ahom.jpg";
-import men from "../../images/men.jpg";
+import him from "../../images/men.jpg";
 import her from "../../images/gift.jpg";
-import bannerlogo from "../../assets/offer.png";
-
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Pagination, Autoplay } from "swiper/modules";
-
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/autoplay";
+import bannerlogo from "../../assets/gamusa.png";
 
 const Home = () => {
   const alert = useAlert();
@@ -54,42 +47,12 @@ const Home = () => {
           <CategoryList />
           <div className="home-container">
             <div className="looking-for">
-              <Link to="/products/gam">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={gamusa}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>GAMUSA</h4>
-                </div>
-              </Link>
-
-              <Link to="/products/trend">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={black}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>TRENDING</h4>
-                </div>
-              </Link>
-
               <Link to="/products/sale">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={sale}
+                      src={bannerlogo}
                       alt="looking-for"
                     />
                   </div>
@@ -104,7 +67,7 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={white}
+                      src={bannerlogo}
                       alt="looking-for"
                     />{" "}
                   </div>
@@ -115,43 +78,83 @@ const Home = () => {
               </Link>
             </div>
 
+            <Link to="/products/mar" className="marryContainer">
+              <div></div>
+            </Link>
+
             <div className="looking-for">
-              <Link to="/products/mis">
+              <Link to="/products/dora">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={mising}
+                      src={bannerlogo}
                       alt="looking-for"
                     />
                   </div>
                 </div>
                 <div className="looking-for-title">
-                  <h4>MISING</h4>
+                  <h4>DORA</h4>
                 </div>
               </Link>
 
-              <Link to="/products/ahom">
+              <Link to="/products/op">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={ahom}
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />{" "}
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>KOINA</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/gam">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
                       alt="looking-for"
                     />
                   </div>
                 </div>
                 <div className="looking-for-title">
-                  <h4>AHOM</h4>
+                  <h4>GAMUSA</h4>
                 </div>
               </Link>
 
+              <Link to="/products/trend">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>RUMAL</h4>
+                </div>
+              </Link>
+            </div>
+
+            <div className="giftContainer">
+              <div></div>
+            </div>
+
+            <div className="looking-for">
               <Link to="/products/man">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={men}
+                      src={bannerlogo}
                       alt="looking-for"
                     />
                   </div>
@@ -166,9 +169,9 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={her}
+                      src={bannerlogo}
                       alt="looking-for"
-                    />{" "}
+                    />
                   </div>
                 </div>
                 <div className="looking-for-title">
@@ -177,8 +180,166 @@ const Home = () => {
               </Link>
             </div>
 
-            <h2 className="homeHeading">FEATURED</h2>
+            <div className="ethContainer">
+              <div></div>
+            </div>
 
+            <div className="looking-for">
+              <Link to="/products/mis">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>MISING</h4>
+                </div>
+              </Link>
+              <Link to="/products/ahom">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>AHOM</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/bod">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>BODO</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/deo">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>DEORI</h4>
+                </div>
+              </Link>
+            </div>
+
+            <div className="axomContainer">
+              <div></div>
+            </div>
+
+            <div className="looking-for">
+              <Link to="/products/mis">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>MUGA</h4>
+                </div>
+              </Link>
+              <Link to="/products/ahom">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>RIHA</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/bod">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>MEKHELA</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/deo">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>JURA</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/deo">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>PAAT</h4>
+                </div>
+              </Link>
+
+              <Link to="/products/deo">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={bannerlogo}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>TOSS</h4>
+                </div>
+              </Link>
+            </div>
+            <Link to="/products" className="justContainer"></Link>
             <div className="container" id="container">
               {products &&
                 products.map((products) => <ProductCard product={products} />)}
@@ -186,6 +347,13 @@ const Home = () => {
             <Link className="show-all" to="/products">
               SHOW ALL
             </Link>
+
+            <a
+              href="https://www.youtube.com/@gamusagugamukh2751"
+              className="youContainer"
+            >
+              <div></div>
+            </a>
           </div>
         </Fragment>
       )}
