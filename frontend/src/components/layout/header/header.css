@@ -133,11 +133,12 @@
   }
 
   .logo-container > img {
+    color: black;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    max-height: 3rem;
+  justify-content: flex-start;
     object-fit: contain;
+    max-height: 3rem;
   }
   .searchBox:hover > .searchInput {
     width: 120px;

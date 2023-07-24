@@ -16,7 +16,7 @@ import mising from "../../images/mising.jpg";
 import ahom from "../../images/ahom.jpg";
 import men from "../../images/men.jpg";
 import her from "../../images/gift.jpg";
-import bannerlogo from "../../assets/gamusa.png";
+import bannerlogo from "../../assets/offer.png";
 
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import { Pagination, Autoplay } from "swiper/modules";
