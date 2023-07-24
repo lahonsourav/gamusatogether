@@ -117,7 +117,7 @@ const Home = () => {
 
             <div className="looking-for">
               <Link to="/products/mis">
-                <div className="looking-for-item-2">
+                <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
