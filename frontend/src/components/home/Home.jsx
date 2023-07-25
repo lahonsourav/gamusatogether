@@ -8,15 +8,26 @@ import Loader from "../layout/loader/Loader";
 import { useAlert } from "react-alert";
 import { Link } from "react-router-dom";
 import CategoryList from "./CategoryList";
-// import black from "../../images/black.jpg";
-// import gamusa from "../../images/gamusa.jpg";
-// import sale from "../../images/sale.jpg";
-// import white from "../../images/white.jpg";
-// import mising from "../../images/mising.jpg";
-// import ahom from "../../images/ahom.jpg";
-// import him from "../../images/men.jpg";
-// import her from "../../images/gift.jpg";
 import bannerlogo from "../../assets/red.png";
+
+import open from "../../images/open.png";
+import sale from "../../images/sale.png";
+import summer from "../../images/trend.jpg";
+import trend from "../../images/summer.png";
+import gamusa from "../../images/gamusa.jpg";
+import dora from "../../images/dora.jpg";
+import marry from "../../images/ok.png";
+import koina from "../../images/koina.jpg";
+import her from "../../images/her.png";
+import him from "../../images/him.png";
+import mising from "../../images/mising.png";
+import muga from "../../images/muga.png";
+import ahom from "../../images/ahom.png";
+import mekhela from "../../images/mekhela.png";
+import jura from "../../images/jura.png";
+import paat from "../../images/paat.png";
+import eri from "../../images/eri.png";
+import riha from "../../images/riha.png";
 
 const Home = () => {
   const alert = useAlert();
@@ -52,9 +63,9 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={open}
                       alt="looking-for"
-                    />{" "}
+                    />
                   </div>
                 </div>
                 <div className="looking-for-title">
@@ -66,7 +77,7 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={sale}
                       alt="looking-for"
                     />
                   </div>
@@ -81,9 +92,9 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={summer}
                       alt="looking-for"
-                    />{" "}
+                    />
                   </div>
                 </div>
                 <div className="looking-for-title">
@@ -95,9 +106,9 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={trend}
                       alt="looking-for"
-                    />{" "}
+                    />
                   </div>
                 </div>
                 <div className="looking-for-title">
@@ -125,7 +136,7 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={dora}
                       alt="looking-for"
                     />
                   </div>
@@ -140,9 +151,9 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={koina}
                       alt="looking-for"
-                    />{" "}
+                    />
                   </div>
                 </div>
                 <div className="looking-for-title">
@@ -155,7 +166,7 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={gamusa}
                       alt="looking-for"
                     />
                   </div>
@@ -170,13 +181,13 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={marry}
                       alt="looking-for"
                     />
                   </div>
                 </div>
                 <div className="looking-for-title">
-                  <h4>RUMAL</h4>
+                  <h4>EXPLORE</h4>
                 </div>
               </Link>
             </div>
@@ -191,7 +202,7 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={him}
                       alt="looking-for"
                     />
                   </div>
@@ -206,43 +217,13 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={her}
                       alt="looking-for"
                     />
                   </div>
                 </div>
                 <div className="looking-for-title">
                   <h4>FOR HER</h4>
-                </div>
-              </Link>
-
-              <Link to="/products/man">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={bannerlogo}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>BABY HE</h4>
-                </div>
-              </Link>
-
-              <Link to="/products/woman">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={bannerlogo}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>BABY SHE</h4>
                 </div>
               </Link>
             </div>
@@ -252,26 +233,12 @@ const Home = () => {
             </div>
 
             <div className="looking-for">
-              <Link to="/products/mis">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={bannerlogo}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>MISING</h4>
-                </div>
-              </Link>
               <Link to="/products/ahom">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={ahom}
                       alt="looking-for"
                     />
                   </div>
@@ -280,34 +247,18 @@ const Home = () => {
                   <h4>AHOM</h4>
                 </div>
               </Link>
-
-              <Link to="/products/bod">
+              <Link to="/products/mis">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={mising}
                       alt="looking-for"
                     />
                   </div>
                 </div>
                 <div className="looking-for-title">
-                  <h4>BODO</h4>
-                </div>
-              </Link>
-
-              <Link to="/products/deo">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={bannerlogo}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>DEORI</h4>
+                  <h4>MISING</h4>
                 </div>
               </Link>
             </div>
@@ -322,7 +273,7 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={muga}
                       alt="looking-for"
                     />
                   </div>
@@ -331,12 +282,26 @@ const Home = () => {
                   <h4>MUGA</h4>
                 </div>
               </Link>
+              <Link to="/products/bod">
+                <div className="looking-for-item">
+                  <div className="looking-for-item-image">
+                    <img
+                      className="looking-for-image"
+                      src={mekhela}
+                      alt="looking-for"
+                    />
+                  </div>
+                </div>
+                <div className="looking-for-title">
+                  <h4>MEKHELA</h4>
+                </div>
+              </Link>
               <Link to="/products/ahom">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={riha}
                       alt="looking-for"
                     />
                   </div>
@@ -346,27 +311,12 @@ const Home = () => {
                 </div>
               </Link>
 
-              <Link to="/products/bod">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={bannerlogo}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>MEKHELA</h4>
-                </div>
-              </Link>
-
               <Link to="/products/deo">
                 <div className="looking-for-item">
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={jura}
                       alt="looking-for"
                     />
                   </div>
@@ -381,7 +331,7 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={paat}
                       alt="looking-for"
                     />
                   </div>
@@ -396,43 +346,13 @@ const Home = () => {
                   <div className="looking-for-item-image">
                     <img
                       className="looking-for-image"
-                      src={bannerlogo}
+                      src={eri}
                       alt="looking-for"
                     />
                   </div>
                 </div>
                 <div className="looking-for-title">
-                  <h4>TOSS</h4>
-                </div>
-              </Link>
-
-              <Link to="/products/deo">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={bannerlogo}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>DHUTI</h4>
-                </div>
-              </Link>
-
-              <Link to="/products/deo">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={bannerlogo}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>EXPLORE</h4>
+                  <h4>ERI</h4>
                 </div>
               </Link>
             </div>

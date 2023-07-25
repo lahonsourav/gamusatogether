@@ -47,6 +47,12 @@ const About = () => {
         <a href="https://wa.me/+916001098923" target="_blank" rel="noreferrer">
           Whatsapp message to the developer
         </a>
+        <br />
+        <br />
+        The whats icon is attributed to
+        <a href="https://www.freepik.com/free-vector/whatsapp-icon-design_3049282.htm#query=whatsapp%20logo%20png&position=0&from_view=keyword&track=ais">
+          Freepik
+        </a>
       </p>
     </div>
   );

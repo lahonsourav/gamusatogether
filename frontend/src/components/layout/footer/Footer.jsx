@@ -2,6 +2,8 @@ import React from "react";
 import logo from "../../../assets/gamusa.png";
 import "./footer.css";
 import { Link } from "react-router-dom";
+import Whats from "../Whats";
+
 const Footer = () => {
   return (
     <footer>
@@ -60,6 +62,8 @@ const Footer = () => {
         <img src={logo} alt="gamusa" />
       </div>
       <div className="copyright">
+        <Whats />
+
         <small>&copy; gamusagogamukh 2023</small>
       </div>
     </footer>
