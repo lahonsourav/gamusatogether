@@ -29,17 +29,28 @@ const Footer = () => {
 
         <div className="rightFooter">
           <h4>GAMUSA SOCIAL</h4>
-          <a    target="_blank" href="https://www.facebook.com/profile.php?id=100066812676876">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.facebook.com/profile.php?id=100066812676876"
+          >
             Instagram
           </a>
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://www.facebook.com/profile.php?id=100066812676876"
           >
             Facebook
           </a>
 
-          <a    target="_blank" href="https://www.youtube.com/@gamusagugamukh2751">Youtube</a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.youtube.com/@gamusagugamukh2751"
+          >
+            Youtube
+          </a>
           <Link to="/about">About us</Link>
           <Link to="/about">Developer</Link>
           <Link to="/about">Legal</Link>

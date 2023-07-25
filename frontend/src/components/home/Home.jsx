@@ -16,7 +16,7 @@ import CategoryList from "./CategoryList";
 // import ahom from "../../images/ahom.jpg";
 // import him from "../../images/men.jpg";
 // import her from "../../images/gift.jpg";
-import bannerlogo from "../../assets/gamusa.png";
+import bannerlogo from "../../assets/red.png";
 
 const Home = () => {
   const alert = useAlert();

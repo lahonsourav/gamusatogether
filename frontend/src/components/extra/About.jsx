@@ -29,7 +29,7 @@ const About = () => {
         <br />
         <br />
         <PiGlobeHemisphereWestThin className="contact_icon" />
-        <a  href="https://lahon.in" target="_blank" rel="noreferrer">
+        <a href="https://lahon.in" target="_blank" rel="noreferrer">
           Visit the developer's site
         </a>
         <br />

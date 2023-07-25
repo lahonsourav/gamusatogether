@@ -10,14 +10,14 @@
 
   justify-content: center;
 
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
-    var(--color-dark-shade-one),
     var(--color-mid),
-    var(--color-light)
-  ); */
+    var(--color-light),
+    var(--color-light-one)
+  );
 
-  background-color: var(--color-light);
+  /* background-color: var(--color-light); */
 
   color: var(--color-dark);
   z-index: -99;
@@ -47,11 +47,10 @@
 
 .banner-text > img {
   display: flex;
-  width: 60%;
+  width: 100%;
   margin-top: -5vmax;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--color-light);
 }
 .home-container {
   display: flex;
