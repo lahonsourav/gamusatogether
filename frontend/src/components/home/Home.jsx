@@ -106,6 +106,15 @@ const Home = () => {
               </Link>
             </div>
 
+            <Link to="/products" className="justContainer"></Link>
+            <div className="container" id="container">
+              {products &&
+                products.map((products) => <ProductCard product={products} />)}
+            </div>
+            <Link className="show-all" to="/products">
+              SHOW ALL
+            </Link>
+
             <Link to="/products/mar" className="marryContainer">
               <div></div>
             </Link>
@@ -427,14 +436,6 @@ const Home = () => {
                 </div>
               </Link>
             </div>
-            <Link to="/products" className="justContainer"></Link>
-            <div className="container" id="container">
-              {products &&
-                products.map((products) => <ProductCard product={products} />)}
-            </div>
-            <Link className="show-all" to="/products">
-              SHOW ALL
-            </Link>
 
             <a
               href="https://www.youtube.com/@gamusagugamukh2751"
