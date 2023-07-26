@@ -135,7 +135,7 @@ const NewProduct = () => {
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 cols="30"
-                rows="1"
+                rows="10"
               ></textarea>
             </div>
 
@@ -147,7 +147,7 @@ const NewProduct = () => {
                 value={tag}
                 onChange={(e) => setTag(e.target.value)}
                 cols="30"
-                rows="1"
+                rows="20"
               ></textarea>
             </div>
 

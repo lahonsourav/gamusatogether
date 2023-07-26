@@ -165,7 +165,7 @@
 
 .productCard > img {
   width: 14vmax;
-  height: 18vmax;
+  aspect-ratio: 3/4;
 }
 
 .productCard > div {
@@ -308,7 +308,7 @@
 
   .productCard > img {
     width: 16vmax;
-    height: 20vmax;
+    aspect-ratio: 3/4;
   }
 
   .productCard > p {

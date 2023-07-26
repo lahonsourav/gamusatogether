@@ -37,8 +37,8 @@ const Header = () => {
               className="searchInput"
               type="text"
               onChange={(e) => {
-                e.target.value === "women"
-                  ? setKeyword("wom")
+                e.target.value === "women" || e.target.value === "woman"
+                  ? setKeyword("girl")
                   : setKeyword(e.target.value);
               }}
               placeholder="search..."
