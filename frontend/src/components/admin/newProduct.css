@@ -5,11 +5,10 @@
   border-left: 1px solid rgba(0, 0, 0, 0.158);
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 .newProductContainer h1 {
   color: rgba(0, 0, 0, 0.733);
-  font: 300 2rem ;
+  font: 300 2rem;
   text-align: center;
 }
 
@@ -21,7 +20,6 @@
   padding: 3vmax;
   justify-content: space-evenly;
   height: 70%;
-  width: 40vh;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
 }
@@ -35,12 +33,11 @@
 .createProductForm > div > select,
 .createProductForm > div > textarea {
   padding: 1vmax 4vmax;
-  padding-right: 1vmax;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.267);
   border-radius: 4px;
-  font: 300 0.9vmax ;
+  font: 300 0.9vmax;
   outline: none;
 }
 
@@ -63,7 +60,7 @@
   height: 5vh;
   border: none;
   margin: 0%;
-  font: 400 0.8vmax ;
+  font: 400 0.8vmax;
   transition: all 0.5s;
   padding: 0 1vmax;
   color: rgba(0, 0, 0, 0.623);
@@ -87,7 +84,7 @@
   border: none;
   background-color: tomato;
   color: white;
-  font: 300 0.9vmax ;
+  font: 300 0.9vmax;
   width: 100%;
   padding: 0.8vmax;
   cursor: pointer;
@@ -105,15 +102,12 @@
   .newProductContainer {
     background-color: rgb(255, 255, 255);
   }
-  .createProductForm {
-    padding: 5vmax;
-  }
 
   .createProductForm > div > input,
   .createProductForm > div > select,
   .createProductForm > div > textarea {
     padding: 2.5vmax 5vmax;
-    font: 300 1.7vmax ;
+    font: 300 1.7vmax;
   }
 
   .createProductForm > div > svg {
@@ -127,7 +121,7 @@
 
   #createProductFormFile > input::file-selector-button {
     height: 7vh;
-    font: 400 1.8vmax ;
+    font: 400 1.8vmax;
   }
 
   #createProductBtn {

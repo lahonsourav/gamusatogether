@@ -358,8 +358,19 @@ const Home = () => {
             </div>
 
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://www.youtube.com/@gamusagugamukh2751"
               className="youContainer"
+            >
+              <div></div>
+            </a>
+
+            <a
+              href="https://wa.me/+916000601557"
+              target="_blank"
+              rel="noreferrer"
+              className="customContainer"
             >
               <div></div>
             </a>

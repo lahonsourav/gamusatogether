@@ -291,6 +291,18 @@
   background-image: url(../../assets/you.png);
 }
 
+.customContainer {
+  display: flex;
+  width: 88%;
+  aspect-ratio: 2 / 1;
+  border: 1px solid var(--color-bor);
+  margin: 0 auto;
+  margin-bottom: 2vmax;
+  align-items: center;
+  background-size: contain;
+  background-image: url(../../assets/custom.png);
+}
+
 @media screen and (max-width: 600px) {
   .banner-text > img {
     display: flex;

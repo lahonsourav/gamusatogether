@@ -15,7 +15,8 @@ const About = () => {
         Assam, India. From our site you can buy all kinds of Assamese
         Traditional Attire. We provide high quality and home made material. Our
         offline store is situated in Gogamukh town, Dhemaji, Assam. We deliver
-        products all over India with minimal delivery charge.
+        products all over India with minimal delivery charge. We are physically
+        situated in Gogamukh town, district Dhemaji, Assam, PIN: 787034
         <br />
         <br />
         <br />

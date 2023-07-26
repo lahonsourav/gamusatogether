@@ -45,7 +45,6 @@ const Footer = () => {
           >
             Facebook
           </a>
-
           <a
             target="_blank"
             rel="noreferrer"
@@ -54,7 +53,13 @@ const Footer = () => {
             Youtube
           </a>
           <Link to="/about">About us</Link>
-          <Link to="/about">Developer</Link>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://wa.me/+916000601557"
+          >
+            Custom Design
+          </a>{" "}
           <Link to="/about">Legal</Link>
         </div>
       </div>
