@@ -1,7 +1,14 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Gamusa Gogamukh",
+  "short_name": "Gamusa Gogamukh",
+  "description": "Gamusa Gogamukh is a online store for Assamese Traditional Attire",
   "icons": [
+    {
+      "src": "/maskable.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
@@ -15,5 +22,8 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+
+  "scope": "/",
+  "start_url": "/"
 }
