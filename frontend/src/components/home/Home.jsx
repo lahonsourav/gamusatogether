@@ -10,25 +10,6 @@ import { Link } from "react-router-dom";
 import CategoryList from "./CategoryList";
 import bannerlogo from "../../assets/red.png";
 
-import open from "../../images/open.png";
-import sale from "../../images/sale.png";
-import summer from "../../images/trend.jpg";
-import trend from "../../images/summer.png";
-import gamusa from "../../images/gamusa.jpg";
-import dora from "../../images/dora.jpg";
-import marry from "../../images/ok.png";
-import koina from "../../images/koina.jpg";
-import her from "../../images/her.png";
-import him from "../../images/him.png";
-import mising from "../../images/mising.png";
-import muga from "../../images/muga.png";
-import ahom from "../../images/ahom.png";
-import mekhela from "../../images/mekhela.png";
-import jura from "../../images/jura.png";
-import paat from "../../images/paat.png";
-import eri from "../../images/eri.png";
-import riha from "../../images/riha.png";
-
 const Home = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
@@ -59,61 +40,16 @@ const Home = () => {
           <div className="home-container">
             <div className="looking-for">
               <Link to="/products/op">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={open}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>OPENING OFFER</h4>
-                </div>
-              </Link>
-              <Link to="/products/sale">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={sale}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>ON SALE</h4>
-                </div>
-              </Link>
-
-              <Link to="/products/op">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={summer}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>SUMMER DEALS</h4>
-                </div>
+                <h4>OPENING OFFER</h4>
               </Link>
               <Link to="/products/op">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={trend}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>TRENDING</h4>
-                </div>
+                <h4>SUMMER DEALS</h4>
+              </Link>
+              <Link to="/products/op">
+                <h4>TRENDING</h4>
+              </Link>
+              <Link to="/products/op">
+                <h4>STEAL DEALS</h4>
               </Link>
             </div>
 
@@ -131,64 +67,20 @@ const Home = () => {
             </Link>
 
             <div className="looking-for">
-              <Link to="/products/dora">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={dora}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>DORA</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>DORA</h4>
               </Link>
 
               <Link to="/products/op">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={koina}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>KOINA</h4>
-                </div>
+                <h4>KOINA</h4>
               </Link>
 
-              <Link to="/products/gam">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={gamusa}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>GAMUSA</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>GAMUSA</h4>
               </Link>
 
-              <Link to="/products/trend">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={marry}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>EXPLORE</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>EXPLORE</h4>
               </Link>
             </div>
 
@@ -197,34 +89,17 @@ const Home = () => {
             </div>
 
             <div className="looking-for">
-              <Link to="/products/man">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={him}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>FOR HIM</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>HIM</h4>
               </Link>
-
-              <Link to="/products/woman">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={her}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>FOR HER</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>HER</h4>
+              </Link>
+              <Link to="/products/op">
+                <h4>BABY HE</h4>
+              </Link>
+              <Link to="/products/op">
+                <h4>BABY SHE</h4>
               </Link>
             </div>
 
@@ -233,33 +108,20 @@ const Home = () => {
             </div>
 
             <div className="looking-for">
-              <Link to="/products/ahom">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={ahom}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>AHOM</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>AHOM</h4>
               </Link>
-              <Link to="/products/mis">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={mising}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>MISING</h4>
-                </div>
+
+              <Link to="/products/op">
+                <h4>MISING</h4>
+              </Link>
+
+              <Link to="/products/op">
+                <h4>BODO</h4>
+              </Link>
+
+              <Link to="/products/op">
+                <h4>EXPLORE</h4>
               </Link>
             </div>
 
@@ -268,92 +130,29 @@ const Home = () => {
             </div>
 
             <div className="looking-for">
-              <Link to="/products/mis">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={muga}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>MUGA</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>MUGA</h4>
               </Link>
-              <Link to="/products/bod">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={mekhela}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>MEKHELA</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>PAAT</h4>
               </Link>
-              <Link to="/products/ahom">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={riha}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>RIHA</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>ERI</h4>
               </Link>
-
-              <Link to="/products/deo">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={jura}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>JURA</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>RIHA</h4>
               </Link>
-
-              <Link to="/products/deo">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={paat}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>PAAT</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>MEKHELA</h4>
               </Link>
-
-              <Link to="/products/deo">
-                <div className="looking-for-item">
-                  <div className="looking-for-item-image">
-                    <img
-                      className="looking-for-image"
-                      src={eri}
-                      alt="looking-for"
-                    />
-                  </div>
-                </div>
-                <div className="looking-for-title">
-                  <h4>ERI</h4>
-                </div>
+              <Link to="/products/op">
+                <h4>SADOR</h4>
+              </Link>
+              <Link to="/products/op">
+                <h4>JURA</h4>
+              </Link>
+              <Link to="/products/op">
+                <h4>EXPLORE</h4>
               </Link>
             </div>
 

@@ -73,7 +73,7 @@ const OrderDetails = () => {
                       {order.shippingInfo &&
                       order.paymentInfo.status === "succeeded"
                         ? "PAID"
-                        : "CASH ON DELIVERY"}
+                        : "PROCESSING BY SELLER"}
                     </p>
                   )}
                 </div>
