@@ -39,18 +39,50 @@ const Home = () => {
           <CategoryList />
           <div className="home-container">
             <div className="looking-for">
-              <Link to="/products/op">
-                <h4>OPENING OFFER</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>SUMMER DEALS</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>TRENDING</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>STEAL DEALS</h4>
-              </Link>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Just launched, opening offer upto 40% off</h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>OPENING OFFER</h5>
+                </div>
+              </div>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>The summer collection for comfy wearing</h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>SUMMER DEALS</h5>
+                </div>
+              </div>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Trending collection of Gamusa, get yourself fit</h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>TRENDING</h5>
+                </div>
+              </div>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>The sale is here with unbelivable prices</h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>SALES</h5>
+                </div>
+              </div>
             </div>
 
             <Link to="/products" className="justContainer"></Link>
@@ -67,21 +99,53 @@ const Home = () => {
             </Link>
 
             <div className="looking-for">
-              <Link to="/products/op">
-                <h4>DORA</h4>
-              </Link>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Gamusa's beautiful collection for the Groom</h4>
+                  </div>
+                </Link>
 
-              <Link to="/products/op">
-                <h4>KOINA</h4>
-              </Link>
+                <div className="looking-for-item-title">
+                  <h5>DORA</h5>
+                </div>
+              </div>
 
-              <Link to="/products/op">
-                <h4>GAMUSA</h4>
-              </Link>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Gamusa's beutiful collection for the Bride</h4>
+                  </div>
+                </Link>
 
-              <Link to="/products/op">
-                <h4>EXPLORE</h4>
-              </Link>
+                <div className="looking-for-item-title">
+                  <h5>KOINA</h5>
+                </div>
+              </div>
+
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Our ultimate collection of Gamusa for every purpose</h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>GAMUSA</h5>
+                </div>
+              </div>
+
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Explore the Marriage Collection of Gamusa</h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>EXPLORE</h5>
+                </div>
+              </div>
             </div>
 
             <div className="giftContainer">
@@ -89,18 +153,55 @@ const Home = () => {
             </div>
 
             <div className="looking-for">
-              <Link to="/products/op">
-                <h4>HIM</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>HER</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>BABY HE</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>BABY SHE</h4>
-              </Link>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>
+                      Gents Attire at affordable price and Ultimate quality
+                    </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>FOR HIM</h5>
+                </div>
+              </div>
+
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Gamusa's ultimate section to find gifts for her </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>FOR HER</h5>
+                </div>
+              </div>
+
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>The Assamese swag Kid, find attire for your child </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>BABY HE</h5>
+                </div>
+              </div>
+
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>The Assamese swag Lady, find attire for your child </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>BABY SHE</h5>
+                </div>
+              </div>
             </div>
 
             <div className="ethContainer">
@@ -108,21 +209,55 @@ const Home = () => {
             </div>
 
             <div className="looking-for">
-              <Link to="/products/op">
-                <h4>AHOM</h4>
-              </Link>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>
+                      We all know the Legacy, get those Legacy Attire here{" "}
+                    </h4>
+                  </div>
+                </Link>
 
-              <Link to="/products/op">
-                <h4>MISING</h4>
-              </Link>
+                <div className="looking-for-item-title">
+                  <h5>AHOM</h5>
+                </div>
+              </div>
 
-              <Link to="/products/op">
-                <h4>BODO</h4>
-              </Link>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Gamusa's Collection of high quality Mising Attire </h4>
+                  </div>
+                </Link>
 
-              <Link to="/products/op">
-                <h4>EXPLORE</h4>
-              </Link>
+                <div className="looking-for-item-title">
+                  <h5>MISING</h5>
+                </div>
+              </div>
+
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Explore and buy the featured Bodo Attire here </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>BODO</h5>
+                </div>
+              </div>
+
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Explore the indigineous Community Attire </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>EXPLORE</h5>
+                </div>
+              </div>
             </div>
 
             <div className="axomContainer">
@@ -130,30 +265,99 @@ const Home = () => {
             </div>
 
             <div className="looking-for">
-              <Link to="/products/op">
-                <h4>MUGA</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>PAAT</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>ERI</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>RIHA</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>MEKHELA</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>SADOR</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>JURA</h4>
-              </Link>
-              <Link to="/products/op">
-                <h4>EXPLORE</h4>
-              </Link>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>
+                      Get the finest collection of Muga Clothing of Gamusa
+                    </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>MUGA</h5>
+                </div>
+              </div>
+
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>
+                      Get the finest collection of Paat clothing of Gamusa{" "}
+                    </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>PAAT</h5>
+                </div>
+              </div>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>The featured collection of Homemade Eri clothing</h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>ERI</h5>
+                </div>
+              </div>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Look into the premium Riha collection of Gamusa </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>RIHA</h5>
+                </div>
+              </div>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>The premium Mekhela collection of Gamusa </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>MEKHELA</h5>
+                </div>
+              </div>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Look into the premium Sador collection of Gamusa </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>SADOR</h5>
+                </div>
+              </div>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Look into the premium Jura collection of Gamusa </h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>JURA</h5>
+                </div>
+              </div>
+              <div className="looking-for-item">
+                <Link to="/products/op">
+                  <div className="looking-for-text-container">
+                    <h4>Explore the original Assamese Attire collection</h4>
+                  </div>
+                </Link>
+
+                <div className="looking-for-item-title">
+                  <h5>EXPLORE</h5>
+                </div>
+              </div>
             </div>
 
             <a
