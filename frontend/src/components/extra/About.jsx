@@ -50,7 +50,7 @@ const About = () => {
         </a>
         <br />
         <br />
-        The whats icon is attributed to &nbsp;
+        The whats app icon is attributed to &nbsp;
         <a href="https://www.freepik.com/free-vector/whatsapp-icon-design_3049282.htm#query=whatsapp%20logo%20png&position=0&from_view=keyword&track=ais">
           Freepik
         </a>
