@@ -78,7 +78,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 100vw;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 5vmax;
   margin-left: 4rem;
   margin-right: 4rem;
@@ -344,6 +344,7 @@
     margin-left: auto;
     margin-right: auto;
     gap: 4vmax;
+    justify-content: center;
   }
 
   .looking-for > a {
