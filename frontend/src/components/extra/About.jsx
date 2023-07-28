@@ -24,9 +24,9 @@ const About = () => {
         <br />
         About the Website <br />
         <br />
-        This website is created by Lahon. All rights reserved. For any kind of
-        copyright issue, technical issue, deals etc, Contact the developer by
-        clicking the follwing links:
+        This website is created and owned by Lahon. All rights reserved. For any
+        kind of copyright issue, technical issue, deals etc, Contact the
+        developer by clicking the follwing links:
         <br />
         <br />
         <PiGlobeHemisphereWestThin className="contact_icon" />

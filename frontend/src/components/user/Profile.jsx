@@ -7,7 +7,7 @@ import "./profile.css";
 import { logout } from "../../actions/userAction";
 import { useDispatch } from "react-redux";
 import { useAlert } from "react-alert";
-import logo from "../../assets/gamusawhite.png";
+import logo from "../../assets/brand.png";
 
 const Profile = () => {
   const { user, loading, isAuthenticated } = useSelector((state) => state.user);
@@ -69,8 +69,6 @@ const Profile = () => {
             <Link to="/password/change">CHANGE PASSWORD</Link>
             <p onClick={logoutUser}>LOGOUT</p>
           </div>
-
-          <small>user since {user && user.createdAt}</small>
         </Fragment>
       )}
     </Fragment>

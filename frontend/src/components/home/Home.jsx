@@ -8,7 +8,7 @@ import Loader from "../layout/loader/Loader";
 import { useAlert } from "react-alert";
 import { Link } from "react-router-dom";
 import CategoryList from "./CategoryList";
-import bannerlogo from "../../assets/red.png";
+import bannerlogo from "../../assets/brand.png";
 
 const Home = () => {
   const alert = useAlert();

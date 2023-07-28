@@ -1,6 +1,6 @@
 .categoryList {
   display: flex;
-  background-color: var(--color-light-one);
+  background-color: var(--color-light);
   position: sticky;
   top: 5rem;
   height: 4rem;
