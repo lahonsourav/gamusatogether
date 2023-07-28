@@ -9,7 +9,7 @@
 }
 
 .orderDetailsContainer {
-  padding: 5vmax;
+  padding: 3vmax;
   padding-bottom: 0%;
 }
 
@@ -25,6 +25,8 @@
 .orderDetailsContainerBox > div {
   display: flex;
   margin: 1vmax 0;
+  flex-direction: column;
+  gap: 1vmax;
 }
 
 .orderDetailsContainerBox > div > p {
@@ -42,7 +44,7 @@
 }
 
 .orderDetailsCartItems {
-  padding: 2vmax 5vmax;
+  padding: 2vmax 3vmax;
   border-top: 1px solid rgba(0, 0, 0, 0.164);
 }
 

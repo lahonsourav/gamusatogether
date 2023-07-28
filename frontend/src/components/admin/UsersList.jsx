@@ -52,19 +52,6 @@ const UsersList = () => {
 
   const columns = [
     {
-      field: "id",
-      headerName: "User ID",
-      minWidth: 180,
-      // flex: 0.8
-    },
-
-    {
-      field: "email",
-      headerName: "Email",
-      minWidth: 200,
-      // flex: 1,
-    },
-    {
       field: "name",
       headerName: "Name",
       minWidth: 150,
@@ -72,23 +59,10 @@ const UsersList = () => {
     },
 
     {
-      field: "role",
-      headerName: "Role",
-      type: "number",
-      minWidth: 150,
-      // flex: 0.3,
-      cellClassName: (params) => {
-        return params.getValue(params.id, "role") === "admin"
-          ? "greenColor"
-          : "redColor";
-      },
-    },
-
-    {
       field: "actions",
       // flex: 0.3,
       headerName: "Actions",
-      minWidth: 150,
+      minWidth: 100,
       type: "number",
       sortable: false,
       renderCell: (params) => {
@@ -109,6 +83,39 @@ const UsersList = () => {
         );
       },
     },
+
+    {
+      field: "date",
+      headerName: "Time",
+      minWidth: 250,
+      // flex: 0.5,
+    },
+    {
+      field: "id",
+      headerName: "User ID",
+      minWidth: 180,
+      // flex: 0.8
+    },
+
+    {
+      field: "email",
+      headerName: "Email",
+      minWidth: 200,
+      // flex: 1,
+    },
+
+    {
+      field: "role",
+      headerName: "Role",
+      type: "number",
+      minWidth: 150,
+      // flex: 0.3,
+      cellClassName: (params) => {
+        return params.getValue(params.id, "role") === "admin"
+          ? "greenColor"
+          : "redColor";
+      },
+    },
   ];
 
   const rows = [];
@@ -120,6 +127,7 @@ const UsersList = () => {
         role: item.role,
         email: item.email,
         name: item.name,
+        date: item.createdAt,
       });
     });
 

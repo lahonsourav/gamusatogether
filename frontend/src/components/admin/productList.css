@@ -1,28 +1,26 @@
 .productListContainer {
-  width: 100%;
-  box-sizing: border-box;
+  width: 95vw;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin: 0 10rem;
-  overflow-x: scroll;
+  margin: 0 10vmax;
+  overflow-x: hidden;
 }
 
 #productListHeading {
-  font: 400 2rem;
-  padding: 0.5vmax;
+  font: 400 2vmax;
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.637);
   transition: all 0.5s;
-  margin: 2rem;
+  margin: 2vmax;
   text-align: center;
 }
 
 .productListTable {
   background-color: white;
   border: none !important;
-  margin-right: 20rem;
+  overflow-x: hidden;
 }
 
 .productListTable div {
@@ -52,5 +50,9 @@
 @media screen and (max-width: 600px) {
   .productListTable div {
     font: 300 4vw;
+  }
+
+  .productListContainer {
+    margin: 0 1vmax;
   }
 }

@@ -62,7 +62,7 @@ const Profile = () => {
           </div>
 
           <div className="profile-actions">
-            <Link to="/cart">WISHLIST</Link>
+            <Link to="/cart">CART</Link>
             <Link to="/orders">ORDERS</Link>
 
             <Link to="/me/update">EDIT PROFILE</Link>

@@ -54,38 +54,16 @@ const ProductList = () => {
 
   const columns = [
     {
-      field: "id",
-      headerName: "Product ID",
-      minWidth: 200,
-      //  flex: 0.5
-    },
-
-    {
       field: "name",
       headerName: "Name",
-      minWidth: 350,
+      minWidth: 200,
       // flex: 1,
-    },
-    {
-      field: "stock",
-      headerName: "Stock",
-      type: "number",
-      minWidth: 150,
-      // flex: 0.3,
-    },
-
-    {
-      field: "price",
-      headerName: "Price",
-      type: "number",
-      minWidth: 270,
-      // flex: 0.5,
     },
 
     {
       field: "actions",
       // flex: 0.3,
-      minWidth: 150,
+      minWidth: 100,
       headerName: "Actions",
 
       type: "number",
@@ -107,6 +85,28 @@ const ProductList = () => {
           </Fragment>
         );
       },
+    },
+
+    {
+      field: "price",
+      headerName: "Price",
+      type: "number",
+      minWidth: 50,
+      // flex: 0.5,
+    },
+    {
+      field: "id",
+      headerName: "Product ID",
+      minWidth: 150,
+      //  flex: 0.5
+    },
+
+    {
+      field: "stock",
+      headerName: "Stock",
+      type: "number",
+      minWidth: 150,
+      // flex: 0.3,
     },
   ];
 

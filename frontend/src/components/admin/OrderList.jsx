@@ -55,7 +55,7 @@ const OrderList = () => {
     {
       field: "id",
       headerName: "Order ID",
-      minWidth: 300,
+      minWidth: 150,
       //  flex: 1
     },
 
@@ -70,27 +70,12 @@ const OrderList = () => {
           : "redColor";
       },
     },
-    {
-      field: "itemsQty",
-      headerName: "Items Qty",
-      type: "number",
-      minWidth: 150,
-      // flex: 0.4,
-    },
-
-    {
-      field: "amount",
-      headerName: "Amount",
-      type: "number",
-      minWidth: 270,
-      // flex: 0.5,
-    },
 
     {
       field: "actions",
       // flex: 0.3,
       headerName: "Actions",
-      minWidth: 150,
+      minWidth: 100,
       type: "number",
       sortable: false,
       renderCell: (params) => {
@@ -110,6 +95,21 @@ const OrderList = () => {
           </Fragment>
         );
       },
+    },
+    {
+      field: "itemsQty",
+      headerName: "Items Qty",
+      type: "number",
+      minWidth: 150,
+      // flex: 0.4,
+    },
+
+    {
+      field: "amount",
+      headerName: "Amount",
+      type: "number",
+      minWidth: 270,
+      // flex: 0.5,
     },
   ];
 

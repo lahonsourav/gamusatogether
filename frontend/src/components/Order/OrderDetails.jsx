@@ -87,11 +87,12 @@ const OrderDetails = () => {
               <Typography>Order Status</Typography>
               <div className="orderDetailsContainerBox">
                 <div>
+                  <p>Order Date: {order && order.createdAt}</p>
                   <p
                     className={
                       order && order.orderStatus === "Delivered"
                         ? "greenColor"
-                        : "redColor"
+                        : "ColorRed"
                     }
                   >
                     {order && order.orderStatus}
