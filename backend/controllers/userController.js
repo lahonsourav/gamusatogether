@@ -41,7 +41,9 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
   const user = await User.findOne({ phone }).select("+password");
 
   if (!user) {
-    return next(new ErrorHandler("Invalid phone number", 401));
+    return next(
+      new ErrorHandler("Account doesn't exist", 401)
+    );
   }
 
   const isPasswordMatched = await user.comparePassword(password);
