@@ -40,7 +40,7 @@ const Home = () => {
           <div className="home-container">
             <div className="looking-for">
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/deal">
                   <div className="looking-for-text-container">
                     <h4>Just launched, opening offer upto 40% off</h4>
                   </div>
@@ -51,7 +51,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/deals">
                   <div className="looking-for-text-container">
                     <h4>The summer collection for comfy wearing</h4>
                   </div>
@@ -62,7 +62,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/tren">
                   <div className="looking-for-text-container">
                     <h4>Trending collection of Gamusa, get yourself fit</h4>
                   </div>
@@ -73,7 +73,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/deals">
                   <div className="looking-for-text-container">
                     <h4>The sale is here with unbelivable prices</h4>
                   </div>
@@ -94,13 +94,13 @@ const Home = () => {
               SHOW ALL
             </Link>
 
-            <Link to="/products/mar" className="marryContainer">
+            <Link to="/products/marry" className="marryContainer">
               <div></div>
             </Link>
 
             <div className="looking-for">
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/boy">
                   <div className="looking-for-text-container">
                     <h4>Gamusa's beautiful collection for the Groom</h4>
                   </div>
@@ -112,7 +112,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/girl">
                   <div className="looking-for-text-container">
                     <h4>Gamusa's beutiful collection for the Bride</h4>
                   </div>
@@ -124,7 +124,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/gam">
                   <div className="looking-for-text-container">
                     <h4>Our ultimate collection of Gamusa for every purpose</h4>
                   </div>
@@ -136,7 +136,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/mar">
                   <div className="looking-for-text-container">
                     <h4>Explore the Marriage Collection of Gamusa</h4>
                   </div>
@@ -154,7 +154,7 @@ const Home = () => {
 
             <div className="looking-for">
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/boy">
                   <div className="looking-for-text-container">
                     <h4>
                       Gents Attire at affordable price and Ultimate quality
@@ -168,7 +168,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/girl">
                   <div className="looking-for-text-container">
                     <h4>Gamusa's ultimate section to find gifts for her </h4>
                   </div>
@@ -180,7 +180,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/bboy">
                   <div className="looking-for-text-container">
                     <h4>The Assamese swag Kid, find attire for your child </h4>
                   </div>
@@ -192,7 +192,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/bgirl">
                   <div className="looking-for-text-container">
                     <h4>The Assamese swag Lady, find attire for your child </h4>
                   </div>
@@ -210,7 +210,7 @@ const Home = () => {
 
             <div className="looking-for">
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/ahom">
                   <div className="looking-for-text-container">
                     <h4>
                       We all know the Legacy, get those Legacy Attire here{" "}
@@ -224,7 +224,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/mis">
                   <div className="looking-for-text-container">
                     <h4>Gamusa's Collection of high quality Mising Attire </h4>
                   </div>
@@ -236,7 +236,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/bod">
                   <div className="looking-for-text-container">
                     <h4>Explore and buy the featured Bodo Attire here </h4>
                   </div>
@@ -248,7 +248,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/tribe">
                   <div className="looking-for-text-container">
                     <h4>Explore the indigineous Community Attire </h4>
                   </div>
@@ -266,7 +266,7 @@ const Home = () => {
 
             <div className="looking-for">
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/mug">
                   <div className="looking-for-text-container">
                     <h4>
                       Get the finest collection of Muga Clothing of Gamusa
@@ -280,7 +280,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/paat">
                   <div className="looking-for-text-container">
                     <h4>
                       Get the finest collection of Paat clothing of Gamusa{" "}
@@ -293,7 +293,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/eri">
                   <div className="looking-for-text-container">
                     <h4>The featured collection of Homemade Eri clothing</h4>
                   </div>
@@ -304,7 +304,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/riha">
                   <div className="looking-for-text-container">
                     <h4>Look into the premium Riha collection of Gamusa </h4>
                   </div>
@@ -315,7 +315,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/mekh">
                   <div className="looking-for-text-container">
                     <h4>The premium Mekhela collection of Gamusa </h4>
                   </div>
@@ -326,7 +326,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/sad">
                   <div className="looking-for-text-container">
                     <h4>Look into the premium Sador collection of Gamusa </h4>
                   </div>
@@ -337,7 +337,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products/jura">
                   <div className="looking-for-text-container">
                     <h4>Look into the premium Jura collection of Gamusa </h4>
                   </div>
@@ -348,7 +348,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/op">
+                <Link to="/products">
                   <div className="looking-for-text-container">
                     <h4>Explore the original Assamese Attire collection</h4>
                   </div>
