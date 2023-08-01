@@ -9,7 +9,7 @@ import { UPDATE_PASSWORD_RESET } from "../../constants/userConstants";
 import { VscLock } from "react-icons/vsc";
 import { useNavigate } from "react-router-dom";
 
-const UpdatePassword = ({ history }) => {
+const UpdatePassword = () => {
   const dispatch = useDispatch();
   const alert = useAlert();
   const navigate = useNavigate();

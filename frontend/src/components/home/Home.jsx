@@ -10,6 +10,24 @@ import { Link } from "react-router-dom";
 import CategoryList from "./CategoryList";
 import bannerlogo from "../../assets/brand.png";
 
+import open from "../../images/open.jpg";
+import tren from "../../images/tren.jpg";
+import sum from "../../images/sum.jpg";
+import sale from "../../images/sale.jpg";
+import koina from "../../images/koina.jpg";
+import marry from "../../images/marry.jpg";
+import gamusa from "../../images/gamusa.jpg";
+import him from "../../images/him.jpg";
+import her from "../../images/her.jpg";
+import mising from "../../images/mising.jpg";
+import bodo from "../../images/bodo.jpeg";
+import muga from "../../images/muga.jpg";
+import eri from "../../images/eri.jpeg";
+import jura from "../../images/jura.jpg";
+import mekhela from "../../images/mekhela.jpg";
+import sador from "../../images/sador.jpg";
+import exp from "../../images/axom.jpg";
+
 const Home = () => {
   const alert = useAlert();
   const dispatch = useDispatch();
@@ -42,7 +60,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/deal">
                   <div className="looking-for-text-container">
-                    <h4>Just launched, opening offer upto 40% off</h4>
+                    <img src={open} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -53,7 +71,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/deals">
                   <div className="looking-for-text-container">
-                    <h4>The summer collection for comfy wearing</h4>
+                    <img src={sum} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -64,7 +82,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/tren">
                   <div className="looking-for-text-container">
-                    <h4>Trending collection of Gamusa, get yourself fit</h4>
+                    <img src={tren} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -75,7 +93,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/deals">
                   <div className="looking-for-text-container">
-                    <h4>The sale is here with unbelivable prices</h4>
+                    <img src={sale} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -114,7 +132,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/girl">
                   <div className="looking-for-text-container">
-                    <h4>Gamusa's beutiful collection for the Bride</h4>
+                    <img src={koina} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -126,7 +144,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/gam">
                   <div className="looking-for-text-container">
-                    <h4>Our ultimate collection of Gamusa for every purpose</h4>
+                    <img src={gamusa} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -138,7 +156,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/mar">
                   <div className="looking-for-text-container">
-                    <h4>Explore the Marriage Collection of Gamusa</h4>
+                    <img src={marry} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -156,9 +174,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/boy">
                   <div className="looking-for-text-container">
-                    <h4>
-                      Gents Attire at affordable price and Ultimate quality
-                    </h4>
+                    <img src={him} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -170,7 +186,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/girl">
                   <div className="looking-for-text-container">
-                    <h4>Gamusa's ultimate section to find gifts for her </h4>
+                    <img src={her} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -226,7 +242,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/mis">
                   <div className="looking-for-text-container">
-                    <h4>Gamusa's Collection of high quality Mising Attire </h4>
+                    <img src={mising} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -238,7 +254,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/bod">
                   <div className="looking-for-text-container">
-                    <h4>Explore and buy the featured Bodo Attire here </h4>
+                    <img src={bodo} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -268,9 +284,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/mug">
                   <div className="looking-for-text-container">
-                    <h4>
-                      Get the finest collection of Muga Clothing of Gamusa
-                    </h4>
+                    <img src={muga} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -295,7 +309,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/eri">
                   <div className="looking-for-text-container">
-                    <h4>The featured collection of Homemade Eri clothing</h4>
+                    <img src={eri} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -317,7 +331,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/mekh">
                   <div className="looking-for-text-container">
-                    <h4>The premium Mekhela collection of Gamusa </h4>
+                    <img src={mekhela} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -328,7 +342,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/sad">
                   <div className="looking-for-text-container">
-                    <h4>Look into the premium Sador collection of Gamusa </h4>
+                    <img src={sador} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -339,7 +353,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/jura">
                   <div className="looking-for-text-container">
-                    <h4>Look into the premium Jura collection of Gamusa </h4>
+                    <img src={jura} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -350,7 +364,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products">
                   <div className="looking-for-text-container">
-                    <h4>Explore the original Assamese Attire collection</h4>
+                    <img src={exp} alt="gamusa" />
                   </div>
                 </Link>
 

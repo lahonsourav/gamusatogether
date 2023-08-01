@@ -150,7 +150,10 @@ const ProductDetails = () => {
                 <p>{product && product.description}</p>
                 <div className="price-container">
                   <h2>{product && product.price}/-</h2>
-                  <small>inclusive of all taxes</small>
+                  <small>
+                    Our sales person will contact you for the price qoute after
+                    order is placed.
+                  </small>
                 </div>
               </div>
 

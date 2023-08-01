@@ -92,7 +92,7 @@
 .looking-for-item {
   display: flex;
   flex-direction: column;
-  width: 18.2vmax;
+  max-width: 18vmax;
 
   aspect-ratio: 4/5;
   align-items: center;
@@ -103,7 +103,6 @@
 .looking-for-item > a {
   display: flex;
   min-width: 18vmax;
-
   aspect-ratio: 4/5;
   align-items: center;
   justify-content: center;
@@ -115,13 +114,20 @@
 
 .looking-for-text-container {
   display: flex;
-  padding: 4vmax;
   align-items: center;
   justify-content: center;
+  object-fit: contain;
 }
 
 .looking-for-text-container > h4 {
   font-weight: 200;
+  padding: 4vmax;
+}
+
+.looking-for-text-container > img {
+  display: flex;
+  width: 18vmax;
+  aspect-ratio: 4/5;
 }
 
 .looking-for-item-title {
@@ -178,6 +184,7 @@
   font-size: 1.2vmax;
   margin: 1vmax 1vmax;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .productCard > span {
@@ -298,7 +305,7 @@
   background-image: url(../../assets/custom.png);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .banner-text > img {
     display: flex;
     width: 100%;
@@ -309,14 +316,20 @@
   }
 
   .productCard {
-    width: 16vmax;
-
+    min-width: 20vmax;
+    /* margin-bottom: 3vmax; */
     padding-bottom: 0.5vmax;
   }
 
   .productCard > img {
-    width: 16vmax;
+    min-width: 20vmax;
     aspect-ratio: 3/4;
+  }
+
+  .productCard:hover {
+    box-shadow: none;
+    background-color: none;
+    transform: none;
   }
 
   .productCard > p {
@@ -337,8 +350,8 @@
   }
 
   .looking-for {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 100vw;
     align-items: center;
     margin-left: auto;
