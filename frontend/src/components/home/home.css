@@ -14,9 +14,7 @@
     var(--color-light-one)
   ); */
 
-  /* background-color: var(--color-light-one); */
   background-size: contain;
-  background-image: url(../../assets/bannerbg.png);
   color: var(--color-dark);
 }
 
@@ -185,6 +183,7 @@
   margin: 1vmax 1vmax;
   margin-bottom: 0;
   text-transform: uppercase;
+  min-height: 3vmax;
 }
 
 .productCard > span {

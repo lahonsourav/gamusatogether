@@ -162,7 +162,7 @@ const Payment = () => {
 
           <input
             type="submit"
-            value={`Pay - ₹${orderInfo && orderInfo.totalPrice}`}
+            value={`Pay - ₹${orderInfo && orderInfo.totalPrice} by Card`}
             ref={payBtn}
             className="paymentFormBtn"
           />
@@ -172,7 +172,7 @@ const Payment = () => {
 
         <div className="codButton">
           <button className="paymentFormBtn" onClick={(e) => clickHandler(e)}>
-            Pay Later
+            Pre-Order (Get Qoute)
           </button>
         </div>
       </div>

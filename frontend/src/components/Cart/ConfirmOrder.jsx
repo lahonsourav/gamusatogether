@@ -15,7 +15,7 @@ const ConfirmOrder = () => {
     0
   );
 
-  const shippingCharges = subtotal > 1000 ? 0 : 5;
+  const shippingCharges = subtotal > 1000 ? 0 : 40;
 
   const tax = subtotal * 0.18;
 
