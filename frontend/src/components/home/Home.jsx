@@ -184,7 +184,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/girl">
+                <Link to="/products/flower">
                   <div className="looking-for-text-container">
                     <img src={her} alt="gamusa" />
                   </div>
