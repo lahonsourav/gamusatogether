@@ -17,7 +17,7 @@ const ConfirmOrder = () => {
 
   const shippingCharges = subtotal > 1000 ? 0 : 40;
 
-  const tax = subtotal * 0.18;
+  const tax = subtotal * 0.02;
 
   const totalPrice = subtotal + tax + shippingCharges;
 
@@ -101,7 +101,7 @@ const ConfirmOrder = () => {
                 <span>₹{shippingCharges}</span>
               </div>
               <div>
-                <p>GST:</p>
+                <p>Convaniant Charge</p>
                 <span>₹{tax}</span>
               </div>
             </div>
