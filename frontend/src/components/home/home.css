@@ -304,6 +304,8 @@
   background-image: url(../../assets/custom.png);
 }
 
+
+
 @media screen and (max-width: 700px) {
   .banner-text > img {
     display: flex;
@@ -368,5 +370,102 @@
   }
   .show-all {
     width: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .marryContainer {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    border: 1px solid var(--color-bor);
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-image: url(../../assets/marry.png);
+  }
+
+  .openContainer {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    border: 1px solid var(--color-bor);
+    margin: 0 auto;
+    align-items: center;
+    background-size: contain;
+    background-image: url(../../assets/offer.png);
+  }
+
+  .giftContainer {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    border: 1px solid var(--color-bor);
+    margin: 0 auto;
+    margin-bottom: 2vmax;
+    align-items: center;
+    background-size: contain;
+    background-image: url(../../assets/gift.png);
+  }
+
+  .ethContainer {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    border: 1px solid var(--color-bor);
+    margin: 0 auto;
+    margin-bottom: 2vmax;
+    align-items: center;
+    background-size: contain;
+    background-image: url(../../assets/ethnic.png);
+  }
+
+  .axomContainer {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    border: 1px solid var(--color-bor);
+    margin: 0 auto;
+    margin-bottom: 2vmax;
+    align-items: center;
+    background-size: contain;
+    background-image: url(../../assets/axom.png);
+  }
+
+  .justContainer {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    border: 1px solid var(--color-bor);
+    margin: 0 auto;
+    margin-bottom: 2vmax;
+    align-items: center;
+    background-size: contain;
+    background-image: url(../../assets/just.png);
+  }
+
+  .youContainer {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    border: 1px solid var(--color-bor);
+    margin: 0 auto;
+    margin-bottom: 2vmax;
+    align-items: center;
+    background-size: contain;
+    background-image: url(../../assets/you.png);
+  }
+
+  .customContainer {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    border: 1px solid var(--color-bor);
+    margin: 0 auto;
+    margin-bottom: 2vmax;
+    align-items: center;
+    background-size: contain;
+    background-image: url(../../assets/custom.png);
   }
 }

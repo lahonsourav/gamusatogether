@@ -27,6 +27,8 @@ import jura from "../../images/jura.jpg";
 import mekhela from "../../images/mekhela.jpg";
 import sador from "../../images/sador.jpg";
 import exp from "../../images/axom.jpg";
+import anin from "../../images/anin.jpeg";
+import riju from "../../images/riju.jpeg";
 
 const Home = () => {
   const alert = useAlert();
@@ -391,6 +393,56 @@ const Home = () => {
             >
               <div></div>
             </a>
+          </div>
+
+          <div className="looking-for">
+            <div className="looking-for-item">
+              <Link to="/products/riju">
+                <div className="looking-for-text-container">
+                  <img src={riju} alt="gamusa" />
+                </div>
+              </Link>
+
+              <div className="looking-for-item-title">
+                <h5>FROM RIJUMONI</h5>
+              </div>
+            </div>
+
+            <div className="looking-for-item">
+              <Link to="/products/anin">
+                <div className="looking-for-text-container">
+                  <img src={anin} alt="gamusa" />
+                </div>
+              </Link>
+
+              <div className="looking-for-item-title">
+                <h5>FROM ANINDITA</h5>
+              </div>
+            </div>
+
+            <div className="looking-for-item">
+              <Link to="/contact">
+                <div className="looking-for-text-container">
+                  <h4>Feature and Sell your Products </h4>
+                </div>
+              </Link>
+
+              <div className="looking-for-item-title">
+                <h5>BECOME SELLER</h5>
+              </div>
+            </div>
+
+            <div className="looking-for-item">
+              <Link to="/products/bgirl">
+                <div className="looking-for-text-container">
+                  <h4>Gamusa Original Products </h4>
+                </div>
+              </Link>
+
+              <div className="looking-for-item-title">
+                <h5>GAMUSA ORIGINAL</h5>
+              </div>
+            </div>
           </div>
         </Fragment>
       )}

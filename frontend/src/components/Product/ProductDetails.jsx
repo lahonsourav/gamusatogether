@@ -150,10 +150,7 @@ const ProductDetails = () => {
                 <p>{product && product.description}</p>
                 <div className="price-container">
                   <h2>{product && product.price}/-</h2>
-                  <small>
-                    Our sales person will contact you for the price qoute after
-                    order is placed.
-                  </small>
+                  <small>Pay later option available</small>
                 </div>
               </div>
 
@@ -246,7 +243,7 @@ const ProductDetails = () => {
           </div>
 
           <div className="swipe_more">
-            <small>swipe and click to view</small>
+            <small>click and zoom</small>
           </div>
 
           <div className="review_container">

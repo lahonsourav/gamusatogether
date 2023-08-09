@@ -172,7 +172,7 @@ const Payment = () => {
 
         <div className="codButton">
           <button className="paymentFormBtn" onClick={(e) => clickHandler(e)}>
-            Pre-Order (Get Qoute)
+            Pay Later
           </button>
         </div>
       </div>

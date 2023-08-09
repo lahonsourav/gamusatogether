@@ -42,7 +42,7 @@ body {
 }
 
 :root {
-  --color-bg: white;
+  --color-bg: #fffff0;
   --color-light-one: #f9f9fb;
   --color-light: #fffff5;
   --color-mid: #fdf4e3;
