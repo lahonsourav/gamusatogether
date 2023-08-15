@@ -2,7 +2,8 @@
   display: flex;
   margin-top: 5rem;
   width: 100%;
-  aspect-ratio: 2 / 1;
+  /* aspect-ratio: 2 / 1; */
+  height: 60vh;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -36,7 +37,7 @@
 
 .banner-text {
   display: flex;
-  width: 40%;
+  width: 30%;
   aspect-ratio: 1/1;
   /* flex-direction: column; */
   align-items: center;
@@ -78,11 +79,10 @@
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 5vmax;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  gap: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 4vmax;
   transition: var(--transition);
-  overflow-x: scroll;
   border-bottom: 1px solid var(--color-dark-shade-one);
   padding-bottom: 3vmax;
 }
@@ -304,9 +304,10 @@
   background-image: url(../../assets/custom.png);
 }
 
-
-
 @media screen and (max-width: 700px) {
+  .banner {
+    height: 30vh;
+  }
   .banner-text > img {
     display: flex;
     width: 100%;

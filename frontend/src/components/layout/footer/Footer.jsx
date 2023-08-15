@@ -56,11 +56,11 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://wa.me/+916000601557"
+            href="https://wa.me/+916001098923"
           >
             Custom Design
           </a>{" "}
-          <Link to="/about">Legal</Link>
+          <Link to="/about">Image Copyright</Link>
         </div>
       </div>
       <div className="logo-container-footer">

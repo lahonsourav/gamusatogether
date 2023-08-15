@@ -15,7 +15,7 @@ const Loader = () => {
         </div>
       </div>
       <div className="logoimage">
-        <p>PLEASE WAIT, GAMUSA IS LOADING</p>
+        <p>GAMUSA IS LOADING</p>
       </div>
     </div>
   );

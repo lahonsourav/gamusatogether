@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="terms_container">
       <p>
-        <br />
+        {/* <br />
         <br />
         About Gamusa Gogamukh <br />
         <br /> Gamusa Gogamukh is a business originated from Gogamukh, Dhemaji,
@@ -19,7 +19,7 @@ const About = () => {
         situated in Gogamukh town, district Dhemaji, Assam, PIN: 787034
         <br />
         <br />
-        <br />
+        <br /> */}
         <br />
         <br />
         About the Website <br />
@@ -31,7 +31,7 @@ const About = () => {
         <br />
         <PiGlobeHemisphereWestThin className="contact_icon" />
         <a href="https://lahon.in" target="_blank" rel="noreferrer">
-          Visit the developer's site
+          Visit the developer's portfolio
         </a>
         <br />
         <br /> <FiPhoneCall className="contact_icon" />
@@ -50,11 +50,20 @@ const About = () => {
         </a>
         <br />
         <br />
-        The whats app icon is attributed to &nbsp;
+        {/* The whats app icon is attributed to &nbsp;
         <a href="https://www.freepik.com/free-vector/whatsapp-icon-design_3049282.htm#query=whatsapp%20logo%20png&position=0&from_view=keyword&track=ais">
           Freepik
-        </a>
+        </a> */}
       </p>
+      <br />
+      <br />
+      Homepage Image Copyright (Please read this) <br />
+      <br />
+      Some of the image on the Homepage is taken from Google and pinterest. If
+      you are the owner please contact me for removal or any other queries. I
+      don't claim them to be mine and nor use them for any unfair use.
+      <br />
+      <br />
     </div>
   );
 };

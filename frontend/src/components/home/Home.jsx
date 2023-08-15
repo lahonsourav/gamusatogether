@@ -14,11 +14,17 @@ import open from "../../images/open.jpg";
 import tren from "../../images/tren.jpg";
 import sum from "../../images/sum.jpg";
 import sale from "../../images/sale.jpg";
+import dora from "../../images/dora.jpg";
+
 import koina from "../../images/koina.jpg";
-import marry from "../../images/marry.jpg";
+import marry from "../../images/couple.jpeg";
 import gamusa from "../../images/gamusa.jpg";
 import him from "../../images/him.jpg";
 import her from "../../images/her.jpg";
+import kidhe from "../../images/kidhe.jpg";
+import kidher from "../../images/kidshe.jpg";
+import ahom from "../../images/ahom.jpg";
+
 import mising from "../../images/mising.jpg";
 import bodo from "../../images/bodo.jpeg";
 import muga from "../../images/muga.jpg";
@@ -27,8 +33,10 @@ import jura from "../../images/jura.jpg";
 import mekhela from "../../images/mekhela.jpg";
 import sador from "../../images/sador.jpg";
 import exp from "../../images/axom.jpg";
-import anin from "../../images/anin.jpeg";
-import riju from "../../images/riju.jpeg";
+import toss from "../../images/toss.jpeg";
+
+// import anin from "../../images/anin.jpeg";
+// import riju from "../../images/riju.jpeg";
 
 const Home = () => {
   const alert = useAlert();
@@ -110,9 +118,9 @@ const Home = () => {
               {products &&
                 products.map((products) => <ProductCard product={products} />)}
             </div>
-            <Link className="show-all" to="/products">
+            {/* <Link className="show-all" to="/products">
               SHOW ALL
-            </Link>
+            </Link> */}
 
             <Link to="/products/marry" className="marryContainer">
               <div></div>
@@ -120,14 +128,14 @@ const Home = () => {
 
             <div className="looking-for">
               <div className="looking-for-item">
-                <Link to="/products/boy">
+                <Link to="/products/girl">
                   <div className="looking-for-text-container">
-                    <h4>Gamusa's beautiful collection for the Groom</h4>
+                    <img src={dora} alt="gamusa" />
                   </div>
                 </Link>
 
                 <div className="looking-for-item-title">
-                  <h5>DORA</h5>
+                  <h5>GROOM</h5>
                 </div>
               </div>
 
@@ -139,7 +147,7 @@ const Home = () => {
                 </Link>
 
                 <div className="looking-for-item-title">
-                  <h5>KOINA</h5>
+                  <h5>BRIDE</h5>
                 </div>
               </div>
 
@@ -200,24 +208,24 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/bboy">
                   <div className="looking-for-text-container">
-                    <h4>The Assamese swag Kid, find attire for your child </h4>
+                    <img src={kidhe} alt="gamusa" />
                   </div>
                 </Link>
 
                 <div className="looking-for-item-title">
-                  <h5>BABY HE</h5>
+                  <h5>KID HE</h5>
                 </div>
               </div>
 
               <div className="looking-for-item">
                 <Link to="/products/bgirl">
                   <div className="looking-for-text-container">
-                    <h4>The Assamese swag Lady, find attire for your child </h4>
+                    <img src={kidher} alt="gamusa" />
                   </div>
                 </Link>
 
                 <div className="looking-for-item-title">
-                  <h5>BABY SHE</h5>
+                  <h5>KID SHE</h5>
                 </div>
               </div>
             </div>
@@ -230,9 +238,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/ahom">
                   <div className="looking-for-text-container">
-                    <h4>
-                      We all know the Legacy, get those Legacy Attire here{" "}
-                    </h4>
+                    <img src={ahom} alt="gamusa" />
                   </div>
                 </Link>
 
@@ -298,9 +304,7 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/paat">
                   <div className="looking-for-text-container">
-                    <h4>
-                      Get the finest collection of Paat clothing of Gamusa{" "}
-                    </h4>
+                    <h4>Paat clothing of Gamusa</h4>
                   </div>
                 </Link>
 
@@ -322,12 +326,12 @@ const Home = () => {
               <div className="looking-for-item">
                 <Link to="/products/riha">
                   <div className="looking-for-text-container">
-                    <h4>Look into the premium Riha collection of Gamusa </h4>
+                    <img src={toss} alt="gamusa" />
                   </div>
                 </Link>
 
                 <div className="looking-for-item-title">
-                  <h5>RIHA</h5>
+                  <h5>TOSS</h5>
                 </div>
               </div>
               <div className="looking-for-item">
@@ -377,6 +381,15 @@ const Home = () => {
             </div>
 
             <a
+              href="https://wa.me/+916001098923"
+              target="_blank"
+              rel="noreferrer"
+              className="customContainer"
+            >
+              <div></div>
+            </a>
+
+            <a
               target="_blank"
               rel="noreferrer"
               href="https://www.youtube.com/@gamusagugamukh2751"
@@ -384,65 +397,6 @@ const Home = () => {
             >
               <div></div>
             </a>
-
-            <a
-              href="https://wa.me/+916000601557"
-              target="_blank"
-              rel="noreferrer"
-              className="customContainer"
-            >
-              <div></div>
-            </a>
-          </div>
-
-          <div className="looking-for">
-            <div className="looking-for-item">
-              <Link to="/products/riju">
-                <div className="looking-for-text-container">
-                  <img src={riju} alt="gamusa" />
-                </div>
-              </Link>
-
-              <div className="looking-for-item-title">
-                <h5>FROM RIJUMONI</h5>
-              </div>
-            </div>
-
-            <div className="looking-for-item">
-              <Link to="/products/anin">
-                <div className="looking-for-text-container">
-                  <img src={anin} alt="gamusa" />
-                </div>
-              </Link>
-
-              <div className="looking-for-item-title">
-                <h5>FROM ANINDITA</h5>
-              </div>
-            </div>
-
-            <div className="looking-for-item">
-              <Link to="/contact">
-                <div className="looking-for-text-container">
-                  <h4>Feature and Sell your Products </h4>
-                </div>
-              </Link>
-
-              <div className="looking-for-item-title">
-                <h5>BECOME SELLER</h5>
-              </div>
-            </div>
-
-            <div className="looking-for-item">
-              <Link to="/products/bgirl">
-                <div className="looking-for-text-container">
-                  <h4>Gamusa Original Products </h4>
-                </div>
-              </Link>
-
-              <div className="looking-for-item-title">
-                <h5>GAMUSA ORIGINAL</h5>
-              </div>
-            </div>
           </div>
         </Fragment>
       )}
