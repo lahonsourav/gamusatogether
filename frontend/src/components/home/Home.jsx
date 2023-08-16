@@ -128,7 +128,7 @@ const Home = () => {
 
             <div className="looking-for">
               <div className="looking-for-item">
-                <Link to="/products/girl">
+                <Link to="/products/groom">
                   <div className="looking-for-text-container">
                     <img src={dora} alt="gamusa" />
                   </div>
@@ -140,7 +140,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/girl">
+                <Link to="/products/bride">
                   <div className="looking-for-text-container">
                     <img src={koina} alt="gamusa" />
                   </div>
@@ -152,7 +152,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/gam">
+                <Link to="/products/gamusa">
                   <div className="looking-for-text-container">
                     <img src={gamusa} alt="gamusa" />
                   </div>
@@ -164,7 +164,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/mar">
+                <Link to="/products/marry">
                   <div className="looking-for-text-container">
                     <img src={marry} alt="gamusa" />
                   </div>
@@ -194,7 +194,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/flower">
+                <Link to="/products/girl">
                   <div className="looking-for-text-container">
                     <img src={her} alt="gamusa" />
                   </div>
@@ -248,7 +248,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/mis">
+                <Link to="/products/mising">
                   <div className="looking-for-text-container">
                     <img src={mising} alt="gamusa" />
                   </div>
@@ -260,7 +260,7 @@ const Home = () => {
               </div>
 
               <div className="looking-for-item">
-                <Link to="/products/bod">
+                <Link to="/products/bodo">
                   <div className="looking-for-text-container">
                     <img src={bodo} alt="gamusa" />
                   </div>
@@ -290,7 +290,7 @@ const Home = () => {
 
             <div className="looking-for">
               <div className="looking-for-item">
-                <Link to="/products/mug">
+                <Link to="/products/muga">
                   <div className="looking-for-text-container">
                     <img src={muga} alt="gamusa" />
                   </div>
@@ -324,7 +324,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/riha">
+                <Link to="/products/toss">
                   <div className="looking-for-text-container">
                     <img src={toss} alt="gamusa" />
                   </div>
@@ -335,7 +335,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/mekh">
+                <Link to="/products/mekhela">
                   <div className="looking-for-text-container">
                     <img src={mekhela} alt="gamusa" />
                   </div>
@@ -346,7 +346,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="looking-for-item">
-                <Link to="/products/sad">
+                <Link to="/products/sador">
                   <div className="looking-for-text-container">
                     <img src={sador} alt="gamusa" />
                   </div>
