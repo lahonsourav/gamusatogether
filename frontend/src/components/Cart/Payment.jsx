@@ -146,7 +146,7 @@ const Payment = () => {
       <CheckoutSteps activeStep={2} />
       <div className="paymentContainer">
         <form className="paymentForm" onSubmit={(e) => submitHandler(e)}>
-          <Typography>Pay with Card</Typography>
+          <Typography>Enter Card</Typography>
           <div>
             <CreditCardIcon />
             <CardNumberElement className="paymentInput" />
@@ -172,7 +172,7 @@ const Payment = () => {
 
         <div className="codButton">
           <button className="paymentFormBtn" onClick={(e) => clickHandler(e)}>
-            Pay Later
+            Pay after Order
           </button>
         </div>
       </div>
