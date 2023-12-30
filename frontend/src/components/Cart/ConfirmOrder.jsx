@@ -15,7 +15,7 @@ const ConfirmOrder = () => {
     0
   );
 
-  const shippingCharges = subtotal > 1000 ? 0 : 40;
+  const shippingCharges = subtotal == 0 ? 0 : 99;
 
   const tax = subtotal * 0.02;
 
@@ -93,7 +93,7 @@ const ConfirmOrder = () => {
             <Typography>Order Summery</Typography>
             <div>
               <div>
-                <p>Subtotal:</p>
+                <p>Price:</p>
                 <span>₹{subtotal}</span>
               </div>
               <div>
@@ -101,7 +101,7 @@ const ConfirmOrder = () => {
                 <span>₹{shippingCharges}</span>
               </div>
               <div>
-                <p>Convaniant Charge</p>
+                <p>Processing Charge</p>
                 <span>₹{tax}</span>
               </div>
             </div>
